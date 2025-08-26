@@ -1,0 +1,108 @@
+{
+    "id": "potassiummagnesiumcitrate",
+    "title": "Potassium Magnesium Citrate",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Food & Nutra Supplements",
+    "overview": "Potassium Magnesium Citrate is a highly soluble mineral complex that combines the benefits of potassium and magnesium with citric acid for enhanced bioavailability. Known for its ability to support cardiovascular health, electrolyte balance, and kidney function, this compound is essential for maintaining proper cellular activity. Potassium Magnesium Citrate appears as a white, odorless, crystalline powder and is well-tolerated in various formulations.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/microcrystallinecellulose/image-1.jpg",
+        "target": "popup",
+        "alt": "PARLOSE product image 1",
+        "openInPopup": true
+      },
+      {
+        "url": "../assets/images/products/photography/microcrystallinecellulose/image-2.jpg",
+        "alt": "PARLOSE product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "potassiummagnesiumcitrate100",
+        "name": "Potassium Magnesium Citrate",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Complies with IP/BP/USP/NF quality standards"
+          },
+          {
+            "parameter": "Potassium Content",
+            "value": "25.0% – 30.0%"
+          },
+          {
+            "parameter": "Magnesium Content",
+            "value": "4.0% – 5.0%"
+          },
+          {
+            "parameter": "Loss on Drying",
+            "value": "NMT 6.0%"
+          },
+          {
+            "parameter": "pH Range",
+            "value": "6.5 – 8.5"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Supports electrolyte balance, aiding in proper muscle function and hydration",
+      "Promotes cardiovascular health by helping regulate blood pressure levels",
+      "Aids in kidney stone prevention through its alkalizing effect",
+      "Highly bioavailable for optimal absorption of potassium and magnesium",
+      "Suitable for use in formulations targeting muscle cramps, fatigue, and heart health"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Used in supplements for cardiovascular support, muscle health, and electrolyte replenishment",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "Popular in health supplements aimed at improving kidney function, preventing kidney stones, and maintaining electrolyte balance",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Food",
+        "description": "Potentially used in electrolyte beverages and fortified foods (subject to regional regulations)",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

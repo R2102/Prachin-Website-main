@@ -1,0 +1,130 @@
+{
+    "id": "xanthangum",
+    "title": "Xanthan Gum",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Natural Polymers & Stabilizers",
+    "overview": "Xanthan gum is a natural polysaccharide produced by the fermentation of sugars using the bacteria Xanthomonas campestris. It appears as a white to cream-colored, odorless, and tasteless powder. Xanthan gum has remarkable thickening and stabilizing properties.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/xanthangum/image-1.jpg",
+        "alt": "Xanthan Gum product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/xanthangum/image-2.jpg",
+        "alt": "Xanthan Gum product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "xanthangum100",
+        "name": "Xanthan Gum",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets BP/USP/NF/Ph.Eur. or food-grade specifications"
+          },
+          {
+            "parameter": "Viscosity",
+            "value": "At 24°C±1 NLT 600 centipoises"
+          },
+          {
+            "parameter": "Isopropyl Alcohol",
+            "value": "NMT 0.075%"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<15%"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "6.0 – 8.0 (as an aqueous solution)"
+          },
+          {
+            "parameter": "Microbial Limits",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Exceptional Thickening Agent: Increases viscosity even at low concentrations",
+      "Superior Stabilizer: Prevents the separation of emulsions and suspensions",
+      "Pseudoplasticity: Viscosity decreases under shear (stirring/mixing), making it easy to pour and process",
+      "Wide pH and Temperature Stability: Functions effectively under various conditions",
+      "Salt Tolerance: Maintains properties even in solutions with high salt concentrations"
+    ],
+    "applications": [
+      {
+        "title": "Food",
+        "description": "Thickener in sauces, salad dressings, baked goods, beverages, dairy products, stabilizer in ice creams and frozen foods, gluten replacement in gluten-free baking",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Pharmaceutical",
+        "description": "Suspending agent, thickener for oral and topical medications",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Cosmetics & Personal Care",
+        "description": "Thickener and stabilizer in lotions, creams, and shampoos",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Cosmetics.jpg",
+        "iconUrl2": "../assets/images/products/Personal Care.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Industrial",
+        "description": "Drilling fluids in oil recovery, thickener in textile printing pastes",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Industrial.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "Halal",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/halal.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

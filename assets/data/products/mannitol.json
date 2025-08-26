@@ -1,0 +1,120 @@
+{
+    "id": "mannitol",
+    "title": "Mannitol",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Sugar Alcohols & Sweeteners",
+    "overview": "Mannitol is a polyol (sugar alcohol) widely used as an excipient in pharmaceutical, nutraceutical, and food formulations. This naturally occurring substance is known for its excellent compatibility, stability, and sweetening properties, making it ideal for oral dosage forms. Mannitol appears as a white, crystalline, odorless powder with a slightly sweet taste and non-hygroscopic characteristics. Its low-calorie content and non-cariogenic nature make it suitable for diabetic-friendly products.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/microcrystallinecellulose/image-1.jpg",
+        "target": "popup",
+        "alt": "PARLOSE product image 1",
+        "openInPopup": true
+      },
+      {
+        "url": "../assets/images/products/photography/microcrystallinecellulose/image-2.jpg",
+        "alt": "PARLOSE product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "mannitol100",
+        "name": "Mannitol",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Complies with IP/BP/USP/NF/Ph.Eur. quality standards"
+          },
+          {
+            "parameter": "Assay",
+            "value": "97.0% – 102.0%"
+          },
+          {
+            "parameter": "Loss on Drying",
+            "value": "≤0.5%"
+          },
+          {
+            "parameter": "Melting Point",
+            "value": "165°C – 170°C"
+          },
+          {
+            "parameter": "Related Substance (Sorbitol)",
+            "value": "NMT 2.0%"
+          },
+          {
+            "parameter": "Sum of Isomalt and Maltitol",
+            "value": "NMT 2.0%"
+          },
+          {
+            "parameter": "Unspecified Impurities",
+            "value": "NMT 0.10%"
+          },
+          {
+            "parameter": "Total Impurities",
+            "value": "NMT 2.0%"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Exhibits excellent compatibility with active pharmaceutical ingredients (APIs) and other excipients",
+      "Non-hygroscopic, ensuring stability in formulations and prolonged shelf life",
+      "Acts as a bulking agent, stabilizer, and sweetening agent in various formulations",
+      "Provides a cooling effect on dissolution, enhancing mouthfeel in chewable tablets and lozenges",
+      "Suitable for diabetic and low-calorie formulations due to its low glycemic index"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Commonly used as a diluent in tablets, capsules, and orally disintegrating tablets",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "Widely incorporated in supplements, particularly chewable and effervescent formulations",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Food",
+        "description": "Used as a low-calorie sweetener in diabetic and sugar-free food products, as well as a stabilizer in confections and frozen desserts",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

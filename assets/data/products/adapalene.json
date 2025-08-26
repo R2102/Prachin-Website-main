@@ -1,0 +1,96 @@
+{
+    "id": "adapalene",
+    "title": "Adapalene",
+    "brandName": "N/A",
+    "category": "APIs",
+    "subcategory": "Dermatological",
+    "overview": "Adapalene is a synthetic retinoid-like compound presented as a white to off-white powder. It is primarily used as a topical dermatological agent for the treatment of acne vulgaris. Adapalene binds to specific retinoic acid nuclear receptors, modulating cell differentiation and keratinization to prevent the formation of microcomedones. With proven anti-inflammatory and comedolytic properties, it is widely recognized for its efficacy and tolerability in both short-term and long-term acne management.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/mcc+cmc/image-1.jpg",
+        "alt": "MCC+CMC product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/mcc+cmc/image-2.jpg",
+        "alt": "MCC+CMC product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "adapalene100",
+        "name": "Adapalene",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Complies with IP/BP/USP/Ph.Eur. quality standards"
+          },
+          {
+            "parameter": "Appearance",
+            "value": "White to off-white powder"
+          },
+          {
+            "parameter": "Assay",
+            "value": "≥99.0% (on dried basis)"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Conforms to standard tests"
+          },
+          {
+            "parameter": "Residual Solvents",
+            "value": "Within acceptable limits"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "≤10 ppm"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "High purity retinoid-like compound with consistent efficacy",
+      "Strong anti-inflammatory and comedolytic action",
+      "Suitable for topical formulations including gels, creams, and lotions",
+      "Stable under recommended storage conditions",
+      "Well-tolerated with a favorable safety profile"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Used as the active pharmaceutical ingredient in topical dermatological preparations for the treatment of acne vulgaris and related skin conditions",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

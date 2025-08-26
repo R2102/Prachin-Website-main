@@ -1,0 +1,132 @@
+/*-----------------------
+    Features
+------------------------*/
+.feature-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    @include prefix(transition, all 0.3s linear, webkit moz ms o);
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .feature-icon {
+        position: relative;
+        width: 26px;
+        height: 30px;
+        margin-right: 10px;
+        background-color: $color-primary;
+        clip-path: url(#hexagon-clippath);
+
+        &:before {
+            content: "\e93d";
+            font-family: 'icomoon';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 8px;
+            color: $color-white;
+            transform: translate(calc(-50% - 1px), -50%);
+        }
+    }
+
+    .feature-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: $color-primary;
+    }
+}
+
+.features-list,
+.features-list-layout2 .feature-item {
+    padding: 30px;
+    background-color: #eef7ff;
+    clip-path: polygon(calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%, 0 0);
+}
+
+.features-list-layout2 .feature-item {
+    padding: 20px;
+    border-radius: 0;
+}
+
+.features-list-layout3 {
+    .feature-item {
+        padding-bottom: 10px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 30px;
+            height: 1px;
+            background-color: #dfdfea;
+        }
+
+        &:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        .feature-icon {
+            width: 26px;
+            height: 26px;
+            clip-path: none;
+            border-radius: 50%;
+
+            &:before {
+                content: "\e907";
+            }
+        }
+    }
+
+    &.list-secondary {
+        .feature-item {
+            .feature-title {
+                color: $color-secondary;
+            }
+
+            .feature-icon {
+                background-color: $color-secondary;
+            }
+        }
+    }
+}
+
+@media (max-width:1199px) {
+    .feature-item {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width:992px) {
+    .features-layout2 .feature-item .feature-img {
+        display: none;
+    }
+}
+
+/* Mobile Phones and tablets  */
+@include xs-sm-screens {
+    .feature-item {
+        .feature-content {
+            padding: 20px;
+        }
+
+        .feature-title {
+            font-size: 16px !important;
+            margin-bottom: 5px;
+        }
+
+        .feature-desc {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+    }
+}

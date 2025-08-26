@@ -1,0 +1,104 @@
+{
+    "id": "calciumcitrate",
+    "title": "Calcium Citrate",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Minerals & Supplements",
+    "overview": "Calcium citrate is a white, odorless, slightly hygroscopic powder. It is a calcium salt of citric acid and serves as a highly bioavailable source of calcium for dietary supplementation.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/calciumcitrate/image-1.jpg",
+        "alt": "Calcium Citrate product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/calciumcitrate/image-2.jpg",
+        "alt": "Calcium Citrate product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "calciumcitrate100",
+        "name": "Calcium Citrate",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets USP/NF standards"
+          },
+          {
+            "parameter": "Assay",
+            "value": "NLT 98.0% and NMT 102.0%"
+          },
+          {
+            "parameter": "Particle Size Distribution",
+            "value": "As per Requirement"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          },
+          {
+            "parameter": "Microbial Limits",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "High bioavailability: Well-absorbed by the body, particularly beneficial for individuals with low stomach acid or certain digestive conditions",
+      "Water-soluble: Dissolves efficiently and can be taken with or without food",
+      "Generally considered well-tolerated: Less likely to cause constipation compared to some other calcium supplements"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Prevention and treatment of calcium deficiencies and osteoporosis",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "Supplement formulations in tablets, capsules, powders, or liquids",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Food",
+        "description": "Fortification of beverages, dairy products, and other foods with calcium (check regional regulations)",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

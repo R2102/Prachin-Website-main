@@ -1,0 +1,127 @@
+{
+    "id": "parmeg",
+    "title": "Magnesium Stearate",
+    "brandName": "PARMEG",
+    "category": "Excipients",
+    "subcategory": "Lubricants",
+    "overview": "Magnesium stearate is a Very fine, light, white powder, slippery to touch, composed of the salt formed from magnesium and stearic acid. It is known for its excellent lubricating properties, flow-enhancing capabilities, and anti-adherent qualities.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/magnesiumstearate/image-1.jpg",
+        "alt": "PARMEG product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/magnesiumstearate/image-2.jpg",
+        "alt": "PARMEG product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "parmeg",
+        "name": "PARMEG",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "Particle Size Distribution",
+            "value": "As per Requirement"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<5%"
+          },
+          {
+            "parameter": "Heavy Metal Limits",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Acts as a highly effective lubricant, reducing friction during tableting and capsule filling",
+      "Prevents active ingredients and other excipients from sticking to manufacturing equipment",
+      "Improves powder flowability for consistent dosage form production",
+      "Can aid in the release of tablets from molds",
+      "Available in both vegetable-source and traditional grades"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Widely used as a lubricant and flow agent in the production of tablets and capsules",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "Enhances manufacturing efficiency and product quality in supplement production",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Cosmetics",
+        "description": "Employed as a lubricant, binder, and thickening agent in various personal care products",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Cosmetics.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Industrial",
+        "description": "Potential uses as a lubricant and processing aid in plastics, metalworking, and other industries",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Industrial.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "USDMF : 38148",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/FDA.jpg",
+        "iconClass": "fas fa-star text-warning"
+      },
+      {
+        "name": "Halal",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/halal.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

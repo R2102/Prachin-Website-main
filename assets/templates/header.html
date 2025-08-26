@@ -1,0 +1,483 @@
+<!-- =========================
+        Header
+    =========================== -->
+    <link rel="stylesheet" href="/assets/css/prachin-button.css">
+<link rel="stylesheet" href="/assets/css/mobile-menu.css">
+<script src="/assets/js/jquery-3.5.1.min.js"></script>
+<script src="/assets/js/mobile-menu.js"></script>
+       <style>
+        /* Mega Dropdown Styles */
+        .mega-dropdown-menu {
+            pointer-events: auto;
+    padding: 20px 0;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.mega-dropdown-menu.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Categories Styles */
+.categories-wrapper {
+    border-right: 1px solid #eee;
+    height: 100%;
+    padding-right: 15px;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-item {
+    padding: 12px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-item i {
+    width: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.category-item:hover,
+.category-item.active {
+    background-color: #f5f5f5;
+    color: #205781;
+}
+
+/* Products Styles */
+.products-container {
+    padding: 0 15px;
+}
+
+.product-list {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.product-list.active {
+    display: block;
+    opacity: 1;
+}
+.product-lists {
+    /* display: none;
+    opacity: 0; */
+    transition: opacity 0.3s ease;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.product-lists.active {
+    display: block;
+    opacity: 1;
+}
+
+.product-item {
+    padding: 12px 15px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.product-item h4 {
+    font-size: 14px;
+    margin: 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.product-item p {
+    font-size: 13px;
+    color: #666;
+    margin: 4px 0 0;
+}
+
+.product-item i {
+    margin-right: 10px;
+    color: #c41a1b;
+    font-size: 16px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Show dropdown on hover */
+.nav-item.has-mega-dropdown {
+    position: relative;
+}
+
+.nav-item.has-mega-dropdown > .nav-item-link {
+    pointer-events: auto;
+    position: relative;
+    z-index: 1001;
+}
+
+.nav-item.has-mega-dropdown {
+    position: relative;
+}
+
+.mega-dropdown-menu.show {
+    display: block !important;
+    opacity: 1;
+}
+
+.has-dropdown .mega-dropdown-menu {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 1236px) {
+        .col-md-3 {
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+    }
+       </style>
+
+<header class="header header-layout1">
+        
+        <nav class="navbar navbar-expand-lg sticky-navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../Index.html">
+              <img src="../assets/images/logo/Prachin Pharmache Logo.png" class="logo-dark" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-label="Toggle navigation" aria-controls="navbarCollapse" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+                
+                <ul class="navbar-nav">
+                <li class="nav-item has-dropdown">
+                  <a href="../Index.html" class="nav-item-link">Home</a>
+                </li><!-- /.nav-item -->
+                <li class="nav-item has-dropdown">
+                  <a href="../about-us.html" class="nav-item-link">About</a>
+                </li><!-- /.nav-item -->
+                
+                
+                <li class="nav-item has-dropdown has-mega-dropdown">
+                  <a href="../Product-list.html" data-toggle="dropdown" class="dropdown-toggle nav-item-link" id="product">Products</a>
+                  <ul class="dropdown-menu mega-dropdown-menu">
+                      <li class="nav-item">
+                          <div class="container" style="max-width: 90% !important;">
+                              <div class="row">
+                                  <!-- Left Side: Categories -->
+                                  <div class="col-sm-12 col-md-3 col-lg-2" 
+                                >
+                                      <div class="categories-wrapper">
+                                          <ul class="category-list">
+                                              <li class="category-item active" data-target="excipients">
+                                                  <i class="fas fa-capsules"></i>
+                                                  Excipients
+                                              </li>
+                                              <li class="category-item" data-target="api">
+                                                  <i class="fas fa-vial"></i>
+                                                  API & Vitamins
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+              
+                                  <!-- Center: Products -->
+                                  <div class="col-sm-12 col-md-10">
+                                      <div class="products-container">
+                                          <!-- Excipients Products -->
+                                          <div class="product-list active" id="excipients-products">
+                                              <div class="row g-3">
+                                                  <div class="col-sm-12 col-md-6 col-lg-3 nav-block">
+                                                      <h2 class="nav-title"><a href="../Product-list.html?subcategory=Superdisintegrants%20%26%20Disintegrants" style="color: inherit;">Superdisintegrants & Disintegrants</a></h2>
+                                                      <ul class="nav flex-column">
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=parcros">Croscarmellose Sodium</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=calopar">Carboxymethyl Cellulose Calcium</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=pargel">Sodium Starch Glycolate</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=parone">Crospovidone</a>
+                                                          </li>
+                                                      </ul>
+                                                      <h2 class="nav-title mt-4"><a href="../Product-list.html?subcategory=Lubricants" style="color: inherit;">Lubricants</a></h2>
+                                                      <ul class="nav flex-column">
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=parmeg">Magnesium Stearate</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=parfum">Sodium Stearyl Fumarate</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=calciumstearate">Calcium Stearate</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=stearicacidpowder">Stearic Acid Powder</a>
+                                                          </li>
+                                                      </ul>
+                                                  </div>
+                                                  <div class="col-sm-12 col-md-6 col-lg-3 nav-block">
+                                                      <h2 class="nav-title"><a href="../Product-list.html?subcategory=Binders%20%26%20Fillers" style="color: inherit;">Binders & Fillers</a></h2>
+                                                      <ul class="nav flex-column">
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=parlose">Microcrystalline Cellulose</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=sodiumcmc">Sodium Carboxymethyl Cellulose</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=carbopar">Calcium Carbonate</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=povidone">Povidone</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=pregelatinizedstarch">Pregelatinized Starch</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=disodiumedetate">DiSodium Edetate</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=starch">Starch</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=talc">Talc</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=mannitol">Mannitol</a>
+                                                          </li>
+                                                      </ul>
+                                                  </div>
+                                                  <div class="col-sm-12 col-md-6 col-lg-3 nav-block">
+                                                    <h2 class="nav-title"><a href="../Product-list.html?subcategory=Stabilizers%20%26%20Thickening%20Agents" style="color: inherit;">Stabilizers & Thickening Agents</a></h2>
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                            <a class="nav-item-link" href="../Products/product-template.html?product=mcccmc">MCC + CMC</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-item-link" href="../Products/product-template.html?product=hydroxpropylmethylcellulose">Hydroxypropyl Methylcellulose</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-item-link" href="../Products/product-template.html?product=xanthangum">Xanthan Gum</a>
+                                                        </li>
+                                                        <!-- <li class="nav-item">
+                                                            <a class="nav-item-link" href="../products/hydroxyethyl-cellulose.html">Hydroxyethyl Cellulose</a>
+                                                        </li> -->
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-12 col-md-4 nav-block"  style="max-width: 25% !important;">
+                                                    <h2 class="nav-title"><a href="../Product-list.html?subcategory=Food%20%26%20Nutra%20Supplements" style="color: inherit;">Food & Nutra Supplements</a></h2>
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                            <a class="nav-item-link" href="../Products/product-template.html?product=calphos">Dibasic Calcium Phosphate</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-item-link" href="../Products/product-template.html?product=calciumcitrate">Calcium Citrate</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-item-link" href="../Products/product-template.html?product=calcitratemalate">Calcium Citrate Malate</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-item-link" href="../Products/product-template.html?product=potcitrate">Potassium Citrate</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-item-link" href="../Products/product-template.html?product=magcitrate">Magnesium Citrate</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-item-link" href="../Products/product-template.html?product=magcitrate">Potassium Magnesium Citrate</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-item-link" href="../Products/product-template.html?product=magnesiumtaurate">Magnesium Taurate</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-item-link" href="../Products/product-template.html?product=magnesiumglycinate">Magnesium Glycinate</a>
+                                                        </li>
+                                                        <!-- <li class="nav-item">
+                                                            <a class="nav-item-link" href="../products/lactose.html">Lactose</a>
+                                                        </li> -->
+                                                    </ul>
+                                                </div>
+                                              </div>
+                                          </div>
+              
+                                                                                    <!-- API Products -->
+                                          <div class="product-list" id="api-products">
+                                              <div class="row g-3">
+                                                  <!-- API Section -->
+                                                  <div class="col-sm-12 col-md-6 col-lg-3 nav-block">
+                                                      <h2 class="nav-title"><a href="../Product-list.html?subcategory=API" style="color: inherit;">API</a></h2>
+                                                      <ul class="nav flex-column">
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=amiodaronehydrochloride">Amiodarone Hydrochloride</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=adapalene">Adapalene</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=acylovir">Acyclovir</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=itopride">Itopride</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=minoxidil">Minoxidil</a>
+                                                          </li>
+                                                      </ul>
+                                                  </div>
+                                                  
+                                                  <!-- Vitamins Section -->
+                                                  <div class="col-sm-12 col-md-6 col-lg-3 nav-block">
+                                                      <h2 class="nav-title"><a href="../Product-list.html?subcategory=Vitamins" style="color: inherit;">Vitamins</a></h2>
+                                                      <ul class="nav flex-column">
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=thiamine">Thiamine (Vitamin B1)</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=riboflavin">Riboflavin (Vitamin B2)</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=pyridoxine">Pyridoxine (Vitamin B6)</a>
+                                                          </li>
+                                                          <li class="nav-item">
+                                                              <a class="nav-item-link" href="../Products/product-template.html?product=methylcobalamin">Methylcobalamin (Vitamin B12)</a>
+                                                          </li>
+                                                      </ul>
+                                                  </div>
+              
+                                  <!-- Right Side: Featured Block (Keep your existing featured block) -->
+                                  
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </li>
+                <li class="nav-item">
+                  <a href="../media-library.html" class=" nav-item-link">Media Library</a>
+                </li><!-- /.nav-item -->
+                <li class="nav-item">
+                  <a href="../certifications.html"  class=" nav-item-link">Certifications</a>
+                </li><!-- /.nav-item -->
+                <li class="nav-item">
+                  <a href="/contact-us.html" class="nav-item-link">Contact</a>
+                </li><!-- /.nav-item -->
+                <li class="nav-item has-dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle nav-item-link" style="color: #c41a1b;">Prachin Group</a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a href="/prachin-group/index.html" class="nav-item-link">Prachin Inc.</a>
+                      </li>
+                    </ul>
+                  </li><!-- /.nav-item -->
+                <ul class="header-actions d-flex align-items-center position-relative list-unstyled mb-0 d-xl-none" style="justify-content: center;">
+                  
+                    <a href="../contact-us.html#general-inquiry" style="text-decoration: none; scroll-behavior: smooth;">
+                    <button class="prachin-group-btn">
+                      <span>INQUIRE NOW</span>
+                      <span class="wrap" aria-hidden="true">
+                        <span class="particle" style="--a: -45deg; --x: 53%; --y: 15%; --d: 4em; --f: .7; --t: .15; --symbol: 'Na'"></span>
+                        <span class="particle" style="--a: 150deg; --x: 40%; --y: 70%; --d: 7.5em; --f: .8; --t: .08; --symbol: 'Cl'"></span>
+                        <span class="particle" style="--a: 10deg; --x: 90%; --y: 65%; --d: 7em; --f: .6; --t: .25; --symbol: 'H'"></span>
+                        <span class="particle" style="--a: -120deg; --x: 15%; --y: 10%; --d: 4em; --symbol: 'O'"></span>
+                        <span class="particle" style="--a: -175deg; --x: 10%; --y: 25%; --d: 5.25em; --f: .6; --t: .32; --symbol: 'C'"></span>
+                        <span class="particle" style="--a: -18deg; --x: 80%; --y: 25%; --d: 4.75em; --f: .5; --t: .4; --symbol: 'N'"></span>
+                        <span class="particle" style="--a: -160deg; --x: 30%; --y: 5%; --d: 9em; --f: .9; --t: .5; --symbol: 'P'"></span>
+                        <span class="particle" style="--a: 175deg; --x: 9%; --y: 30%; --d: 6em; --f: .95; --t: .6; --symbol: 'S'"></span>
+                        <span class="particle" style="--a: -10deg; --x: 89%; --y: 25%; --d: 4.5em; --f: .55; --t: .67; --symbol: 'Fe'"></span>
+                        <span class="particle" style="--a: -140deg; --x: 40%; --y: 10%; --d: 5em; --f: .85; --t: .75; --symbol: 'K'"></span>
+                        <span class="particle" style="--a: 90deg; --x: 45%; --y: 65%; --d: 4em; --f: .5; --t: .83; --symbol: 'Mg'"></span>
+                        <span class="particle" style="--a: 30deg; --x: 70%; --y: 80%; --d: 6.5em; --f: .75; --t: .92; --symbol: 'Ca'"></span>
+                      </span>
+                    </button>
+                    </a>
+                  </li>
+                </ul>
+              </ul><!-- /.navbar-nav -->
+              
+            </div><!-- /.navbar-collapse -->
+            <div class="d-none d-xl-flex align-items-center position-relative ml-30">
+              <div class="contact-phone d-flex align-items-center">
+                <ul class="header-actions d-flex align-items-center position-relative list-unstyled mb-0">
+                  
+                  <li class="d-xl-flex align-items-center ml-3">
+                    <a href="../contact-us.html#map" style="text-decoration: none; scroll-behavior: smooth; ">
+                    <button class="prachin-group-btn">
+                      INQUIRE NOW
+                      <span class="wrap" aria-hidden="true">
+                        <span class="particle" style="--a: -45deg; --x: 53%; --y: 15%; --d: 4em; --f: .7; --t: .15; --symbol: 'Na'"></span>
+                        <span class="particle" style="--a: 150deg; --x: 40%; --y: 70%; --d: 7.5em; --f: .8; --t: .08; --symbol: 'Cl'"></span>
+                        <span class="particle" style="--a: 10deg; --x: 90%; --y: 65%; --d: 7em; --f: .6; --t: .25; --symbol: 'H'"></span>
+                        <span class="particle" style="--a: -120deg; --x: 15%; --y: 10%; --d: 4em; --symbol: 'O'"></span>
+                        <span class="particle" style="--a: -175deg; --x: 10%; --y: 25%; --d: 5.25em; --f: .6; --t: .32; --symbol: 'C'"></span>
+                        <span class="particle" style="--a: -18deg; --x: 80%; --y: 25%; --d: 4.75em; --f: .5; --t: .4; --symbol: 'N'"></span>
+                        <span class="particle" style="--a: -160deg; --x: 30%; --y: 5%; --d: 9em; --f: .9; --t: .5; --symbol: 'P'"></span>
+                        <span class="particle" style="--a: 175deg; --x: 9%; --y: 30%; --d: 6em; --f: .95; --t: .6; --symbol: 'S'"></span>
+                        <span class="particle" style="--a: -10deg; --x: 89%; --y: 25%; --d: 4.5em; --f: .55; --t: .67; --symbol: 'Fe'"></span>
+                        <span class="particle" style="--a: -140deg; --x: 40%; --y: 10%; --d: 5em; --f: .85; --t: .75; --symbol: 'K'"></span>
+                        <span class="particle" style="--a: 90deg; --x: 45%; --y: 65%; --d: 4em; --f: .5; --t: .83; --symbol: 'Mg'"></span>
+                        <span class="particle" style="--a: 30deg; --x: 70%; --y: 80%; --d: 6.5em; --f: .75; --t: .92; --symbol: 'Ca'"></span>
+                      </span>
+                    </button>
+                    </a>
+                  </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.container -->
+        </nav><!-- /.navabr -->
+      </header><!-- /.Header -->
+  
+<style>
+    /* Add hover effect for product list items */
+    .nav-item-link:hover {
+        color: #c41a1b !important;
+        transition: color 0.3s ease;
+    }
+
+    /* Add hover effect for category titles */
+    .nav-title a:hover {
+        color: #c41a1b !important;
+        transition: color 0.3s ease;
+    }
+</style>
+  

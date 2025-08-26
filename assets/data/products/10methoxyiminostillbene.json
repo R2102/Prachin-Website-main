@@ -1,0 +1,104 @@
+{
+    "id": "10methoxyiminostillbene",
+    "title": "10 Methoxy-Iminostillbene",
+    "brandName": "N/A",
+    "category": "APIs",
+    "subcategory": "Pharmaceutical Intermediates",
+    "overview": "10 Methoxy-Iminostillbene is a white to off-white crystalline powder used as a crucial intermediate in the synthesis of Oxcarbazepine, an antiepileptic drug. This compound forms the core structural framework of Oxcarbazepine and ensures a reliable and efficient synthetic process. Its high purity and consistent quality make it indispensable in pharmaceutical manufacturing.",
+    "gallery": [
+      {
+        "url": "../assets/images/gallery/2.jpg",
+        "alt": "10 Methoxy-Iminostillbene product image 1"
+      },
+      {
+        "url": "../assets/images/gallery/3.jpg",
+        "alt": "10 Methoxy-Iminostillbene product image 2"
+      },
+      {
+        "url": "../assets/images/gallery/4.jpg",
+        "alt": "10 Methoxy-Iminostillbene product image 3"
+      },
+      {
+        "url": "../assets/images/gallery/5.jpg",
+        "alt": "10 Methoxy-Iminostillbene product image 4"
+      }
+    ],
+    "variants": [
+      {
+        "id": "10methoxyiminostillbene100",
+        "name": "10 Methoxy-Iminostillbene",
+        "specifications": [
+          {
+            "parameter": "Appearance",
+            "value": "White to off-white crystalline powder"
+          },
+          {
+            "parameter": "Assay",
+            "value": "≥98.0%"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Conforms to standard tests"
+          },
+          {
+            "parameter": "Melting Point",
+            "value": "190°C – 200°C"
+          },
+          {
+            "parameter": "Residual Solvents",
+            "value": "Within acceptable limits"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "≤10 ppm"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "High chemical purity supporting efficient synthesis",
+      "Stable under standard storage and handling conditions",
+      "Optimized particle size for smooth processing",
+      "Suitable for scale-up in industrial manufacturing",
+      "Available in multiple grades as per customer requirements"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical Intermediate",
+        "description": "A key building block in the synthesis of Oxcarbazepine, used in antiepileptic medications to manage partial seizures and generalized tonic-clonic seizures",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

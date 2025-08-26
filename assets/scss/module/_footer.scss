@@ -1,0 +1,234 @@
+/*-------------------------
+    Footer
+--------------------------*/
+.footer {
+    overflow-x: hidden;
+
+    .footer-primary {
+        position: relative;
+        padding-top: 88px;
+        padding-bottom: 50px;
+        background-color: #0d0e43;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 200px;
+            z-index: 1;
+            background-image: url(../images/backgrounds/pattern.png);
+        }
+    }
+
+    .footer-secondary {
+        position: relative;
+        padding: 46px 0;
+        background-color: $color-white;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+            right: 50px;
+            height: 5px;
+            background-color: $color-secondary;
+        }
+    }
+
+    [class*="footer-widget"] {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 30px;
+    }
+
+    .footer-widget-title {
+        color: $color-white;
+        font-size: 16px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+    }
+
+    .contact-list li {
+        font-family: $font-heading;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 0;
+        line-height: 2;
+
+        a {
+            color: $color-secondary;
+            display: flex;
+            align-items: center;
+
+            .contact-icon {
+                margin-right: 7px;
+            }
+        }
+    }
+
+    .footer-widget-contact p {
+        color: $color-gray;
+    }
+
+    .footer-widget-nav li a {
+        display: block;
+        position: relative;
+        color: $color-gray;
+        font-size: 14px;
+        margin-bottom: 11px;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    .footer-copyright-links li {
+        a {
+            position: relative;
+            color: $color-primary;
+            display: block;
+            margin-right: 25px;
+            padding: 3px 0;
+
+            &:before {
+                content: '-';
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                right: -13px;
+                color: $color-primary;
+            }
+
+            &:last-of-type:before {
+                display: none;
+            }
+
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+
+        &:last-child a {
+            margin-right: 0;
+        }
+    }
+
+    .time-list li {
+        border-bottom-color: #3c3d73;
+
+        .day {
+            color: $color-white;
+        }
+
+        .time {
+            color: $color-body;
+        }
+    }
+
+    .footer-widget-time {
+        padding: 40px;
+        background-color: #0a0a32;
+    }
+}
+
+/* Scroll Top Button */
+#scrollTopBtn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
+    bottom: 30px;
+    opacity: 0;
+    z-index: 1000;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #dfdfea inset;
+    @include prefix(transition, all .3s ease-in-out, webkit moz ms o);
+
+    i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        font-size: 18px;
+        color: $color-white;
+        background-color: $color-secondary;
+        @include prefix(transition, all .3s ease-in-out, webkit moz ms o);
+    }
+
+    &:hover {
+        i {
+            background-color: $color-primary;
+        }
+    }
+
+    &.actived {
+        right: 30px;
+        opacity: 1;
+    }
+}
+
+/* Mobile Phones and tablets */
+@media (min-width: 320px) and (max-width: 1200px) {
+    .footer {
+        .footer-primary {
+            padding-top: 35px;
+            padding-bottom: 30px;
+        }
+
+        .footer-secondary {
+            padding: 20px 0;
+
+            &:after {
+                left: 20px;
+                right: 20px;
+                height: 3px;
+            }
+        }
+
+        .footer-widget {
+            margin-bottom: 20px;
+        }
+
+        .footer-widget-title {
+            margin-bottom: 15px;
+        }
+
+        .footer-widget-nav li a {
+            font-size: 13px;
+        }
+
+        .phone-number {
+            margin: 10px 0;
+        }
+    }
+}
+
+/* Mobile Phones */
+@include xs-sm-screens {
+    .footer .footer-copyright-links {
+        -ms-flex-pack: start !important;
+        justify-content: flex-start !important;
+    }
+
+    #scrollTopBtn {
+        bottom: 20px;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+
+        &.actived {
+            right: 20px;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+/*----------------------
+    Accordions
+------------------------*/
+.accordion-item {
+    padding: 22px 0;
+    margin-top: -1px;
+    border-top: 2px solid #e7ebef;
+    border-bottom: 2px solid #e7ebef;
+    background-color: $color-white;
+
+    &:first-child {
+        border-top: 4px solid $color-primary;
+    }
+
+    .accordion-title {
+        font-weight: 700;
+        font-size: 19px;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        padding-left: 40px;
+        color: $color-primary;
+
+        &:hover {
+            color: $color-secondary;
+        }
+
+        &:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "+";
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            color: $color-white;
+            background-color: $color-secondary;
+        }
+    }
+
+    &.opened {
+
+        .accordion-header:not(.collapsed) {
+            .accordion-title {
+                color: $color-primary;
+
+                &:after {
+                    content: "-";
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
+
+    .accordion-body {
+        padding-top: 20px;
+
+        p {
+            font-size: 15px;
+            margin-bottom: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .accordion-item {
+        padding: 10px 0;
+
+        .accordion-title {
+            font-size: 15px;
+        }
+
+        .accordion-body p {
+            font-size: 13px;
+        }
+    }
+}

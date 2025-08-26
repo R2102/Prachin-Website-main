@@ -1,0 +1,153 @@
+{
+    "id": "mcccmc",
+    "title": "Microcrystalline Cellulose + Carboxymethyl Cellulose",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Stabilizers & Thickening Agents",
+    "overview": "This is a co-processed excipient consisting of Microcrystalline Cellulose (MCC) and Sodium Carboxymethyl Cellulose (NaCMC). This unique combination provides superior flowability, compressibility, and disintegration properties, making it an ideal binder and disintegrant for pharmaceutical formulations. It is a white to off-white, odorless, and free-flowing powder designed to enhance the performance of tablets and capsules, particularly in direct compression applications.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/mcc+cmc/image-1.jpg",
+        "alt": "MCC+CMC product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/mcc+cmc/image-2.jpg",
+        "alt": "MCC+CMC product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "rc591",
+        "name": "RC 591",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Complies with IP/BP/USP/Ph.Eur. quality standards"
+          },
+          {
+            "parameter": "Loss on Drying",
+            "value": "NMT 8%"
+          },
+          {
+            "parameter": "Viscosity",
+            "value": "39 to 91 cps"
+          },
+          {
+            "parameter": "pH Range",
+            "value": "5.0 – 8.0"
+          },
+          {
+            "parameter": "Assay",
+            "value": "8.3 to 13.8%"
+          }
+        ]
+      },
+      {
+        "id": "rc611",
+        "name": "RC 611",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Complies with IP/BP/USP/Ph.Eur. quality standards"
+          },
+          {
+            "parameter": "Loss on Drying",
+            "value": "NMT 8%"
+          },
+          {
+            "parameter": "Viscosity",
+            "value": "50 to 118 cps (2.6%)"
+          },
+          {
+            "parameter": "pH Range",
+            "value": "6.0 – 8.0"
+          },
+          {
+            "parameter": "Assay",
+            "value": "11.3% to 18.8%"
+          }
+        ]
+      },
+      {
+        "id": "rc811",
+        "name": "RC 811",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Complies with IP/BP/USP/Ph.Eur. quality standards"
+          },
+          {
+            "parameter": "Loss on Drying",
+            "value": "NMT 8%"
+          },
+          {
+            "parameter": "Viscosity",
+            "value": "2400 - 5600 cps"
+          },
+          {
+            "parameter": "pH Range",
+            "value": "6.0 – 8.0"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Offers excellent compressibility, contributing to strong tablet formation without the need for additional binders",
+      "Promotes rapid and uniform disintegration, ensuring faster drug dissolution and bioavailability",
+      "Designed for direct compression, optimizing production efficiency and reducing manufacturing time",
+      "Demonstrates compatibility with a wide range of active pharmaceutical ingredients (APIs) and excipients",
+      "Provides enhanced stability, maintaining performance even under fluctuating environmental conditions"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Widely used as a binder and disintegrant in solid oral dosage forms, including tablets, capsules, and orally disintegrating tablets (ODTs)",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "Suitable for dietary supplements, offering enhanced compressibility and rapid disintegration for improved absorption",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

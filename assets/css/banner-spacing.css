@@ -1,0 +1,124 @@
+/* Banner Section Spacing Improvements */
+
+/* Improve overall banner section spacing */
+.banner-layout8 {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fix content container spacing */
+.banner-layout8 .banner-content {
+    padding: 50px 40px;
+}
+
+/* Improve heading spacing */
+.banner-layout8 .heading-layout2 {
+    margin-bottom: 35px;
+}
+
+.banner-layout8 .heading-title {
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.banner-layout8 .heading-desc {
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+/* Fix button spacing */
+.banner-layout8 .d-flex.flex-wrap {
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+/* Improve fancybox spacing */
+.banner-layout8 .fancybox-layout2 {
+    margin-top: 40px;
+}
+
+.banner-layout8 .fancybox-layout2 .fancybox-item {
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.banner-layout8 .fancybox-layout2 .fancybox-item:hover {
+    transform: translateY(-5px);
+}
+
+.banner-layout8 .fancybox-layout2 .fancybox-icon {
+    margin-bottom: 20px;
+}
+
+.banner-layout8 .fancybox-layout2 .fancybox-title {
+    margin-bottom: 15px;
+}
+
+.banner-layout8 .fancybox-layout2 .fancybox-desc {
+    margin-bottom: 0;
+}
+
+/* Fix banner image spacing */
+.banner-layout8 .banner-img {
+    height: 71.6%;
+    display: flex;
+    align-items: center;
+}
+
+.banner-layout8 .banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199px) {
+    .banner-layout8 .banner-content {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner-layout8 {
+        padding: 60px 0;
+    }
+    
+    .banner-layout8 .banner-content {
+        padding: 30px 25px;
+    }
+    
+    .banner-layout8 .heading-title {
+        font-size: 28px;
+    }
+    
+    .banner-layout8 .heading-desc {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-layout8 {
+        padding: 40px 0;
+    }
+    
+    .banner-layout8 .banner-content {
+        padding: 25px 20px;
+    }
+    
+    .banner-layout8 .heading-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .banner-layout8 .heading-desc {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    
+    .banner-layout8 .d-flex.flex-wrap {
+        justify-content: center;
+    }
+}

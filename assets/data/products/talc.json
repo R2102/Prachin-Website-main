@@ -1,0 +1,125 @@
+{
+    "id": "talc",
+    "title": "Talc",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Minerals & Lubricants",
+    "overview": "Talc is a naturally occurring clay mineral. Its soft, flaky nature and water-repellent properties make it a versatile ingredient. Very fine, white or grayish-white, crystalline powder. Is unctuous, adheres readily to the skin, and is free from grittiness.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/mcc+cmc/image-1.jpg",
+        "alt": "MCC+CMC product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/mcc+cmc/image-2.jpg",
+        "alt": "MCC+CMC product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "talc100",
+        "name": "Talc",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "Magnesium Content",
+            "value": "17.0 to 19.5%"
+          },
+          {
+            "parameter": "Particle Size Distribution",
+            "value": "As per Requirement"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          },
+          {
+            "parameter": "Microbial Limits",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Softness: The softest mineral known, making it easy to grind and process",
+      "Lubricant: Reduces friction between surfaces",
+      "Absorbent: Can absorb moisture, oils, and other liquids",
+      "Chemically Inert: Generally doesn't react with other substances",
+      "Opacifying Agent: Provides opacity and whiteness to formulations"
+    ],
+    "applications": [
+      {
+        "title": "Cosmetics",
+        "description": "Widely used in face powders, eyeshadows, blushes, and other makeup products",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Cosmetics.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Pharmaceuticals",
+        "description": "Tablet filler, glidant, and anticaking agent",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Industrial",
+        "description": "Lubricants, paints, coatings, ceramics, plastics, paper, and rubber",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Industrial.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Food",
+        "description": "Anticaking agent and processing aid (check regional regulations)",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "Halal",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/halal.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

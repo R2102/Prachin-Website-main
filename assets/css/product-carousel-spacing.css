@@ -1,0 +1,126 @@
+/* Product Carousel Spacing Improvements */
+
+/* Improve overall section spacing */
+.fancybox-layout4 {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fix heading spacing */
+.fancybox-layout4 .heading-layout2 {
+    margin-bottom: 40px;
+}
+
+.fancybox-layout4 .heading-title {
+    margin-bottom: 20px;
+}
+
+.fancybox-layout4 .heading-desc {
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+
+/* Improve product item spacing and appearance */
+.fancybox-layout4 .fancybox-item {
+    margin: 15px;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 83px 0 rgba(40, 40, 40, 0.08);
+    transition: all 0.3s ease;
+}
+
+.fancybox-layout4 .fancybox-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Fix product image sizing */
+.fancybox-layout4 .fancybox-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.fancybox-layout4 .fancybox-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Improve product content spacing */
+.fancybox-layout4 .fancybox-body {
+    padding: 25px 20px;
+    background-color: #fff;
+}
+
+.fancybox-layout4 .fancybox-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.fancybox-layout4 .fancybox-desc {
+    margin-bottom: 15px;
+    min-height: 60px;
+}
+
+/* Improve carousel navigation */
+.fancybox-layout4 .slick-arrow {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.fancybox-layout4 .slick-arrow:hover {
+    background-color: #205781;
+    color: #fff;
+}
+
+/* Fix button spacing */
+.fancybox-layout4 .btn-link {
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.fancybox-layout4 .btn-link i {
+    margin-right: 5px;
+}
+
+/* Improve flex-wrap-new for buttons */
+.d-flex.flex-wrap-new {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .fancybox-layout4 {
+        padding: 100px 0;
+    }
+    
+    .fancybox-layout4 .fancybox-desc {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .fancybox-layout4 {
+        padding: 100px 0;
+    }
+    
+    .fancybox-layout4 .fancybox-body {
+        padding: 20px 15px;
+        min-height: 230px;
+    }
+    
+    .d-flex.flex-wrap-new {
+        justify-content: center;
+    }
+}

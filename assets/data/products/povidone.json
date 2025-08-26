@@ -1,0 +1,115 @@
+{
+    "id": "povidone",
+    "title": "Povidone (PVPK)",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Binders & Fillers",
+    "overview": "Povidone is a water-soluble, synthetic polymer made from the monomer N-vinylpyrrolidone. It appears as a white to slightly off-white, odorless powder. Povidone is classified into different grades using a K-value, which reflects the polymer's average molecular weight and influences its properties.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/povidone/image-1.jpg",
+        "alt": "Povidone product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/povidone/image-2.jpg",
+        "alt": "Povidone product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "povidone100",
+        "name": "Povidone",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "K-value Range",
+            "value": "K30 (MW ~40,000), K60 (MW ~160,000), K90 (MW ~360,000)"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<5%"
+          },
+          {
+            "parameter": "pH",
+            "value": "3.0-7.0 (as an aqueous solution)"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Excellent solubility in water and various organic solvents",
+      "Strong binding and adhesive properties",
+      "Film-forming capabilities",
+      "Physiologically inert and chemically stable",
+      "Compatible with a wide range of active ingredients and excipients"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Binder in tablets and capsules (especially K30), Disintegrant (K30, K90), Solubilizer for poorly soluble drugs, Film coating agent",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "Binder and capsule formulation",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Personal Care",
+        "description": "Hair styling products, film-former in cosmetics",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Personal Care.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Industrial",
+        "description": "Adhesives, coatings, textile processing",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Industrial.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "Halal",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/halal.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

@@ -1,0 +1,251 @@
+{
+    "id": "parlose",
+    "title": "Microcrystalline Cellulose",
+    "brandName": "PARLOSE",
+    "category": "Excipients",
+    "subcategory": "Binders & Fillers",
+    "overview": "Microcrystalline cellulose is a purified, partially depolymerized form of cellulose. It presents as a white, odorless, and tasteless crystalline powder. MCC is a versatile excipient offering exceptional binding, flow, and disintegration properties.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/microcrystallinecellulose/image-1.jpg",
+        "target": "popup",
+        "alt": "PARLOSE product image 1",
+        "openInPopup": true
+      },
+      {
+        "url": "../assets/images/products/photography/microcrystallinecellulose/image-2.jpg",
+        "alt": "PARLOSE product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "parlose101",
+        "name": "PARLOSE 101",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<7%"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "5.0-7.5 (as an aqueous suspension)"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          }
+        ]
+      },
+      {
+        "id": "parlose102",
+        "name": "PARLOSE 102",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<7%"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "5.0-7.5 (as an aqueous suspension)"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          }
+        ]
+      },
+      {
+        "id": "parlose105",
+        "name": "PARLOSE 105",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<7%"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "5.0-7.5 (as an aqueous suspension)"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          }
+        ]
+      },
+      {
+        "id": "parlose112",
+        "name": "PARLOSE 112",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<7%"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "5.0-7.5 (as an aqueous suspension)"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          }
+        ]
+      },
+      {
+        "id": "parlose200",
+        "name": "PARLOSE 200",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<7%"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "5.0-7.5 (as an aqueous suspension)"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          }
+        ]
+      },
+      {
+        "id": "parlose302",
+        "name": "PARLOSE 302",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<7%"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "5.0-7.5 (as an aqueous suspension)"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Excellent compression and binding characteristics for robust tablet formation",
+      "Enhances powder flowability for efficient tableting and capsule filling processes",
+      "Functions as a disintegrant to aid in tablet breakdown and drug release",
+      "Chemically stable and compatible with most APIs",
+      "Available in various grades to suit diverse formulation needs"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Widely used as a binder, disintegrant, filler, and flow aid in tablet and capsule formulations",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "Enhances formulation and functionality in dietary supplement tablets and capsules",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Food",
+        "description": "Employs texturizing, bulking, and anti-caking properties in various food products",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Cosmetics",
+        "description": "Potential applications as a thickener and texture enhancer",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Cosmetics.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "/assets/Pdf/Prachin APIs Brochure.pdf",
+      "company": "/assets/Pdf/Prachin Excipients Brochure.pdf"
+    },
+    "certifications": [
+      {
+        "name": "USDMF : 38147",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/FDA.jpg",
+        "iconClass": "fas fa-star text-warning"
+      },
+      {
+        "name": "Excipact",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-04.png",
+        "largeIcon": true
+      },
+      {
+        "name": "Halal",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/halal.png",
+        "largeIcon": true
+      },
+      {
+        "name": "Kosher",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/keniseth.jpg",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "id": "2butylbenzofuran",
+    "title": "2-Butyl-3-(3,5-Diiodo-4-hydroxybenzoyl) Benzofuran",
+    "brandName": "N/A",
+    "category": "APIs",
+    "subcategory": "Pharmaceutical Intermediates",
+    "overview": "2-Butyl-3-(3,5-Diiodo-4-hydroxybenzoyl) Benzofuran is a white to off-white solid, playing a crucial role as an intermediate in the synthesis of Amiodarone Hydrochloride. This compound incorporates iodine atoms into the molecular framework, critical for the antiarrhythmic activity of the final API. It offers excellent purity and stability, ensuring reliable performance in pharmaceutical manufacturing.",
+    "gallery": [
+      {
+        "url": "../assets/images/gallery/2.jpg",
+        "alt": "2-Butyl-3-(3,5-Diiodo-4-hydroxybenzoyl) Benzofuran product image 1"
+      },
+      {
+        "url": "../assets/images/gallery/3.jpg",
+        "alt": "2-Butyl-3-(3,5-Diiodo-4-hydroxybenzoyl) Benzofuran product image 2"
+      },
+      {
+        "url": "../assets/images/gallery/4.jpg",
+        "alt": "2-Butyl-3-(3,5-Diiodo-4-hydroxybenzoyl) Benzofuran product image 3"
+      },
+      {
+        "url": "../assets/images/gallery/5.jpg",
+        "alt": "2-Butyl-3-(3,5-Diiodo-4-hydroxybenzoyl) Benzofuran product image 4"
+      }
+    ],
+    "variants": [
+      {
+        "id": "2butylbenzofuran100",
+        "name": "2-Butyl-3-(3,5-Diiodo-4-hydroxybenzoyl) Benzofuran",
+        "specifications": [
+          {
+            "parameter": "Appearance",
+            "value": "White to off-white crystalline solid"
+          },
+          {
+            "parameter": "Assay",
+            "value": "≥98.0%"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Conforms to standard tests"
+          },
+          {
+            "parameter": "Melting Point",
+            "value": "140°C – 150°C"
+          },
+          {
+            "parameter": "Residual Solvents",
+            "value": "Within acceptable limits"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "≤10 ppm"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "High purity with excellent batch-to-batch consistency",
+      "Chemically stable under recommended storage",
+      "Supports efficient and scalable synthesis of Amiodarone HCL",
+      "Available in various grades as per customer requirements",
+      "Optimized particle size for smooth processing"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical Intermediate",
+        "description": "Key intermediate in the production of Amiodarone Hydrochloride, enabling the development of antiarrhythmic medications used to manage serious heart rhythm disorders",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

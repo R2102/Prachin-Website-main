@@ -1,0 +1,31 @@
+/*-------------------------
+       Counters
+--------------------------*/
+.counter-item {
+  margin-bottom: 30px;
+
+  .counter-number {
+    position: relative;
+    font-size: 70px;
+    line-height: 1;
+    color: $color-heading;
+    font-weight: 400;
+    padding-bottom: 22px;
+    margin-bottom: 20px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #dfdfea;
+    }
+  }
+
+  .counter-desc {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

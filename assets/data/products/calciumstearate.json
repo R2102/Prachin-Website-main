@@ -1,0 +1,116 @@
+{
+    "id": "calciumstearate",
+    "title": "Calcium Stearate",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Lubricants & Flow Aids",
+    "overview": "Calcium stearate is a white, fine powder with a slightly soapy feel. It is produced from the reaction of stearic acid (derived from animal or vegetable sources) with calcium hydroxide. Calcium stearate functions primarily as a lubricant, release agent, and flow aid.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/calciumcitrate/image-1.jpg",
+        "alt": "Calcium Stearate product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/calciumcitrate/image-2.jpg",
+        "alt": "Calcium Stearate product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "calciumstearate100",
+        "name": "Calcium Stearate",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "Fatty Acid Content",
+            "value": "Sum of stearic acid and palmitic acid NLT 90.0% of total content"
+          },
+          {
+            "parameter": "Calcium Content",
+            "value": "6.4 to 7.4%"
+          },
+          {
+            "parameter": "Particle Size Distribution",
+            "value": "As per Requirement"
+          },
+          {
+            "parameter": "Loss on Drying",
+            "value": "<4%"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Excellent lubricant properties: Reduces friction between particles and against manufacturing equipment",
+      "Anti-adherent: Prevents active ingredients and excipients from sticking to processing equipment",
+      "Enhances flowability: Improves powder flow in tableting and capsule filling",
+      "Water-repellent: Can provide a degree of moisture resistance"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Lubricant for tablet and capsule production, reducing wear on equipment and preventing sticking",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "Similar uses as in pharmaceuticals to enhance production efficiency",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Cosmetics",
+        "description": "Thickener, emulsifier, and texture enhancer in personal care products",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Cosmetics.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Industrial",
+        "description": "Lubricant and processing aid in plastics, rubber, and other manufacturing industries",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Industrial.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

@@ -1,0 +1,27 @@
+/*---------------------------
+    Client
+---------------------------*/
+.client {
+	position: relative;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	height: 90px;
+
+	img {
+		padding: 0 15px;
+		@include prefix(transition, transform .5s ease, webkit moz ms o);
+	}
+
+	&:hover img {
+		transform: scale(1.1);
+	}
+}
+
+.clients-light .client img {
+	filter: brightness(100);
+
+	&:first-of-type {
+		opacity: 0.98;
+	}
+}

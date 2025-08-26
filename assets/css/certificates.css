@@ -1,0 +1,128 @@
+
+.certificates-grid {
+  padding: 50px 0;
+  position: relative;
+  z-index: 1;
+  /* margin-top: 210px; */
+}
+
+.certificate-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.certificate-icon {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  display: block;
+}
+
+.certificate-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.certificate-title {
+  color: #205781;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.certificate-desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.certificate-validity {
+  color: #205781;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  background-color: #205781;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #1a4668;
+  color: #fff;
+}
+
+.about-layout2 {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 60px;
+  margin-bottom: 0;
+}
+
+/* .quality-features {
+    padding: 20px 0;
+}
+
+.quality-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 2;
+    column-gap: 40px;
+}
+
+.quality-list li {
+    margin-bottom: 15px;
+    break-inside: avoid;
+    padding: 10px 15px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.quality-list li:hover {
+    background: #205781;
+    color: white;
+    transform: translateX(5px);
+}
+
+.quality-list li i {
+    margin-right: 10px;
+    color: #205781;
+    font-size: 1.2em;
+}
+
+.quality-list li:hover i {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .quality-list {
+        columns: 1;
+    }
+} */
+.certi {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}

@@ -1,0 +1,102 @@
+{
+    "id": "calciumcitratemaleate",
+    "title": "Calcium Citrate Maleate",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Minerals & Supplements",
+    "overview": "Calcium citrate maleate (CCM) is a water-soluble organic compound that combines calcium citrate with maleic acid. It is a highly bioavailable source of calcium designed to support bone health and address calcium deficiencies.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/mcc+cmc/image-1.jpg",
+        "alt": "MCC+CMC product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/mcc+cmc/image-2.jpg",
+        "alt": "MCC+CMC product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "calciumcitratemaleate100",
+        "name": "Calcium Citrate Maleate",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "USP quality standards"
+          },
+          {
+            "parameter": "Calcium Content",
+            "value": "23.0 to 24.2% elemental calcium by weight"
+          },
+          {
+            "parameter": "Sum of Citrate and Malate",
+            "value": "NLT 73.0%"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "4.0 to 8.0"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          },
+          {
+            "parameter": "Microbial Limits",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "High Bioavailability: CCM's unique structure allows for efficient calcium absorption, even in individuals with low stomach acid or digestive issues",
+      "Water-soluble: Dissolves readily, making it convenient for individuals who dislike swallowing large tablets or capsules",
+      "Potential Kidney Health Support: Citrate and maleate components may help prevent the formation of kidney stones in some individuals",
+      "Versatile Applications: Can be incorporated into tablets, capsules, powders, or liquids"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Treatment and prevention of calcium deficiencies and osteoporosis",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "May be particularly beneficial for individuals with compromised digestion or risk of kidney stones",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

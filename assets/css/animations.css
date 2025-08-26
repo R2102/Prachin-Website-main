@@ -1,0 +1,54 @@
+/* Custom animations for slider and fancybox */
+
+/* Text animations */
+.slide-subtitle .char,
+.slide-title .word span {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-subtitle.animate-element .char,
+.slide-title.animate-element .word span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger animation delays for characters */
+.slide-subtitle .char {
+  transition-delay: calc(0.05s * var(--char-index));
+}
+
+/* Stagger animation delays for words */
+.slide-title .word span {
+  transition-delay: calc(0.1s * var(--word-index));
+}
+
+/* Fancybox icon animations */
+.fancybox-icon {
+  transform: scale(0.8);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              opacity 0.5s ease;
+}
+
+.fancybox-icon.animate-element {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Hover effects for fancybox items */
+.fancybox-item:hover .fancybox-icon {
+  transform: scale(1.1);
+}
+
+.fancybox-title {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fancybox-title.animate-element {
+  opacity: 1;
+  transform: translateY(0);
+}

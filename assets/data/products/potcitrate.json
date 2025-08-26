@@ -1,0 +1,101 @@
+{
+    "id": "potassiumcitrate",
+    "title": "Potassium Citrate",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Minerals & Supplements",
+    "overview": "Potassium citrate is a white, odorless, crystalline powder with a salty taste. It is the potassium salt of citric acid and serves as a source of potassium and citrate. Potassium citrate is highly soluble in water.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/microcrystallinecellulose/image-1.jpg",
+        "target": "popup",
+        "alt": "PARLOSE product image 1",
+        "openInPopup": true
+      },
+      {
+        "url": "../assets/images/products/photography/microcrystallinecellulose/image-2.jpg",
+        "alt": "PARLOSE product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "potassiumcitrate100",
+        "name": "Potassium Citrate",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF standards"
+          },
+          {
+            "parameter": "Purity",
+            "value": "NLT 99.0%"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          },
+          {
+            "parameter": "Microbial Limits",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Alkalizing Agent: Helps raise the pH of urine, making it less acidic",
+      "Source of Potassium: Provides an essential electrolyte for various bodily functions",
+      "Water Soluble: Dissolves readily for easy consumption"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Prevention and treatment of kidney stones, management of hypokalemia, treatment of renal tubular acidosis",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Food",
+        "description": "May be used as a buffering agent, flavor enhancer, or stabilizer in some foods (check local regulations)",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

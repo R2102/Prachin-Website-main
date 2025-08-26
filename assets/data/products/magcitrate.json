@@ -1,0 +1,101 @@
+{
+    "id": "magnesiumcitrate",
+    "title": "Magnesium Citrate",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Minerals & Supplements",
+    "overview": "Magnesium citrate is a highly bioavailable magnesium salt formed with citric acid. It appears as a white, slightly hygroscopic powder with a slightly acidic taste.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/crospovidone/image-1.jpg",
+        "alt": "PARONE product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/crospovidone/image-2.jpg",
+        "alt": "PARONE product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "magnesiumcitrate100",
+        "name": "Magnesium Citrate",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/USP/NF standard"
+          },
+          {
+            "parameter": "Magnesium Content",
+            "value": "Between 14.5% to 16.4% elemental magnesium by weight"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          },
+          {
+            "parameter": "Microbial Limits",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Water Soluble: Dissolves easily for efficient absorption",
+      "Bioavailability: Provides a readily absorbable form of magnesium for the body",
+      "Osmotic Laxative Properties: Can attract water into the intestines, softening stool and promoting bowel movements",
+      "Potential Health Benefits: May support muscle function, nerve health, bone health, and cardiovascular health"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Dietary supplement for magnesium deficiency and laxative for short-term relief of constipation",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "May be combined with other vitamins and minerals in supplement formulations",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Food",
+        "description": "Potential use in fortified beverages (check regional regulations)",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

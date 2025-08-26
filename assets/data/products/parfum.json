@@ -1,0 +1,119 @@
+{
+    "id": "parfum",
+    "title": "Sodium Stearyl Fumarate",
+    "brandName": "PARFUM",
+    "category": "Excipients",
+    "subcategory": "Lubricants",
+    "overview": "Sodium stearyl fumarate (SSF) is a fine, white powder. Odorless powder derived from stearyl alcohol and fumaric acid. This excipient functions primarily as a highly effective lubricant and glidant within pharmaceutical formulations, particularly in the tableting process. They are used to enhance the flowability of a powder by reducing the interparticle friction, surface charge, and cohesion.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/sodiumstearylfumarate/image-1.jpg",
+        "alt": "PARFUM product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/sodiumstearylfumarate/image-2.jpg",
+        "alt": "PARFUM product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "parfum",
+        "name": "PARFUM",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "Purity",
+            "value": ">99%"
+          },
+          {
+            "parameter": "Particle Size Distribution",
+            "value": "As per Requirement"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "NMT 5%"
+          },
+          {
+            "parameter": "Heavy Metal Limits",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Possesses superior lubricating properties, reducing friction between tablet ingredients and manufacturing equipment",
+      "Prevents sticking and picking issues during tableting, improving tablet appearance and production efficiency",
+      "SSF dissolves readily, potentially improving dissolution profiles compared to traditional water-insoluble lubricants",
+      "Enhances powder flowability for consistent filling of tablet dies",
+      "Promotes smooth tablet ejection from the press",
+      "Demonstrates good compatibility with a wide range of active ingredients",
+      "Typically used in smaller concentrations compared to some other lubricants"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Widely used as a lubricant in tablet and capsule formulations, particularly where traditional lubricants may be incompatible or less effective",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "Potential applications in supplement formulations where enhanced lubrication and flow properties are desired (check compatibility)",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "USDMF : 39364",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/FDA.jpg",
+        "iconClass": "fas fa-star text-warning"
+      },
+      {
+        "name": "Halal",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/halal.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

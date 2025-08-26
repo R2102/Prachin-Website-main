@@ -1,0 +1,108 @@
+{
+    "id": "pyridoxine",
+    "title": "Vitamin B6 (Pyridoxine)",
+    "brandName": "N/A",
+    "category": "APIs",
+    "subcategory": "Vitamins & Nutrients",
+    "overview": "Vitamin B6, known as Pyridoxine, is a white to off-white crystalline powder essential for amino acid metabolism, neurotransmitter synthesis, and immune function. It plays a crucial role in brain health and red blood cell production. Pyridoxine is widely utilized in pharmaceutical formulations, nutraceutical supplements, and fortified foods to prevent and treat Vitamin B6 deficiency and related disorders.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/magnesiumstearate/image-1.jpg",
+        "alt": "PARMEG product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/magnesiumstearate/image-2.jpg",
+        "alt": "PARMEG product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "pyridoxine100",
+        "name": "Vitamin B6 (Pyridoxine)",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Complies with IP/BP/USP/Ph.Eur. quality standards"
+          },
+          {
+            "parameter": "Appearance",
+            "value": "White to off-white crystalline powder"
+          },
+          {
+            "parameter": "Assay",
+            "value": "≥98.0% (on dried basis)"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Conforms to standard tests"
+          },
+          {
+            "parameter": "Loss on Drying",
+            "value": "≤0.5%"
+          },
+          {
+            "parameter": "Residue on Ignition",
+            "value": "≤0.1%"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "≤10 ppm"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Essential water-soluble vitamin supporting metabolic functions",
+      "Proven efficacy in neurological and hematological health",
+      "Excellent stability in various formulations",
+      "Available in different salt forms for versatile applications",
+      "High bioavailability and excellent safety profile"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Used in tablets, capsules, and injectable formulations to treat or prevent Pyridoxine deficiency, anemia, and neurological disorders",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical/Food",
+        "description": "Commonly added to multivitamins, dietary supplements, and fortified food products to support general health and wellbeing",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "iconUrl2": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

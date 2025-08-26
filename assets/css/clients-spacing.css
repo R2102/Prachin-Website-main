@@ -1,0 +1,128 @@
+/* Clients Section Spacing Improvements */
+
+/* Improve overall section spacing */
+.clients {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+/* Fix heading spacing */
+.clients .section-title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0e2b5c;
+}
+
+.clients .section-desc {
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #848e9f;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Improve client logo spacing and appearance */
+.clients .client {
+    /* padding: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.clients .client:hover {
+    opacity: 1;
+}
+
+/* Fix client logo sizing */
+.clients .client img {
+    max-width: 70%;
+    max-height: 150px;
+    
+    transition: all 0.3s ease;
+}
+
+
+/* Improve carousel spacing */
+.clients .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+/* Continuous client logo marquee */
+.client-marquee {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.client-track {
+  display: flex;
+  width: max-content;
+  animation: scrollClients 30s linear infinite;
+}
+
+.client {
+  flex: 0 0 auto;
+  margin: 0 20px;
+}
+
+.client img {
+  min-width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+@keyframes scrollClients {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .clients {
+        padding: 40px 0;
+    }
+    
+    .clients .section-title {
+        font-size: 28px;
+    }
+    
+    .clients .client img {
+        max-height: 130px;
+        min-width: 90px;
+    }
+}
+
+@media (max-width: 767px) {
+    .clients {
+        padding: 30px 0;
+    }
+    
+    .clients .section-title {
+        font-size: 24px;
+    }
+    
+    .clients .section-desc {
+        font-size: 14px;
+    }
+    
+    .clients .client {
+        padding: 10px;
+    }
+    
+    .clients .client img {
+        max-width: 130px;
+        min-height: 90px;
+    }
+}

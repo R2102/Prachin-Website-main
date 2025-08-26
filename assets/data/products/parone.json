@@ -1,0 +1,125 @@
+{
+    "id": "parone",
+    "title": "Crospovidone XL10",
+    "brandName": "PARONE",
+    "category": "Excipients",
+    "subcategory": "Superdisintegrants & Disintegrants",
+    "overview": "Crospovidone, also known as cross-linked Polyvinylpyrrolidone (PVP), is white to creamy-white, hygroscopic powder, having a faint odor powder. It is an insoluble, synthetic polymer specifically designed for its exceptional disintegration capabilities within pharmaceutical and nutraceutical formulations.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/crospovidone/image-1.jpg",
+        "alt": "PARONE product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/crospovidone/image-2.jpg",
+        "alt": "PARONE product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "parone-xl10",
+        "name": "PARONE XL10",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<5.0%"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "5.0 - 7.0 (as an aqueous suspension)"
+          },
+          {
+            "parameter": "Nitrogen Content",
+            "value": "11.0% to 12.8%"
+          },
+          {
+            "parameter": "Hydrogen Peroxide Type-A",
+            "value": "NMT-400 ppm"
+          },
+          {
+            "parameter": "Hydrogen Peroxide Type-B",
+            "value": "NMT-1000 ppm"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Possesses rapid swelling and wicking action upon contact with water",
+      "Promotes fast and efficient disintegration of tablets and capsules, leading to enhanced drug dissolution",
+      "Effective at low concentrations, minimizing excipient load",
+      "Compatible with a broad range of active pharmaceutical ingredients (APIs)",
+      "Suitable for various manufacturing processes, including direct compression and wet granulation"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "A leading superdisintegrant for tablets and capsules, optimizing drug release profiles",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "Used to improve the disintegration of dietary supplements in solid dosage forms",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "Halal",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/halal.png",
+        "largeIcon": true
+      },
+      {
+        "name": "Kosher",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/keniseth.jpg",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

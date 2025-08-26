@@ -1,0 +1,96 @@
+{
+    "id": "magnesiumtaurate",
+    "title": "Magnesium Taurate",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Food & Nutra Supplements",
+    "overview": "Magnesium Taurate is a white, odorless, crystalline powder formed by combining magnesium with the amino sulfonic acid taurine. This compound is known for its excellent bioavailability and superior tolerability, making it a preferred magnesium source in cardiovascular and neurological health supplements. It is sparingly soluble in water and provides a synergistic effect from both magnesium and taurine.",
+    "gallery": [
+        {
+          "url": "../assets/images/products/photography/crospovidone/image-1.jpg",
+          "alt": "PARONE product image 1"
+        },
+        {
+          "url": "../assets/images/products/photography/crospovidone/image-2.jpg",
+          "alt": "PARONE product image 2"
+        }
+      ],
+    "variants": [
+        {
+            "id": "magnesiumtaurate",
+            "name": "Magnesium Taurate",
+            "specifications": [
+                {
+                    "parameter": "Standards Compliance",
+                    "value": "Conforms to nutraceutical-grade standards (based on FCC/USP)"
+                },
+                {
+                    "parameter": "Magnesium Content",
+                    "value": "Approximately 8–10% elemental magnesium by weight"
+                },
+                {
+                    "parameter": "Impurities",
+                    "value": "Limits on heavy metals, impurities, and microbial counts"
+                }
+            ]
+        }
+    ],
+    "features": [
+        "Cardiovascular Support: Combines two heart-healthy nutrients in one molecule",
+        "High Tolerance: Less likely to cause digestive discomfort or laxative effects",
+        "Neuroprotective Potential: May support stress, cognition, and sleep quality",
+        "Synergistic Effect: Taurine enhances magnesium's bioavailability and function"
+    ],
+    "applications": [
+        {
+            "title": "Pharmaceutical/Nutraceutical",
+            "description": "Used in cardiovascular support, blood pressure regulation, and stress-relief formulations",
+            "iconType": "image",
+            "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+            "largeIcon": true
+        },
+        {
+            "title": "Food",
+            "description": "May be used in functional beverages or health drink blends (subject to regulatory approvals)",
+            "iconType": "image",
+            "iconUrl": "../assets/images/products/Food.jpg",
+            "largeIcon": true
+        }
+    ],
+    "brochures": {
+        "product": "#",
+        "company": "#"
+    },
+    "certifications": [
+        {
+            "name": "ISO 9001",
+            "iconType": "image",
+            "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+            "largeIcon": true
+        },
+        {
+            "name": "ISO 14001",
+            "iconType": "image",
+            "iconUrl": "../assets/images/certificates/ISO_14001.png",
+            "largeIcon": true
+        },
+        {
+            "name": "ISO 22000",
+            "iconType": "image",
+            "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+            "largeIcon": true
+        },
+        {
+            "name": "GMP",
+            "iconType": "image",
+            "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+            "largeIcon": true
+        },
+        {
+            "name": "FSSAI",
+            "iconType": "image",
+            "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+            "largeIcon": true
+        }
+    ]
+}

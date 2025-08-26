@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Prachin">
+  <link href="assets/images/favicon/Prachin Pharmache,-2.png" rel="icon">
+  <title>Prachin Pharmachem - Product List</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link rel="stylesheet" href="assets/css/libraries.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/filter-bar.css">
+  <link rel="stylesheet" href="assets/css/contact-info.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/distribute/nouislider.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="preloader">
+      <div class="loading"><span></span><span></span><span></span><span></span></div>
+    </div><!-- /.preloader -->
+
+    <div id="header-container"></div>
+    <script src="assets/js/header-loader.js"></script>
+
+    
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section class="page-title-layout1 page-title-light pb-0" style="padding: 40px 0 0; padding-bottom:0px !important;background-color: #205781;">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-sm-12">
+            <h1 class="pagetitle-heading category-title" style="font-size: 4rem;">All Products</h1>
+          </div>
+        </div>
+      </div>
+      <div class="breadcrumb-area" style="margin-top: 20px;">
+        <div class="container">
+          <nav>
+            <ol class="breadcrumb mb-0 justify-content-center" style="font-size: 0.9rem;">
+              <li class="breadcrumb-item">
+                <a href="../index.html"><i class="icon-home"></i> <span>Home</span></a>
+              </li>
+              
+              <li class="breadcrumb-item active category-breadcrumb" aria-current="page">All Products</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section><!-- /.page-title -->
+    <!-- ========================
+       shop 
+    =========================== -->
+    <section class="shop">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <div class="filter-bar">
+              <div class="search-section">
+                <form class="modern-search-form">
+                  <input type="text" class="form-control" placeholder="Search products..." id="productSearch">
+                  <button class="btn" style="justify-content: flex-end !important;" type="submit"><i class="icon-search"></i></button>
+                </form>
+              </div>
+              <div class="filter-section">
+                <div class="filter-group">
+                  <label>Categories</label>
+                  <div class="filter-options">
+                    <label class="modern-checkbox">
+                      <input type="checkbox" name="category" value="excipients">
+                      <span>Excipients</span>
+                    </label>
+                    <label class="modern-checkbox">
+                      <input type="checkbox" name="category" value="api-intermediates-vitamins">
+                      <span>API & Vitamins</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="filter-group">
+                  <label>Subcategories</label>
+                  <div class="filter-options">
+                    <label class="modern-checkbox">
+                      <input type="checkbox" name="subcategory" value="Superdisintegrants & Disintegrants">
+                      <span>Superdisintegrants & Disintegrants</span>
+                    </label>
+                    <label class="modern-checkbox">
+                      <input type="checkbox" name="subcategory" value="Binders & Fillers">
+                      <span>Binders & Fillers</span>
+                    </label>
+                    <label class="modern-checkbox">
+                      <input type="checkbox" name="subcategory" value="Lubricants">
+                      <span>Lubricants</span>
+                    </label>
+                    <label class="modern-checkbox">
+                      <input type="checkbox" name="subcategory" value="Stabilizers & Thickening Agents">
+                      <span>Stabilizers & Thickening Agents</span>
+                    </label>
+                    <label class="modern-checkbox">
+                      <input type="checkbox" name="subcategory" value="Food & Nutra Supplements">
+                      <span>Food & Nutra Supplements</span>
+                    </label>
+                    <label class="modern-checkbox">
+                      <input type="checkbox" name="subcategory" value="API">
+                      <span>API</span>
+                    </label>
+                    <!-- <label class="modern-checkbox">
+                      <input type="checkbox" name="subcategory" value="Intermediates">
+                      <span>Intermediates</span>
+                    </label> -->
+                    <label class="modern-checkbox">
+                      <input type="checkbox" name="subcategory" value="Vitamins">
+                      <span>Vitamins</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4" id="productsContainer">
+          <!-- Products will be loaded here dynamically -->
+        </div>
+      </div>
+    </section><!-- /.shop -->
+
+    <!-- ========================
+      Footer
+    ========================== -->
+    <div id="footer-container"></div>
+    <script src="assets/js/footer-loader.js"></script>
+
+  </div><!-- /.wrapper -->
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/distribute/nouislider.min.js"></script>
+  <script type="module" src="assets/js/product-filter.js"></script>
+  <script type="module" src="assets/js/product-grid-dynamic.js"></script>
+  <script id="superflowToolbarScript" data-sf-platform="manual" async src="https://cdn.velt.dev/lib/superflow.js?apiKey=WlO0L0R1whxue9fk2k70&projectId=8373591704464985"></script>
+</body>
+
+</html>

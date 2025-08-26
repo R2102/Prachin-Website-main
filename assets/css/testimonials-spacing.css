@@ -1,0 +1,163 @@
+/* Testimonials Section Spacing Improvements */
+
+/* Improve overall section spacing */
+.banner-layout7 {
+    padding: 80px 0 !important;
+    background-color: #f8f9fa;
+}
+
+/* Fix content container spacing */
+.banner-layout7 .banner-content {
+    padding: 40px !important;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 83px 0 rgba(40, 40, 40, 0.08);
+}
+
+/* Improve heading spacing */
+.banner-layout7 .heading-layout2 {
+    margin-bottom: 30px;
+}
+
+.banner-layout7 .heading-title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0e2b5c;
+}
+
+/* Improve testimonials container spacing */
+.testimonials-layout3 {
+    padding: 20px 0;
+}
+
+/* Fix testimonial item spacing */
+.testimonials-layout3 .testimonial-item {
+    padding: 20px 0;
+}
+
+/* Improve testimonial title spacing and appearance */
+.testimonials-layout3 .testimonial-title {
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 500;
+    font-style: italic;
+    color: #0e2b5c;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonials-layout3 .testimonial-title:before {
+    content: '"';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 40px;
+    color: #205781;
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+/* Improve testimonial meta spacing */
+.testimonials-layout3 .testimonial-meta {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.testimonials-layout3 .testimonial-meta:hover {
+    background-color: #205781;
+}
+
+.testimonials-layout3 .testimonial-meta:hover .testimonial-meta-title,
+.testimonials-layout3 .testimonial-meta:hover .testimonial-meta-desc {
+    color: #fff;
+}
+
+/* Fix testimonial thumbnail spacing */
+.testimonials-layout3 .testimonial-thmb {
+    margin-right: 15px;
+}
+
+.testimonials-layout3 .testimonial-thmb img {
+    width: 60px;
+    height: 43px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* ----------  Mobile default  ---------- */
+.testimonials-layout3 .testimonial-thmb img {
+    width: 60px;
+    height: 36px;        /* mobile height */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* ----------  iPad + Desktop  ---------- */
+  @media only screen and (min-width: 768px) {   /* iPad portrait‑upwards */
+    .testimonials-layout3 .testimonial-thmb img {
+      height: 37px;      /* larger height */
+    }
+  }
+  
+
+/* Improve testimonial meta title spacing */
+.testimonials-layout3 .testimonial-meta-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Fix testimonial meta description spacing */
+.testimonials-layout3 .testimonial-meta-desc {
+    font-size: 14px;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+}
+
+/* Improve slider navigation */
+.testimonials-layout3 .slider-nav-thumbnails {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .banner-layout7 {
+        padding: 60px 0 !important;
+    }
+    
+    .banner-layout7 .banner-content {
+        padding: 30px !important;
+    }
+    
+    .testimonials-layout3 .testimonial-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-layout7 {
+        padding: 40px 0 !important;
+    }
+    
+    .banner-layout7 .banner-content {
+        padding: 20px !important;
+    }
+    
+    .testimonials-layout3 .testimonial-title {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    
+    .testimonials-layout3 .slider-nav-thumbnails {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

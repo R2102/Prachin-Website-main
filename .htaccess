@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Make URLs case-insensitive and remove .html extension
+RewriteMap lc int:tolower
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^.]+)$ ${lc:$1}.html [NC,L]
+
+# Redirect /index.html to /
+RewriteRule ^index\.html$ / [R=301,NC,L]
+
+# Ensure proper handling of direct .html requests (case-insensitive)
+RewriteCond %{THE_REQUEST} \.html [NC]
+RewriteRule ^(.+)\.html$ /${lc:$1} [R=301,NC,L]

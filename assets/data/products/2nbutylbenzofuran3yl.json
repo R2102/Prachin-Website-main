@@ -1,0 +1,104 @@
+{
+    "id": "2nbutylbenzofuran3yl",
+    "title": "(2-Butylbenzofuran-3-yl)(4-hydroxyphenyl) Methanone",
+    "brandName": "N/A",
+    "category": "APIs",
+    "subcategory": "Pharmaceutical Intermediates",
+    "overview": "(2-Butylbenzofuran-3-yl)(4-hydroxyphenyl) Methanone is a white to off-white crystalline powder, used as a critical intermediate in the synthesis of Amiodarone Hydrochloride. This compound forms a key structural component in the molecular assembly of Amiodarone, ensuring the precise formation of its pharmacologically active framework. Its high chemical purity and process reliability make it a preferred choice in large-scale pharmaceutical manufacturing.",
+    "gallery": [
+      {
+        "url": "../assets/images/gallery/2.jpg",
+        "alt": "(2-Butylbenzofuran-3-yl)(4-hydroxyphenyl) Methanone product image 1"
+      },
+      {
+        "url": "../assets/images/gallery/3.jpg",
+        "alt": "(2-Butylbenzofuran-3-yl)(4-hydroxyphenyl) Methanone product image 2"
+      },
+      {
+        "url": "../assets/images/gallery/4.jpg",
+        "alt": "(2-Butylbenzofuran-3-yl)(4-hydroxyphenyl) Methanone product image 3"
+      },
+      {
+        "url": "../assets/images/gallery/5.jpg",
+        "alt": "(2-Butylbenzofuran-3-yl)(4-hydroxyphenyl) Methanone product image 4"
+      }
+    ],
+    "variants": [
+      {
+        "id": "2nbutylbenzofuran3yl100",
+        "name": "(2-Butylbenzofuran-3-yl)(4-hydroxyphenyl) Methanone",
+        "specifications": [
+          {
+            "parameter": "Appearance",
+            "value": "White to off-white crystalline powder"
+          },
+          {
+            "parameter": "Assay",
+            "value": "≥98.0%"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Conforms to standard tests"
+          },
+          {
+            "parameter": "Melting Point",
+            "value": "160°C – 170°C"
+          },
+          {
+            "parameter": "Residual Solvents",
+            "value": "Within acceptable limits"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "≤10 ppm"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Excellent purity with reliable batch consistency",
+      "Supports efficient synthesis of Amiodarone HCL",
+      "Stable under standard storage and handling conditions",
+      "Available in different grades to meet customer needs",
+      "Optimized for smooth processing in industrial setups"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical Intermediate",
+        "description": "An essential intermediate in the synthesis of Amiodarone Hydrochloride, facilitating the production of antiarrhythmic medications used for treating severe cardiac rhythm disorders",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

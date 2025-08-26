@@ -1,0 +1,154 @@
+{
+  "id": "calopar",
+  "title": "Carboxymethyl Cellulose Calcium",
+  "brandName": "CALOPAR",
+  "category": "Excipients",
+  "subcategory": "Superdisintegrants & Disintegrants",
+  "overview": "Calcium Carboxymethyl Cellulose is a white to slightly yellowish, odorless powder derived from cellulose. As the calcium salt of Carboxymethyl Cellulose, it functions primarily as a superdisintegrant in pharmaceutical and nutraceutical formulations, aiding in the breakdown of tablets and capsules.",
+  "gallery": [
+    {
+      "url": "../assets/images/products/photography/calciumcarboxymethylcellulose/image-1.jpg",
+      "alt": "CAL-O-PAR product image 1"
+    },
+    {
+      "url": "../assets/images/products/photography/calciumcarboxymethylcellulose/image-2.jpg",
+      "alt": "CAL-O-PAR product image 2"
+    }
+  ],
+  "variants": [
+    {
+      "id": "calopar100",
+      "name": "CAL-O-PAR 100",
+      "specifications": [
+        {
+          "parameter": "Meets",
+          "value": "IP/BP/JP/USP/NF/Ph.Eur. standards"
+        },
+        {
+          "parameter": "Loss on Drying",
+          "value": "<10%"
+        },
+        {
+          "parameter": "pH Value",
+          "value": "4.5 - 6.0 (as an aqueous suspension)"
+        },
+        {
+          "parameter": "May contain specifications on heavy metal limits",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "calopar200",
+      "name": "CAL-O-PAR 200",
+      "specifications": [
+        {
+          "parameter": "Standards Compliance",
+          "value": "Meets USP/NF standards"
+        },
+        {
+          "parameter": "Loss on Drying",
+          "value": "<8%"
+        },
+        {
+          "parameter": "pH Value",
+          "value": "5.0 - 7.0"
+        },
+        {
+          "parameter": "Degree of Substitution",
+          "value": "0.70 – 0.95"
+        },
+        {
+          "parameter": "Heavy Metal Limits",
+          "value": "Complies with USP/NF specifications"
+        },
+        {
+          "parameter": "Appearance",
+          "value": "White to off-white fine powder"
+        },
+        {
+          "parameter": "Particle Size",
+          "value": "95% less than 50 microns"
+        }
+      ]
+    }
+  ],
+  "features": [
+    "Exhibits rapid swelling and disintegration properties for enhanced drug release.",
+    "Works particularly well in formulations where other disintegrants may be less effective.",
+    "Improves tablet hardness and mechanical strength.",
+    "Demonstrates good flowability for efficient tableting processes.",
+    "Chemically stable and compatible with most APIs."
+  ],
+  "applications": [
+    {
+      "title": "Pharmaceutical",
+      "description": "Superdisintegrant in tablets and capsules, especially for medications requiring fast onset.",
+      "iconType": "image",
+      "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+      "largeIcon": true
+    },
+    {
+      "title": "Nutraceutical",
+      "description": "Enhances the breakdown of dietary supplements in tablet or capsule form.",
+      "iconType": "image",
+      "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+      "largeIcon": true
+    },
+    {
+      "title": "Technical Applications",
+      "description": "Potential uses as a binder, thickener, and suspending agent in various industries (check compatibility).",
+      "iconType": "image",
+      "iconUrl": "../assets/images/products/Technical.jpg",
+      "largeIcon": true
+    }
+  ],
+  "brochures": {
+    "product": "#",
+    "company": "#"
+  },
+  "certifications": [
+    {
+      "name": "USDMF : 33649",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/FDA.jpg",
+      "iconClass": "fas fa-star text-warning"
+    },
+    {
+      "name": "Halal",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/halal.png",
+      "largeIcon": true
+    },
+    {
+      "name": "ISO 9001",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+      "largeIcon": true
+    },
+    {
+      "name": "ISO 14001",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/ISO_14001.png",
+      "largeIcon": true
+    },
+    {
+      "name": "ISO 22000",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+      "largeIcon": true
+    },
+    {
+      "name": "GMP",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+      "largeIcon": true
+    },
+    {
+      "name": "FSSAI",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+      "largeIcon": true
+    }
+  ]
+}

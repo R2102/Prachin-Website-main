@@ -1,0 +1,133 @@
+{
+    "id": "calphos",
+    "title": "Dibasic Calcium Phosphate",
+    "brandName": "CALPHOS",
+    "category": "Excipients",
+    "subcategory": "Fillers & Diluents",
+    "overview": "Dibasic calcium phosphate (DCP) is an inorganic compound and a source of calcium and phosphate. It exists in two primary forms: anhydrous (without water) and dihydrate (containing two molecules of water). It appears as a white, odorless, and generally tasteless powder.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/dibasiccalciumphosphate/image-1.jpg",
+        "alt": "CALPHOS product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/dibasiccalciumphosphate/image-2.jpg",
+        "alt": "CALPHOS product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "calphos",
+        "name": "CALPHOS",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/USP/NF standards"
+          },
+          {
+            "parameter": "Purity",
+            "value": ">99%"
+          },
+          {
+            "parameter": "Loss on Ignition (Anhydrous)",
+            "value": "7.0-9.0%"
+          },
+          {
+            "parameter": "Loss on Ignition (Dihydrate)",
+            "value": "24.5% to 26.5%"
+          },
+          {
+            "parameter": "Fluoride",
+            "value": "NMT 50ppm"
+          },
+          {
+            "parameter": "Carbonate",
+            "value": "No effervescence occurs"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Anhydrous: High density, excellent flowability, ideal for direct compression tableting",
+      "Dihydrate: Good compressibility, suitable for both direct compression and granulation processes",
+      "Provides a source of calcium and phosphorus for nutritional fortification",
+      "Mildly abrasive, suitable as a polishing agent in oral care"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Tablet filler/diluent, source of calcium in medications",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "Calcium supplement, tableting excipient",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Food",
+        "description": "Nutritional fortification, anticaking agent, texturizer",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Oral Care",
+        "description": "Polishing agent in toothpastes and tooth powders",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Oral Care.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Industrial",
+        "description": "Possible applications in ceramics, fertilizers",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Industrial.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

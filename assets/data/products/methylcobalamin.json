@@ -1,0 +1,110 @@
+{
+    "id": "methylcobalamin",
+    "title": "Vitamin B12 (Methylcobalamin)",
+    "brandName": "N/A",
+    "category": "APIs",
+    "subcategory": "Vitamins & Nutrients",
+    "overview": "Vitamin B12, specifically in its active form Methylcobalamin, is a dark red crystalline powder that plays a pivotal role in nerve health, DNA synthesis, and red blood cell formation. It is essential for neurological function and energy metabolism. Methylcobalamin is widely used in pharmaceutical and nutraceutical products for the treatment and prevention of Vitamin B12 deficiency, and is often preferred for its superior bioavailability over other forms.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/microcrystallinecellulose/image-1.jpg",
+        "target": "popup",
+        "alt": "PARLOSE product image 1",
+        "openInPopup": true
+      },
+      {
+        "url": "../assets/images/products/photography/microcrystallinecellulose/image-2.jpg",
+        "alt": "PARLOSE product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "methylcobalamin100",
+        "name": "Vitamin B12 (Methylcobalamin)",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Complies with IP/BP/USP/Ph.Eur. quality standards"
+          },
+          {
+            "parameter": "Appearance",
+            "value": "Dark red crystalline powder"
+          },
+          {
+            "parameter": "Assay",
+            "value": "≥98.0% (on dried basis)"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Conforms to standard tests"
+          },
+          {
+            "parameter": "Loss on Drying",
+            "value": "≤5.0%"
+          },
+          {
+            "parameter": "Residue on Ignition",
+            "value": "≤0.1%"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "≤10 ppm"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Active and highly bioavailable form of Vitamin B12",
+      "Supports nerve health, cognitive function, and red blood cell production",
+      "Suitable for tablets, capsules, injections, and oral sprays",
+      "Excellent stability when stored under recommended conditions",
+      "Available in both Methylcobalamin and Cyanocobalamin forms"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Used in injectable, oral, and sublingual formulations for the treatment of megaloblastic anemia, neuropathies, and Vitamin B12 deficiency",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical/Food",
+        "description": "Incorporated into multivitamins, dietary supplements, and fortified foods to support nerve health, energy levels, and overall wellness",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "iconUrl2": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

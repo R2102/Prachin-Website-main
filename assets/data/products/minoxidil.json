@@ -1,0 +1,101 @@
+{
+    "id": "minoxidil",
+    "title": "Minoxidil",
+    "brandName": "N/A",
+    "category": "APIs",
+    "subcategory": "Hair Growth Agents",
+    "overview": "Minoxidil is a white to off-white crystalline powder, originally developed as an antihypertensive vasodilator and now widely used as a topical agent for hair regrowth. It stimulates hair follicles by enhancing blood flow to the scalp and prolonging the anagen phase of the hair cycle. Minoxidil is clinically proven to be effective in treating androgenetic alopecia (pattern hair loss) in both men and women, with a well-established safety and efficacy profile across global markets.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/crospovidone/image-1.jpg",
+        "alt": "PARONE product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/crospovidone/image-2.jpg",
+        "alt": "PARONE product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "minoxidil100",
+        "name": "Minoxidil",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Complies with IP/BP/USP/Ph.Eur. quality standards"
+          },
+          {
+            "parameter": "Appearance",
+            "value": "White to off-white crystalline powder"
+          },
+          {
+            "parameter": "Assay",
+            "value": "≥98.0% (on dried basis)"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Conforms to standard tests"
+          },
+          {
+            "parameter": "Loss on Drying",
+            "value": "≤0.5%"
+          },
+          {
+            "parameter": "Residue on Ignition",
+            "value": "≤0.2%"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "≤10 ppm"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Clinically proven to promote hair regrowth and slow hair loss",
+      "Dual-use: effective in both male and female pattern hair loss",
+      "Suitable for a variety of topical formulations including solutions, foams, and sprays",
+      "Excellent chemical stability under standard storage",
+      "Minimal systemic absorption when used topically"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical/Cosmeceutical",
+        "description": "Widely used as the active component in over-the-counter and prescription-strength topical treatments for androgenetic alopecia and other hair thinning disorders",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "iconUrl2": "../assets/images/products/Cosmetics.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

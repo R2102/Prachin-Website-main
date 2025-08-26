@@ -1,0 +1,100 @@
+{
+    "id": "amiodaronehydrochloride",
+    "title": "Amiodarone Hydrochloride",
+    "brandName": "N/A",
+    "category": "APIs",
+    "subcategory": "Cardiovascular",
+    "overview": "Amiodarone Hydrochloride is a white to slightly yellow crystalline powder, classified as a class III antiarrhythmic agent. It is widely used in the treatment and prevention of various types of serious cardiac arrhythmias, particularly ventricular and supraventricular arrhythmias. This active pharmaceutical ingredient (API) exhibits low solubility in water but is soluble in alcohol and chloroform. Amiodarone Hydrochloride is valued for its broad-spectrum antiarrhythmic action, prolonging myocardial cell-action potential duration and refractory period, thus stabilizing cardiac rhythm effectively.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/sodiumstarchglycolate/image-1.jpg",
+        "alt": "PARGEL product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/sodiumstarchglycolate/image-2.jpg",
+        "alt": "PARGEL product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "amiodaronehydrochloride100",
+        "name": "Amiodarone Hydrochloride",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Complies with IP/BP/USP/Ph.Eur. quality standards"
+          },
+          {
+            "parameter": "Appearance",
+            "value": "White to slightly yellow crystalline powder"
+          },
+          {
+            "parameter": "Assay",
+            "value": "≥98.5% (on dried basis)"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Conforms to standard tests"
+          },
+          {
+            "parameter": "Loss on Drying",
+            "value": "≤0.5%"
+          },
+          {
+            "parameter": "Sulphated Ash",
+            "value": "≤0.1%"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "≤10 ppm"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Highly effective in managing life-threatening ventricular arrhythmias",
+      "Proven efficacy in both acute and chronic arrhythmia management",
+      "Good chemical stability under recommended storage conditions",
+      "Compatible with various excipients and formulation processes",
+      "Available in multiple grades and particle size distributions to suit different formulation needs"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Primarily used as an active pharmaceutical ingredient in the formulation of tablets, injections, and intravenous infusions for the treatment of ventricular tachycardia, atrial fibrillation, and other serious rhythm disorders",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

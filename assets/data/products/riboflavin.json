@@ -1,0 +1,108 @@
+{
+    "id": "riboflavin",
+    "title": "Vitamin B2 (Riboflavin)",
+    "brandName": "N/A",
+    "category": "APIs",
+    "subcategory": "Vitamins & Nutrients",
+    "overview": "Vitamin B2, commonly known as Riboflavin, is an orange-yellow crystalline powder and an essential nutrient involved in numerous metabolic processes. It plays a critical role in energy production, cellular function, and the metabolism of fats, drugs, and steroids. Riboflavin is also important for maintaining healthy skin, eyes, and nerve functions. It is widely used in pharmaceuticals, nutraceuticals, and food fortification programs globally.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/mcc+cmc/image-1.jpg",
+        "alt": "MCC+CMC product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/mcc+cmc/image-2.jpg",
+        "alt": "MCC+CMC product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "riboflavin100",
+        "name": "Vitamin B2 (Riboflavin)",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Complies with IP/BP/USP/Ph.Eur. quality standards"
+          },
+          {
+            "parameter": "Appearance",
+            "value": "Orange-yellow crystalline powder"
+          },
+          {
+            "parameter": "Assay",
+            "value": "≥98.0% (on dried basis)"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Conforms to standard tests"
+          },
+          {
+            "parameter": "Loss on Drying",
+            "value": "≤1.5%"
+          },
+          {
+            "parameter": "Residue on Ignition",
+            "value": "≤0.1%"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "≤10 ppm"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Vital water-soluble vitamin supporting energy metabolism",
+      "Excellent stability in dry form under proper storage",
+      "Suitable for use in both pharmaceutical and food industries",
+      "Available in pure and phosphate sodium forms",
+      "High bioavailability and well-established safety"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Formulated into tablets, capsules, and injections for treating and preventing riboflavin deficiency and related conditions",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical/Food",
+        "description": "Incorporated into multivitamins, dietary supplements, and fortified foods to promote general health and prevent deficiencies",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "iconUrl2": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

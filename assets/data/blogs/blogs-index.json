@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "manufacturing-quality-api-excipients",
+    "title": "Manufacturing Quality API and Excipients",
+    "category": "Pharmaceuticals",
+    "author": "Prachin Editorial Team",
+    "date": { "day": "30", "month": "Jan 2022" },
+    "heroImage": "assets/images/blog/single/1.jpg"
+  },
+  {
+    "slug": "ccs-vs-ssg-choosing-right-super-disintegrant",
+    "title": "Croscarmellose Sodium vs. Sodium Starch Glycolate: choosing the right super-disintegrant for your formulation",
+    "category": "Pharmaceuticals",
+    "author": "Prachin Editorial Team",
+    "date": { "day": "26", "month": "Aug 2025" },
+    "heroImage": "assets/images/blog/single/1.jpg"
+  },
+  {
+    "slug": "magnesium-stearate-deep-dive",
+    "title": "A Deep Dive into Magnesium Stearate: Beyond Lubrication to Enhance Tablet Stability",
+    "category": "Pharmaceuticals",
+    "author": "Prachin Editorial Team",
+    "date": { "day": "26", "month": "Aug 2025" },
+    "heroImage": "assets/images/blog/single/1.jpg"
+  },
+  {
+    "slug": "particle-size-excipients-performance",
+    "title": "The Critical Role of Particle Size in Pharmaceutical Excipient Performance",
+    "category": "Pharmaceuticals",
+    "author": "Prachin Editorial Team",
+    "date": { "day": "26", "month": "Aug 2025" },
+    "heroImage": "assets/images/blog/single/1.jpg"
+  }
+]

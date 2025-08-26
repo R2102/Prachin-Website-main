@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Prachin Chemicals - Media Library">
+  <link href="assets/images/favicon/Prachin Pharmache,-2.png" rel="icon">
+  <title>Prachin Chemicals - Media Library</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link rel="stylesheet" href="assets/css/libraries.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contact-info.css">
+  
+  <style>
+    /* Custom styles for media library */
+    /* Media Tabs Styles */
+    
+    
+    @media (max-width: 768px) {
+      .nav-tabs {
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+      
+      .nav-tabs .nav-link {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
+    .media-filter-btn {
+      padding: 10px 20px;
+      margin: 0 8px 12px 0;
+      background-color: transparent;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.25s ease-in-out;
+      color: #666;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 100px;
+    }
+    
+    .media-filter-btn:hover {
+      background-color: #f5f5f5;
+      color: #205781;
+      border-color: #205781;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(32, 87, 129, 0.08);
+    }
+    
+    .media-filter-btn.active {
+      background-color: #205781;
+      border-color: #205781;
+      color: white;
+      font-weight: 600;
+      box-shadow: 0 3px 10px rgba(32, 87, 129, 0.15);
+    }
+    
+    .media-filter-btn:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(32, 87, 129, 0.2);
+    }
+    
+    .media-filter-btn:last-child {
+      margin-right: 0;
+    }
+    
+    .d-flex.flex-wrap.mb-40 {
+      border-bottom: 2px solid rgba(32, 87, 129, 0.2);
+      padding-bottom: 15px;
+    }
+    
+    @media (max-width: 768px) {
+      .media-filter-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin: 0 8px 12px 0;
+      }
+    }
+    
+    .media-item {
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+    }
+    
+    .media-item .media-img {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    
+    .media-item .media-img img {
+      width: 100%;
+      transition: transform 0.5s ease;
+    }
+    
+    .media-item:hover .media-img img {
+      transform: scale(1.05);
+    }
+    
+    .media-item .media-date {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: rgba(196, 26, 27, 0.9);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    .media-item .media-category {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: rgba(14, 32, 77, 0.9);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    .media-item .media-body {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 0 0 8px 8px;
+    }
+    
+    .media-item .media-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    
+    .media-item .media-info {
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+    
+    .media-item .media-info i {
+      color: #c41a1b;
+      margin-right: 5px;
+    }
+    
+    .media-item .media-desc {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 15px;
+      text-align: -webkit-left;
+      word-spacing: 4px;
+    }
+    
+    .media-item .btn-link {
+      font-size: 14px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      color: #c41a1b;
+      transition: all 0.3s ease;
+    }
+    
+    .media-item .btn-link:hover {
+      color: #0e204d;
+    }
+    
+    .media-item .btn-link .plus-icon {
+      font-size: 18px;
+      font-weight: 700;
+      margin-right: 5px;
+    }
+    
+    .hidden {
+      display: none;
+    }
+
+    /* PhotoGrid Gallery Styles */
+    .photo-grid {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-auto-rows: 200px;
+      grid-auto-flow: dense;
+      padding: 20px 0;
+    }
+
+    .photo-grid-item {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-grid-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .photo-grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-grid-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .photo-grid-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      text-align: center;
+    }
+
+    .photo-grid-overlay h4 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    /* Video Grid Styles */
+    .video-grid {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      padding: 20px 0;
+    }
+
+    .video-grid-item {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-thumbnail {
+      position: relative;
+      padding-top: 56.25%;
+      background: #f5f5f5;
+    }
+
+    .video-thumbnail img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background: rgba(196, 26, 27, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .video-play-button:hover {
+      background: rgba(196, 26, 27, 1);
+    }
+
+    .video-play-button i {
+      color: white;
+      font-size: 24px;
+      margin-left: 4px;
+    }
+
+    .video-info {
+      padding: 15px;
+      background: white;
+    }
+
+    .video-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #0e204d;
+    }
+
+    .video-meta {
+      font-size: 14px;
+      color: #666;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .video-meta i {
+      color: #c41a1b;
+      margin-right: 5px;
+    }
+
+    .photo-grid-item.wide {
+      grid-column: span 2;
+    }
+
+    .photo-grid-item.tall {
+      grid-row: span 2;
+    }
+
+    .photo-grid-item.big {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .photo-grid-item:hover .photo-grid-overlay {
+      opacity: 1;
+    }
+    
+    .event-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .event {
+      display: flex;
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .event:hover {
+      transform: translateY(-3px);
+    }
+
+    .event .date {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 100px;
+      background: #c41a1b;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .event .date .day {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .event .date .month {
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 5px 0;
+    }
+
+    .event .date .year {
+      font-size: 14px;
+    }
+
+    .event .info {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .event .info .title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #0e204d;
+      margin: 0 0 10px;
+    }
+
+    .event .info .desc {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .event .info .location {
+      display: flex;
+      align-items: center;
+      color: #666;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .event .info .location i {
+      color: #c41a1b;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="preloader">
+      <div class="loading"><span></span><span></span><span></span><span></span></div>
+    </div><!-- /.preloader -->
+
+    <div id="header-container"></div>
+    <script src="assets/js/header-loader.js"></script>
+
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section class="page-title-layout1 page-title-light pb-0 bg-overlay bg-parallax" style="padding-bottom: 5px !important">
+      <div class="bg-img"><img src="assets/images/page-titles/15.jpg" alt="background"></div>
+      <div class="container">
+        <div class="heading-row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <h2 class="pagetitle-heading" style="font-size: 60px !important;">MEDIA LIBRARY</h2>
+            <p class="pagetitle-desc" style="line-height: 1.2 !important; font-size:24px !important ;">Explore our company photos, videos, and upcoming events to learn more about Prachin Chemicals and our activities.</p>
+            
+          </div><!-- /.col-xl-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+      <div class="breadcrumb-area">
+        <div class="container">
+          <nav>
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item">
+                <a href="index.html"><i class="icon-home"></i> <span>Home</span></a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="media-library.html">Media</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">Media Library</li>
+            </ol>
+          </nav>
+        </div><!-- /.container -->
+      </div><!-- /.breadcrumb-area -->
+    </section><!-- /.page-title -->
+
+    <!-- ======================
+      Media Library
+    ========================= -->
+    <section class="blog-layout1 pb-70">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-8">
+            <!-- Media Filters -->
+            <div class="d-flex flex-wrap mb-40" style="margin-bottom: 10px !important;">
+              <button class="media-filter-btn" data-filter="photogrid">Photos</button>
+              <!--<button class="media-filter-btn" data-filter="videos">Videos</button>-->
+              <button class="media-filter-btn" data-filter="events">Events</button>
+              <button class="media-filter-btn" data-filter="press">Press Releases</button>
+            </div>
+
+            <div class="row">
+            
+              <!-- PhotoGrid Gallery Section -->
+              <div class="col-sm-12 media-item" data-category="photogrid">
+                <div class="photo-grid">
+                  <div class="photo-grid-item" >
+                    <img src="assets/images/media/IMG-20250721-WA0039.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                  <div class="photo-grid-item">
+                    <img src="assets/images/media/IMG-20250721-WA0040.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                  <div class="photo-grid-item">
+                    <img src="assets/images/media/IMG-20250721-WA0041.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                  <div class="photo-grid-item">
+                    <img src="assets/images/media/IMG-20250721-WA0042.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                  <div class="photo-grid-item">
+                    <img src="assets/images/media/IMG-20250721-WA0045.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                  <div class="photo-grid-item">
+                    <img src="assets/images/media/IMG-20250721-WA0044.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                  <div class="photo-grid-item">
+                    <img src="assets/images/media/IMG-20250721-WA0046.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                  <div class="photo-grid-item">
+                    <img src="assets/images/media/IMG-20250721-WA0047.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                  <div class="photo-grid-item">
+                    <img src="assets/images/media/IMG-20250721-WA0048.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                  <div class="photo-grid-item">
+                    <img src="assets/images/media/IMG-20250721-WA0050.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                  <div class="photo-grid-item">
+                    <img src="assets/images/media/IMG-20250721-WA0051.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                  <div class="photo-grid-item">
+                    <img src="assets/images/media/IMG-20250721-WA0053.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div><div class="photo-grid-item">
+                    <img src="assets/images/media/IMG-20250721-WA0054.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                  <div class="photo-grid-item">
+                    <img src="assets/images/media/WhatsApp Image 2025-07-21 at 15.12.39_06079ec6.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                  <div class="photo-grid-item">
+                    <img src="assets/images/media/WhatsApp Image 2025-07-21 at 15.12.39_92be6b76.jpg" alt="Prachin Pharmachem" loading="lazy">
+                    <!-- <div class="photo-grid-overlay">
+                      <p style="margin-bottom:0px !important;">Prachin Pharmachem</p>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <!-- Video Gallery Section -->
+              <!--<div class="col-sm-12 media-item" data-category="videos">-->
+              <!--  <div class="video-grid">-->
+              <!--    <div class="video-grid-item">-->
+              <!--      <div class="video-thumbnail">-->
+              <!--        <img src="assets/images/gallery/2.jpg" alt="Product Manufacturing Process" loading="lazy">-->
+              <!--        <a href="https://www.youtube.com/watch?v=nrJtHemSPW4" class="video-play-button popup-video">-->
+              <!--          <i class="fas fa-play"></i>-->
+              <!--        </a>-->
+              <!--      </div>-->
+              <!--      <div class="video-info">-->
+              <!--        <h4 class="video-title">Product Manufacturing Process</h4>-->
+              <!--        <div class="video-meta">-->
+              <!--          <span><i class="far fa-calendar"></i> Feb 28, 2023</span>-->
+              <!--          <span><i class="far fa-clock"></i> 5:30</span>-->
+              <!--        </div>-->
+              <!--      </div>-->
+              <!--    </div>-->
+
+              <!--    <div class="video-grid-item">-->
+              <!--      <div class="video-thumbnail">-->
+              <!--        <img src="assets/images/gallery/3.jpg" alt="Prachin Pharmachem Process" loading="lazy">-->
+              <!--        <a href="https://www.youtube.com/watch?v=nrJtHemSPW4" class="video-play-button popup-video">-->
+              <!--          <i class="fas fa-play"></i>-->
+              <!--        </a>-->
+              <!--      </div>-->
+              <!--      <div class="video-info">-->
+              <!--        <h4 class="video-title">Prachin Pharmachem Process</h4>-->
+              <!--        <div class="video-meta">-->
+              <!--          <span><i class="far fa-calendar"></i> Mar 15, 2023</span>-->
+              <!--          <span><i class="far fa-clock"></i> 4:45</span>-->
+              <!--        </div>-->
+              <!--      </div>-->
+              <!--    </div>-->
+
+              <!--    <div class="video-grid-item">-->
+              <!--      <div class="video-thumbnail">-->
+              <!--        <img src="assets/images/gallery/4.jpg" alt="Research and Development" loading="lazy">-->
+              <!--        <a href="https://www.youtube.com/watch?v=nrJtHemSPW4" class="video-play-button popup-video">-->
+              <!--          <i class="fas fa-play"></i>-->
+              <!--        </a>-->
+              <!--      </div>-->
+              <!--      <div class="video-info">-->
+              <!--        <h4 class="video-title">Research and Development</h4>-->
+              <!--        <div class="video-meta">-->
+              <!--          <span><i class="far fa-calendar"></i> Apr 5, 2023</span>-->
+              <!--          <span><i class="far fa-clock"></i> 6:15</span>-->
+              <!--        </div>-->
+              <!--      </div>-->
+              <!--    </div>-->
+
+              <!--    <div class="video-grid-item">-->
+              <!--      <div class="video-thumbnail">-->
+              <!--        <img src="assets/images/gallery/4.jpg" alt="Research and Development" loading="lazy">-->
+              <!--        <a href="https://www.youtube.com/watch?v=nrJtHemSPW4" class="video-play-button popup-video">-->
+              <!--          <i class="fas fa-play"></i>-->
+              <!--        </a>-->
+              <!--      </div>-->
+              <!--      <div class="video-info">-->
+              <!--        <h4 class="video-title">Research and Development</h4>-->
+              <!--        <div class="video-meta">-->
+              <!--          <span><i class="far fa-calendar"></i> Apr 5, 2023</span>-->
+              <!--          <span><i class="far fa-clock"></i> 6:15</span>-->
+              <!--        </div>-->
+              <!--      </div>-->
+              <!--    </div>-->
+                  
+              <!--  </div>-->
+              <!--</div>-->
+
+              <!-- Events Section -->
+              <div class="col-sm-12 media-item" data-category="events">
+                <ul class="nav nav-tabs mb-40" style="margin-bottom: 10px !important; margin-top: 5px !important;border-bottom:0px !important" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#upcoming-events" role="tab">Upcoming Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#past-events" role="tab">Past Events</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div id="upcoming-events" class="tab-pane fade show active" role="tabpanel">
+                    <ul class="event-list"></ul>
+                  </div>
+                  <div id="past-events" class="tab-pane fade" role="tabpanel">
+                    <ul class="event-list"></ul>
+                  </div>
+                  <!-- Single Event List Container -->
+                  <div id="all-events" style="display: none;">
+                    <ul class="event-list">
+                      <!-- <li class="event">
+                        <div class="date">
+                          <time datetime="2023-06-15">
+                            <span class="day">15</span>
+                            <span class="month">Jun</span>
+                            <span class="year">2023</span>
+                          </time>
+                        </div>
+                        <div class="info">
+                          <h2 class="title">Annual Pharmaceutical Conference 2023</h2>
+                          <p class="desc">Join us at our flagship conference where we'll showcase the latest innovations in pharmaceutical excipients and discuss industry trends.</p>
+                          <div class="location">
+                            <i class="icon-location"></i>
+                            <span>Ahmedabad International Convention Center</span>
+                          </div>
+                        </div>
+                      </li> -->
+
+                      <!-- <li class="event">
+                        <div class="date">
+                          <time datetime="2026-07-20">
+                            <span class="day">20</span>
+                            <span class="month">Jul</span>
+                            <span class="year">2026</span>
+                          </time>
+                        </div>
+                        <div class="info">
+                          <h2 class="title">Global Pharma Tech Summit</h2>
+                          <p class="desc">A premier gathering of industry leaders discussing technological advancements in pharmaceutical manufacturing.</p>
+                          <div class="location">
+                            <i class="icon-location"></i>
+                            <span>Mumbai Convention Center</span>
+                          </div>
+                        </div>
+                      </li> -->
+
+                      
+                      <!-- <li class="event">
+                        <div class="date">
+                          <time datetime="2025-08-10">
+                            <span class="day">10</span>
+                            <span class="month">Aug</span>
+                            <span class="year">2025</span>
+                          </time>
+                        </div>
+                        <div class="info">
+                          <h2 class="title">Research & Innovation Workshop</h2>
+                          <p class="desc">An interactive workshop focusing on the latest research developments and innovative approaches in pharmaceutical excipients.</p>
+                          <div class="location">
+                            <i class="icon-location"></i>
+                            <span>Prachin R&D Center, Gujarat</span>
+                          </div>
+                        </div>
+                      </li> -->
+                      <!-- <li class="event">
+                        <div class="date">
+                          <time datetime="2023-03-15">
+                            <span class="day">15</span>
+                            <span class="month">Mar</span>
+                            <span class="year">2023</span>
+                          </time>
+                        </div>
+                        <div class="info">
+                          <h2 class="title">International Chemical Expo 2023</h2>
+                          <p class="desc">A successful showcase of our latest pharmaceutical excipients and networking with industry leaders from around the globe.</p>
+                          <div class="location">
+                            <i class="icon-location"></i>
+                            <span>Dubai World Trade Centre</span>
+                          </div>
+                        </div>
+                      </li> -->
+
+                      <!-- <li class="event">
+                        <div class="date">
+                          <time datetime="2024-02-28">
+                            <span class="day">28</span>
+                            <span class="month">Feb</span>
+                            <span class="year">2024</span>
+                          </time>
+                        </div>
+                        <div class="info">
+                          <h2 class="title">Pharmaceutical Innovation Summit</h2>
+                          <p class="desc">Presented our research findings on sustainable pharmaceutical manufacturing processes and green chemistry initiatives.</p>
+                          <div class="location">
+                            <i class="icon-location"></i>
+                            <span>Hyderabad International Convention Centre</span>
+                          </div>
+                        </div>
+                      </li> -->
+
+                      <!-- 2025 Events -->
+      <!-- July 2025 -->
+      <li class="event">
+        <div class="date">
+          <time datetime="2025-07-08">
+            <span class="day">08</span>
+            <span class="month">Jul</span>
+            <span class="year">2025</span>
+          </time>
+        </div>
+        <div class="info">
+          <h2 class="title">Arab pharma</h2>
+          <p class="desc">An interactive workshop focusing on the latest research developments and innovative approaches in pharmaceutical excipients.</p>
+          <div class="location">
+            <i class="icon-location"></i>
+            <span>Amman | Jordan | 1051</span>
+          </div>
+        </div>
+      </li>
+
+<!-- September 2025 -->
+<li class="event">
+  <div class="date">
+    <time datetime="2025-09-04">
+      <span class="day">04</span>
+      <span class="month">Sep</span>
+      <span class="year">2025</span>
+    </time>
+  </div>
+  <div class="info">
+    <h2 class="title">Iphex</h2>
+    <p class="desc">A premier gathering of industry leaders discussing technological advancements in pharmaceutical manufacturing.</p>
+    <div class="location">
+      <i class="icon-location"></i>
+      <span>New Delhi | India | 2808</span>
+    </div>
+  </div>
+</li>
+<li class="event">
+        <div class="date">
+          <time datetime="2025-09-01">
+            <span class="day">01</span>
+            <span class="month">Sep</span>
+            <span class="year">2025</span>
+          </time>
+        </div>
+        <div class="info">
+          <h2 class="title">Pharmaconex</h2>
+          <p class="desc">An interactive workshop focusing on the latest research developments and innovative approaches in pharmaceutical excipients.</p>
+          <div class="location">
+            <i class="icon-location"></i>
+            <span>Cairo | Egypt | H3.E28</span>
+          </div>
+        </div>
+      </li>
+<!-- October 2025 -->
+<li class="event">
+  <div class="date">
+    <time datetime="2025-10-28">
+      <span class="day">28</span>
+      <span class="month">Oct</span>
+      <span class="year">2025</span>
+    </time>
+  </div>
+  <div class="info">
+    <h2 class="title">CPhl Worldwide</h2>
+    <p class="desc">A premier gathering of industry leaders discussing technological advancements in pharmaceutical manufacturing.</p>
+    <div class="location">
+      <i class="icon-location"></i>
+      <span>Frankfurt | German | 8.0M101</span>
+    </div>
+  </div>
+</li>
+
+<li class="event">
+  <div class="date">
+    <time datetime="2025-10-29">
+      <span class="day">29</span>
+      <span class="month">Oct</span>
+      <span class="year">2025</span>
+    </time>
+  </div>
+  <div class="info">
+    <h2 class="title">Suppy Side West</h2>
+    <p class="desc">A premier gathering of industry leaders discussing technological advancements in pharmaceutical manufacturing.</p>
+    <div class="location">
+      <i class="icon-location"></i>
+      <span>Las Vegas | USA | 911</span>
+    </div>
+  </div>
+</li>
+<!-- November 2025 -->
+<li class="event">
+  <div class="date">
+    <time datetime="2025-11-25">
+      <span class="day">25</span>
+      <span class="month">Nov</span>
+      <span class="year">2025</span>
+    </time>
+  </div>
+  <div class="info">
+    <h2 class="title">CPhl India</h2>
+    <p class="desc">A premier gathering of industry leaders discussing technological advancements in pharmaceutical manufacturing.</p>
+    <div class="location">
+      <i class="icon-location"></i>
+      <span>Greater Noida | India | 6M201</span>
+    </div>
+  </div>
+</li>
+                      <!-- <li class="event">
+                        <div class="date">
+                          <time datetime="2023-01-20">
+                            <span class="day">20</span>
+                            <span class="month">Jan</span>
+                            <span class="year">2023</span>
+                          </time>
+                        </div>
+                        <div class="info">
+                          <h2 class="title">Annual Stakeholders Meeting</h2>
+                          <p class="desc">Celebrated our achievements of 2022 and shared our vision for sustainable growth and innovation in pharmaceutical excipients.</p>
+                          <div class="location">
+                            <i class="icon-location"></i>
+                            <span>Prachin Headquarters, Ahmedabad</span>
+                          </div>
+                        </div>
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              
+
+              
+
+              
+
+              <!-- Media Item #8 - Press Release -->
+              <div class="col-sm-12 col-md-6 media-item" data-category="press">
+                <div class="post-item">
+                  <div class="post-img media-img">
+                    <span class="media-date">Sep 12, 2022</span>
+                    <span class="media-category">Press</span>
+                    <a href="#">
+                      <img src="assets/images/gallery/8.jpg" alt="media image" loading="lazy">
+                    </a>
+                  </div><!-- /.post-img -->
+                  <div class="post-body media-body">
+                    <h4 class="media-title">New Certification Achievement</h4>
+                    <div class="media-desc">
+                      <p>Prachin Chemicals is proud to announce the achievement of a new international certification, further validating our commitment to quality and safety.</p>
+                    </div>
+                    <a href="#" class="btn btn-link">
+                      <i class="plus-icon">+</i>
+                      <span>Read More</span>
+                    </a>
+                  </div><!-- /.post-body -->
+                </div><!-- /.post-item -->
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+          </div><!-- /.col-lg-8 -->
+
+          <!-- Sidebar -->
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <aside class="sidebar">
+              <!-- Upcoming Events Widget -->
+              <div class="widget widget-posts">
+                <h5 class="widget-title">Upcoming Events</h5>
+                <div class="widget-content">
+                 
+                </div><!-- /.widget-content -->
+              </div><!-- /.widget-posts -->
+
+              
+              <!-- Download Brochure Widget -->
+              <div class="widget widget-download">
+                <h5 class="widget-title">Company Resources</h5>
+                <div class="widget-content">
+                  <a href="/assets/Pdf/Prachin APIs Brochure.pdf" download class="btn btn-primary btn-block">
+                    <span>Download APIs Brochure</span>
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                  <a href="/assets/Pdf/Prachin Excipients Brochure.pdf" download class="btn btn-secondary btn-block">
+                    <span>Download Excipients Brochure</span>
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </div><!-- /.widget-content -->
+              </div><!-- /.widget-download -->
+            </aside><!-- /.sidebar -->
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.blog-grid -->
+ 
+
+
+    <div id="footer-container"></div>
+    <script src="assets/js/footer-loader.js"></script>
+    <script src="assets/js/media-filter.js"></script>
+    <button id="scrollTopBtn"><i class="fas fa-long-arrow-alt-up"></i></button>
+    <!-- The sidebar filter links are now handled in media-filter.js -->
+  </div><!-- /.wrapper -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/gallery-lightbox.js"></script>
+<script id="superflowToolbarScript" data-sf-platform="manual" async src="https://cdn.velt.dev/lib/superflow.js?apiKey=WlO0L0R1whxue9fk2k70&projectId=8373591704464985"></script>
+</body>
+
+</html>
+<style>
+.widget-download {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.widget-download .widget-title {
+  color: #205781;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(32, 87, 129, 0.1);
+}
+
+.widget-download .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.widget-download .btn:last-child {
+  margin-bottom: 0;
+}
+
+.widget-download .btn span {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.widget-download .btn i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.widget-download .btn:hover i {
+  transform: translateX(5px);
+}
+
+.widget-download .btn-primary {
+  background-color: #205781;
+  border-color: #205781;
+}
+
+.widget-download .btn-primary:hover {
+  background-color: #1a4668;
+  border-color: #1a4668;
+  transform: translateY(-2px);
+}
+
+.widget-download .btn-secondary {
+  background-color: #c41a1b;
+  border-color: #c41a1b;
+}
+
+.widget-download .btn-secondary:hover {
+  background-color: #a31516;
+  border-color: #a31516;
+  transform: translateY(-2px);
+}
+</style>
+<script src="assets/js/pdf-handler.js"></script>

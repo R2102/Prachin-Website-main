@@ -1,0 +1,104 @@
+{
+    "id": "2nbutylbenzofuran",
+    "title": "2n Butyl Benzofuran",
+    "brandName": "N/A",
+    "category": "APIs",
+    "subcategory": "Pharmaceutical Intermediates",
+    "overview": "2n Butyl Benzofuran is a pale yellow to yellow liquid that serves as a core intermediate in the synthesis of Amiodarone Hydrochloride, a potent antiarrhythmic drug. This intermediate contributes to the benzofuran backbone essential for Amiodarone's pharmacological activity. It is valued for its high purity, chemical stability, and performance in pharmaceutical synthesis.",
+    "gallery": [
+      {
+        "url": "../assets/images/gallery/2.jpg",
+        "alt": "2n Butyl Benzofuran product image 1"
+      },
+      {
+        "url": "../assets/images/gallery/3.jpg",
+        "alt": "2n Butyl Benzofuran product image 2"
+      },
+      {
+        "url": "../assets/images/gallery/4.jpg",
+        "alt": "2n Butyl Benzofuran product image 3"
+      },
+      {
+        "url": "../assets/images/gallery/5.jpg",
+        "alt": "2n Butyl Benzofuran product image 4"
+      }
+    ],
+    "variants": [
+      {
+        "id": "2nbutylbenzofuran100",
+        "name": "2n Butyl Benzofuran",
+        "specifications": [
+          {
+            "parameter": "Appearance",
+            "value": "Pale yellow to yellow liquid"
+          },
+          {
+            "parameter": "Assay",
+            "value": "≥98.0%"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Conforms to standard tests"
+          },
+          {
+            "parameter": "Boiling Point",
+            "value": "260°C – 270°C"
+          },
+          {
+            "parameter": "Residual Solvents",
+            "value": "Within acceptable limits"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "≤10 ppm"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "High chemical purity with reproducible quality",
+      "Excellent thermal and chemical stability",
+      "Supports efficient synthesis of Amiodarone HCL",
+      "Suitable for scale-up in industrial production",
+      "Available in customizable grades on request"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical Intermediate",
+        "description": "A vital component in the synthesis of Amiodarone Hydrochloride, used in medications for treating serious cardiac arrhythmias and stabilizing heart rhythm",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

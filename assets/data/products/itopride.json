@@ -1,0 +1,102 @@
+{
+    "id": "itopride",
+    "title": "Itopride",
+    "brandName": "N/A",
+    "category": "APIs",
+    "subcategory": "Gastrointestinal",
+    "overview": "Itopride Hydrochloride is a white crystalline powder, functioning as a gastroprokinetic agent with both dopamine D2 receptor antagonistic and acetylcholinesterase inhibitory activities. It enhances gastrointestinal motility and accelerates gastric emptying, making it highly effective in the treatment of functional dyspepsia and other gastrointestinal disorders. Itopride is known for its dual-action mechanism and minimal central nervous system side effects, offering improved patient compliance and therapeutic outcomes.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/microcrystallinecellulose/image-1.jpg",
+        "target": "popup",
+        "alt": "PARLOSE product image 1",
+        "openInPopup": true
+      },
+      {
+        "url": "../assets/images/products/photography/microcrystallinecellulose/image-2.jpg",
+        "alt": "PARLOSE product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "itopride100",
+        "name": "Itopride",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Complies with IP/BP/USP/Ph.Eur. quality standards"
+          },
+          {
+            "parameter": "Appearance",
+            "value": "White crystalline powder"
+          },
+          {
+            "parameter": "Assay",
+            "value": "≥99.0% (on dried basis)"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Conforms to standard tests"
+          },
+          {
+            "parameter": "Loss on Drying",
+            "value": "≤0.5%"
+          },
+          {
+            "parameter": "Residue on Ignition",
+            "value": "≤0.1%"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "≤10 ppm"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Dual mechanism: D2 receptor antagonism and acetylcholinesterase inhibition",
+      "Enhances gastric motility and alleviates symptoms of dyspepsia",
+      "Low risk of central nervous system side effects",
+      "Suitable for various oral dosage forms including tablets and capsules",
+      "Chemically stable under standard storage conditions"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Widely used as an active pharmaceutical ingredient in the formulation of tablets and capsules for the treatment of functional dyspepsia, gastroesophageal reflux disease (GERD), and related gastrointestinal motility disorders",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}

@@ -1,0 +1,154 @@
+/*----------------------
+    Carousel
+-----------------------*/
+.slick-list {
+    margin: 0 -10px;
+}
+
+.slick-slide {
+    margin: 0 10px;
+}
+
+.m-slides-0 {
+    .slick-list {
+        margin: 0;
+    }
+
+    .slick-slide {
+        margin: 0;
+    }
+}
+
+.custom-dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-dots {
+    font-size: 14px;
+    color: $color-primary;
+    font-weight: 500;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    border-radius: 50%;
+    @include prefix(transition, all 0.3s linear, webkit moz ms o);
+    @include prefix(transform, translateY(-50%), webkit moz ms o);
+
+    &:before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'icomoon';
+        font-size: 16px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        color: $color-white;
+        background-color: $color-primary;
+        @include prefix(transition, all 0.3s linear, webkit moz ms o);
+    }
+
+    &:hover {
+        box-shadow: 0 0 0 2px #dfdfea inset;
+
+        &:before {
+            background-color: $color-secondary;
+            display: flex;
+            opacity: 1;
+        }
+    }
+
+    &.slick-next {
+        right: 0;
+
+        @media (max-width: 991px) {
+            right: 25%;
+            top: 105%;
+            transform: none;
+        }
+
+        &:before {
+            content: "\e907";
+        }
+    }
+
+    &.slick-prev {
+        left: 0;
+
+        @media (max-width: 991px) {
+            left: 25%;
+            top: 105%;
+            transform: none;
+        }
+
+        &:before {
+            content: "\e905";
+        }
+    }
+}
+
+.slick-dots {
+    display: none !important;
+    list-style: none;
+    position: relative;
+    z-index: 2;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 0;
+
+    li {
+        display: inline-flex;
+        position: relative;
+        width: 10px;
+        height: 10px;
+        margin: 0 7px;
+        @include prefix(transition, all 0.3s linear, webkit moz ms o);
+
+        button {
+            display: block;
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            border-radius: 50%;
+            background-color: $color-primary;
+            @include prefix(transition, all 0.2s linear, webkit moz ms o);
+        }
+
+        &.slick-active {
+            button {
+                background-color: $color-secondary;
+                box-shadow: 0 0 0 5px rgba($color-secondary, .15);
+            }
+        }
+    }
+}
+
+.carousel-dots-light .slick-dots li {
+
+    button {
+        background-color: $color-white;
+    }
+
+    &.slick-active {
+        button {
+            box-shadow: 0 0 0 5px rgba($color-white, .2);
+        }
+    }
+}

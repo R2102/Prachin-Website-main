@@ -1,0 +1,149 @@
+{
+    "id": "pargel",
+    "title": "Sodium Starch Glycolate",
+    "brandName": "PARGEL",
+    "category": "Excipients",
+    "subcategory": "Superdisintegrants & Disintegrants",
+    "overview": "Sodium starch glycolate is a white tasteless, odourless, relatively free flowing powder derived from cross-linking and carboxymethylation of either potato or maize (corn) starch. It functions as a highly effective superdisintegrant in pharmaceutical and nutraceutical formulations, promoting rapid tablet and capsule breakdown.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/sodiumstarchglycolate/image-1.jpg",
+        "alt": "PARGEL product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/sodiumstarchglycolate/image-2.jpg",
+        "alt": "PARGEL product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "pargel-potato",
+        "name": "SSG POTATO",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "5.5 - 7.5 (as an aqueous suspension)"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<10%"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Complies with Infrared spectrophotometer"
+          }
+        ]
+      },
+      {
+        "id": "pargel-maize",
+        "name": "SSG MAIZE",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "5.5 - 7.5 (as an aqueous suspension)"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<10%"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Complies with Infrared spectrophotometer"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Exhibits exceptional swelling capacity upon contact with water",
+      "Promotes rapid disintegration and dissolution of tablets and capsules",
+      "Enhances drug release profiles and bioavailability",
+      "Works effectively at low concentrations",
+      "Available from both potato and maize starch sources, offering options for formulation preferences"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "A primary disintegrant in a wide variety of oral tablets and capsules",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "Enhances the breakdown of dietary supplements in tablet or capsule form",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "USDMF : 37308",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/FDA.jpg",
+        "iconClass": "fas fa-star text-warning"
+      },
+      {
+        "name": "Excipact",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-04.png",
+        "largeIcon": true
+      },
+      {
+        "name": "Halal",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/halal.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

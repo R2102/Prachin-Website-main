@@ -1,0 +1,135 @@
+/*--------------------
+     Team
+---------------------*/
+.member {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    @include prefix(transition, all .3s linear, webkit moz ms o);
+
+    .member-img {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .member-info {
+        position: relative;
+        margin-top: -100px;
+        padding: 40px 40px 25px;
+        background-color: transparent;
+        clip-path: url(#path-direction-up);
+        @include prefix(transition, all .3s ease, webkit moz ms o);
+
+
+        .member-name {
+            font-size: 20px;
+            margin-bottom: 7px;
+            padding-top: 10px;
+            @include prefix(transition, all .3s ease, webkit moz ms o);
+        }
+
+        .member-desc {
+            font-size: 14px;
+            margin-bottom: 0;
+            @include prefix(transition, all .3s ease, webkit moz ms o);
+        }
+    }
+
+    .social-icons {
+        transform: scale(0);
+        @include prefix(transition, all .3s ease, webkit moz ms o);
+
+        li {
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                width: 38px;
+                height: 38px;
+                border: 0;
+                box-shadow: none;
+                border-radius: 2px;
+                background-color: $color-secondary;
+                @include prefix(transition, all .3s linear, webkit moz ms o);
+
+                i {
+                    width: 20px;
+                    height: 20px;
+                    color: $color-secondary;
+                    background-color: $color-white;
+                }
+
+                &:hover {
+                    background-color: $color-primary;
+
+                    i {
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .member-info {
+            background-color: $color-white;
+        }
+
+        .social-icons {
+            transform: scale(1);
+        }
+    }
+}
+
+.team-layout1 {
+    .member {
+        box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.11);
+
+        .member-info:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            height: 100px;
+            background-color: $color-white;
+        }
+    }
+}
+
+.team-layout2 {
+    .member {
+        .member-info {
+            padding-top: 70px;
+        }
+
+        &:hover {
+            box-shadow: 0px 5px 83px 0px rgba(40, 40, 40, 0.11);
+        }
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .member {
+        max-width: 450px;
+        margin: 0 auto 30px;
+
+        .member-info {
+            .member-name {
+                font-size: 15px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .team-layout1 .member .member-info:after {
+        height: 90px;
+    }
+}

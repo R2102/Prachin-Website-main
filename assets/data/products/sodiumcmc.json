@@ -1,0 +1,125 @@
+{
+    "id": "sodiumcmc",
+    "title": "Sodium Carboxymethyl Cellulose",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Binders & Thickeners",
+    "overview": "Sodium carboxymethylcellulose (Sodium CMC) is white to cream-colored powder or granules. The powder is hygroscopic Derived from cellulose, it is an anionic polymer with diverse thickening, stabilizing, binding, suspending, and film-forming properties.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/sodiumcarboxymethylcellulose/image-1.jpg",
+        "alt": "Sodium CMC product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/sodiumcarboxymethylcellulose/image-2.jpg",
+        "alt": "Sodium CMC product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "sodiumcmc100",
+        "name": "Sodium CMC",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF/Ph.Eur. standards"
+          },
+          {
+            "parameter": "Viscosity Grades",
+            "value": "LVP, MVP, HVP, DVP, DVP Special"
+          },
+          {
+            "parameter": "Degree of Substitution",
+            "value": "0.65 – 0.85"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<10%"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "6.5 – 8.5 (as an aqueous solution)"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Forms clear, viscous solutions and gels in water",
+      "Excellent thickening, stabilizing, and suspending agent",
+      "Provides adhesive and binding properties",
+      "Creates strong and flexible films",
+      "Chemically stable and compatible with many ingredients"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Thickener, binder, suspending agent in syrups, gels, tablets, and emulsions",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Food",
+        "description": "Stabilizer, thickener, and texture modifier in ice creams, beverages, baked goods, and more",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Cosmetics",
+        "description": "Thickener and film-former in lotions, creams, toothpastes, and shampoos",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Cosmetics.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Industrial",
+        "description": "Papermaking, textiles, oil drilling, paints, ceramics and adhesives",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Industrial.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "Halal",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/halal.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

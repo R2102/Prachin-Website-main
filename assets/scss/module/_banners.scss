@@ -1,0 +1,479 @@
+/*-----------------------
+    banner
+------------------------*/
+.banner-layout1,
+.banner-layout2 {
+    overflow-x: hidden;
+    padding-right: 30px;
+
+    .banner-shape {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-width: 205px;
+        max-height: 638px;
+        clip-path: url(#path-direction-right);
+    }
+
+    .banner-img {
+        min-height: 700px;
+        clip-path: url(#path-direction-right-large);
+    }
+
+    .banner-text {
+        max-width: 600px;
+    }
+
+    .fancybox-layout2 .fancybox-item {
+
+        .fancybox-body {
+            border-bottom: 1px solid #faab97;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+
+            .fancybox-body {
+                border-bottom: 0;
+            }
+        }
+
+    }
+}
+
+.banner-layout1 {
+    overflow-x: hidden;
+
+    .top-shape {
+        height: 90px;
+        background-color: $color-secondary;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 90px;
+            border-radius: 0 0 0 70px;
+            background-color: $color-white;
+        }
+    }
+
+    .banner-content {
+        padding: 110px 100px 110px 0;
+        background-color: $color-secondary;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: -100%;
+            width: 100%;
+            z-index: -1;
+            background-color: $color-secondary;
+        }
+    }
+
+    .banner-shape {
+        right: 70px;
+        animation: zoomOut 1s infinite;
+        background: -webkit-linear-gradient(left, rgba(244, 87, 46, 0) 0%, rgba(244, 87, 46, 0) 45%, $color-secondary 78%);
+        background: -moz-linear-gradient(left, rgba(244, 87, 46, 0) 0%, rgba(244, 87, 46, 0) 45%, $color-secondary 78%);
+        background: -ms-linear-gradient(left, rgba(244, 87, 46, 0) 0%, rgba(244, 87, 46, 0) 45%, $color-secondary 78%);
+        background: -o-linear-gradient(left, rgba(244, 87, 46, 0) 0%, rgba(244, 87, 46, 0) 45%, $color-secondary 78%);
+        background: linear-gradient(to right, rgba(244, 87, 46, 0) 0%, rgba(244, 87, 46, 0) 45%, $color-secondary 78%);
+    }
+}
+
+.banner-layout2 {
+    .banner-content {
+        padding: 110px 100px 110px 110px;
+        background-color: $color-secondary;
+        clip-path: url(#path-direction-right-large);
+    }
+
+    .banner-wrapper {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            z-index: -1;
+            background-color: $color-secondary;
+        }
+    }
+
+    .banner-shape {
+        left: 0;
+        background-color: $color-secondary;
+    }
+}
+
+.banner-layout3,
+.banner-layout4 {
+    overflow-x: hidden;
+    padding-left: 30px;
+
+    .banner-img {
+        min-height: 700px;
+    }
+
+    .banner-shape {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-width: 205px;
+        max-height: 638px;
+        clip-path: url(#path-direction-left);
+    }
+
+    .banner-content {
+        padding: 110px 0 110px 130px;
+        background-color: #020e26;
+    }
+
+    .banner-text {
+        max-width: 600px;
+    }
+
+    .fancybox-layout2 .fancybox-item {
+        .fancybox-desc {
+            color: #c0c3ec;
+        }
+
+        .fancybox-body {
+            border-bottom: 1px solid #c1c3ec;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+
+            .fancybox-body {
+                border-bottom: 0;
+            }
+        }
+
+    }
+
+    .btn-white {
+        color: $color-primary;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+}
+
+.banner-layout3 {
+    .top-shape {
+        height: 90px;
+        background-color: #020e26;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 90px;
+            border-radius: 0 0 70px 0;
+            background-color: $color-white;
+        }
+    }
+
+    .banner-img {
+        -webkit-clip-path: url(#path-direction-left-large);
+        clip-path: url(#path-direction-left-large);
+    }
+
+    .banner-content {
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -100%;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+            background-color: #020e26;
+        }
+    }
+
+    .banner-shape {
+        left: 70px;
+        animation: zoomOut 1s infinite;
+        background: -webkit-linear-gradient(left, #020e26 0%, #020e26 15%, rgba(46, 49, 146, 0) 50%, rgba(46, 49, 146, 0) 100%);
+        background: -moz-linear-gradient(left, #020e26 0%, #020e26 15%, rgba(46, 49, 146, 0) 50%, rgba(46, 49, 146, 0) 100%);
+        background: -ms-linear-gradient(left, #020e26 0%, #020e26 15%, rgba(46, 49, 146, 0) 50%, rgba(46, 49, 146, 0) 100%);
+        background: -o-linear-gradient(left, #020e26 0%, #020e26 15%, rgba(46, 49, 146, 0) 50%, rgba(46, 49, 146, 0) 100%);
+        background: linear-gradient(to right, #020e26 0%, #020e26 15%, rgba(46, 49, 146, 0) 50%, rgba(46, 49, 146, 0) 100%);
+    }
+}
+
+.banner-layout4 {
+    .banner-wrapper {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 50%;
+            z-index: -1;
+            background-color: #020e26;
+        }
+    }
+
+    .banner-content {
+        clip-path: url(#path-direction-left-large);
+    }
+
+    .banner-img {
+        clip-path: url(#path-direction-left-large);
+    }
+
+    .banner-shape {
+        right: 0;
+        background-color: #020e26;
+    }
+}
+
+.banner-layout5 {
+    .banner-content {
+        max-width: 650px;
+        padding: 120px 0;
+    }
+
+    .banner-img {
+        position: relative;
+        padding: 120px 0;
+        max-width: 670px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 80px;
+            z-index: -1;
+            background-color: #eef7ff;
+        }
+    }
+}
+
+.banner-layout7 {
+    .banner-img {
+        clip-path: url(#path-direction-down);
+    }
+
+    .container-fluid {
+        padding-left: calc((100% - 1250px) / 2);
+        padding-right: 0;
+    }
+
+    .banner-content {
+        padding: 115px 0 125px 70px;
+        background-color: $color-white;
+
+        >div {
+            max-width: 680px;
+        }
+    }
+
+    .testimonials-layout3 .testimonial-title {
+        margin-bottom: 80px;
+    }
+}
+
+.banner-layout8 {
+    overflow-x: hidden;
+
+    .banner-img {
+        width: 100%;
+        height: 100%;
+        min-height: 600px;
+        margin-left: 20px;
+        -webkit-clip-path: url(#path-direction-left-large);
+        clip-path: url(#path-direction-left-large);
+    }
+
+    .banner-shape {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $color-secondary;
+        -webkit-clip-path: url(#path-direction-left-large);
+        clip-path: url(#path-direction-left-large);
+    }
+
+    .btn-white {
+        color: $color-primary;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-secondary;
+        }
+    }
+}
+
+@media (min-width:1400px) {
+
+    .banner-layout1,
+    .banner-layout2 {
+        padding-right: 60px;
+    }
+
+    .banner-layout3,
+    .banner-layout4 {
+        padding-left: 60px;
+    }
+
+    .banner-layout2 {
+        .banner-content {
+            padding-right: calc((100% - 1340px)/2);
+        }
+    }
+
+    .banner-layout4 {
+        .banner-content {
+            padding-left: calc((100% - 1340px)/2);
+        }
+    }
+
+}
+
+@media (min-width:1399px) {
+    .banner-layout2 {
+        padding-right: 20px;
+    }
+
+    .banner-layout4 {
+        padding-left: 20px;
+    }
+
+}
+
+/* Extra Large Size Screens */
+@media (min-width:1200px) {
+    .banner-layout1 {
+        .container-fluid {
+            padding-left: calc((100% - 1160px)/2);
+        }
+    }
+
+    .banner-layout3 {
+        .container-fluid {
+            padding-right: calc((100% - 1160px)/2);
+        }
+    }
+
+
+    .banner-layout5 {
+        .container-fluid {
+            padding-left: calc((100% - 1240px)/2);
+        }
+    }
+
+    .banner-layout8 {
+        .container-fluid {
+            padding-left: calc((100% - 1240px)/2);
+        }
+    }
+}
+
+/* Mobile Phones & tablets and Small Screens */
+@media(max-width:1199px) {
+
+    .banner-layout1,
+    .banner-layout3 {
+        .banner-img {
+            min-height: 600px;
+        }
+
+        .banner-content {
+            padding: 50px;
+        }
+    }
+
+    .banner-layout1 .banner-content:before {
+        left: 0;
+        width: 120%
+    }
+
+    .banner-layout3 {
+        .banner-img {
+            order: 2;
+        }
+
+        .banner-content {
+            order: 1;
+
+            &:before {
+                right: 0;
+                width: 120%
+            }
+        }
+    }
+
+}
+
+@media(max-width:991px) {
+    .banner-layout5 {
+
+        .banner-img,
+        .banner-content {
+            padding: 60px 0;
+        }
+    }
+
+    .banner-layout7 {
+        .banner-img {
+            margin: 0 30px 30px;
+        }
+
+        .banner-content {
+            padding: 60px 30px;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .banner-layout6 {
+        .banner-img {
+            position: relative;
+            z-index: 2;
+            margin-top: -240px;
+
+            img {
+                border-radius: 20px;
+            }
+        }
+
+        .heading-layout2 .heading-title {
+            font-size: 39px;
+        }
+    }
+}
+
+@media(max-width:767px) {
+
+    .banner-layout1,
+    .banner-layout2 {
+        padding-right: 0;
+    }
+
+    .banner-layout3,
+    .banner-layout4 {
+        padding-left: 0;
+    }
+
+    .banner-layout2 .banner-content {
+        padding: 110px 120px 110px 40px;
+    }
+}

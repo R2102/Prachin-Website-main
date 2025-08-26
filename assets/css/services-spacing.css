@@ -1,0 +1,81 @@
+/* Services Section Spacing Improvements */
+
+/* Improve spacing in services section */
+.services-layout3 {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+/* Add consistent margins to service items */
+.services-layout3 .service-item {
+    margin-bottom: 30px;
+    height: 100%;
+    box-shadow: 0 5px 83px 0 rgba(40, 40, 40, 0.08);
+    transition: all 0.3s ease;
+}
+
+/* Improve service item hover effect */
+.services-layout3 .service-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Fix service body padding */
+.services-layout3 .service-body {
+    padding: 30px 25px;
+}
+
+/* Improve service title spacing */
+.services-layout3 .service-title {
+    margin-bottom: 15px;
+}
+
+/* Fix service description spacing */
+.services-layout3 .service-desc {
+    margin-bottom: 0;
+    min-height: 80px;
+}
+
+/* Ensure consistent height for service images */
+.services-layout3 .service-img img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Fix row spacing */
+.row-new {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row-new > [class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .services-layout3 {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .services-layout3 .service-desc {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .services-layout3 {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    
+    .services-layout3 .service-body {
+        padding: 20px 15px;
+    }
+}

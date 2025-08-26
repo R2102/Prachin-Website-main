@@ -1,0 +1,114 @@
+{
+    "id": "disodiumedetate",
+    "title": "Disodium EDTA (Disodium Edetate)",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Binders & Fillers",
+    "overview": "Disodium EDTA is a white, crystalline powder. It's the disodium salt of ethylenediaminetetraacetic acid (EDTA), a powerful chelating agent. Chelating agents form strong complexes with metal ions.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/mcc+cmc/image-1.jpg",
+        "alt": "MCC+CMC product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/mcc+cmc/image-2.jpg",
+        "alt": "MCC+CMC product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "disodiumedetate100",
+        "name": "Disodium EDTA",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF standards"
+          },
+          {
+            "parameter": "Purity",
+            "value": ">98.5%"
+          },
+          {
+            "parameter": "pH",
+            "value": "4.0 – 6.0 (as an aqueous solution)"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "Within acceptable limits"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Exceptional Chelating Agent: Binds strongly to various metal ions, including calcium, magnesium, iron, and copper",
+      "Water Soluble: Dissolves readily in water for convenient use",
+      "Sequestering Ability: Prevents metal ions from participating in unwanted reactions, improving product stability"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Prevents degradation of active ingredients caused by trace metals, enhances the efficacy of preservatives, and used in chelation therapy to remove heavy metals from the body",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Cosmetics & Personal Care",
+        "description": "Stabilizer and preservative in shampoos, soaps, lotions, and other products. Prevents discoloration and rancidity caused by metal contamination",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Cosmetics.jpg",
+        "iconUrl2": "../assets/images/products/Personal Care.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Food",
+        "description": "Preservative to maintain color, flavor, and texture in canned foods, dressings, and sauces. Helps prevent oxidation and spoilage",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Industrial",
+        "description": "Used in cleaning solutions to remove metal deposits and scale, textile and paper processing to prevent metal contamination, and water treatment to soften water and control scaling",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Industrial.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

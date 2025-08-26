@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="{{product.description}}">
+  <link href="../assets/images/favicon/Prachin Pharmache,-2.png" rel="icon">
+  <title>{{product.name}} - Prachin Pharmachem</title>
+
+  <!-- OpenGraph Meta Tags for Social Media Sharing -->
+  <meta property="og:title" content="{{product.name}} - Prachin Pharmachem">
+  <meta property="og:description" content="{{product.description}}">
+  <meta property="og:image" content="{{product.image}}">
+  <meta property="og:url" content="https://prachinpharmachem.com/Products/{{product.url}}">
+  <meta property="og:type" content="product">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{product.name}} - Prachin Pharmachem">
+  <meta name="twitter:description" content="{{product.description}}">
+  <meta name="twitter:image" content="{{product.image}}">
+
+  <!-- Product Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "{{product.name}}",
+    "description": "{{product.description}}",
+    "image": "{{product.image}}",
+    "brand": {
+      "@type": "Brand",
+      "name": "Prachin Pharmachem"
+    }
+  }
+  </script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link rel="stylesheet" href="../assets/css/libraries.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/table-styles.css">
+  <link rel="stylesheet" href="../assets/css/custom-carousel.css">
+  <link rel="stylesheet" href="../assets/css/product-page.css">
+ 
+  
+  <script src="../assets/js/custom-carousel.js"></script>
+  <script src="../assets/js/product-template.js"></script>
+  <script src="../assets/js/variant-handler.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="preloader">
+      <div class="loading"><span></span><span></span><span></span><span></span></div>
+    </div><!-- /.preloader -->
+
+    <!-- =========================
+        Header
+    =========================== -->
+    <div id="header-container"></div>
+    <script src="../assets/js/header-loader.js"></script>
+
+     <!-- ========================
+    page title 
+ =========================== -->
+ <section class="page-title-layout1 page-title-light pb-0">
+   <div class="container">
+     <div class="row justify-content-center text-center">
+       <div class="col-sm-12">
+         <h1 class="pagetitle-heading category-title">Product Title</h1>
+         <div class="brand-name">Brand Name</div>
+         
+       </div>
+     </div>
+   </div>
+   <div class="breadcrumb-area" style="margin-top: 5px !important;">
+     <div class="container">
+       <nav>
+         <ol class="breadcrumb mb-0 justify-content-center">
+           <li class="breadcrumb-item">
+             <a href="../index.html"><i class="icon-home"></i> <span>Home</span></a>
+           </li>
+           <li class="breadcrumb-item">
+            <a href="../Product-list.html"><i class="category-breadcrumb"></i> <span>Products</span></a>
+          </li>
+           <li class="breadcrumb-item active c" aria-current="page">Product Brand</li>
+         </ol>
+       </nav>
+     </div>
+   </div>
+ </section><!-- /.page-title -->
+
+    <section class="specifications-section pb-80">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-sm-12 col-md-12 col-lg-4 order-2-md">
+            <aside class="sidebar has-marign-right mb-50">
+              <div class="widget widget-certifications">
+                <h5 class="widget-title">Certifications & Standards</h5>
+                <div class="widget-content">
+                  <h6 class="sub-title">Product Variants</h6>
+                  <ul class="list-unstyled mb-4">
+                    <!-- Variants will be loaded dynamically -->
+                  </ul>
+                  <h6 class="sub-title">Certifications</h6>
+                  <ul class="list-unstyled mb-0">
+                    <!-- Certifications will be loaded dynamically -->
+                  </ul>
+                </div>
+
+              </div><!-- /.widget-certifications -->
+              
+              <div class="widget widget-download">
+                <h5 class="widget-title">Download Brochure</h5>
+                <a style="display: none;" href="../assets/Pdf/Prachin APIs Brochure.pdf" download="Prachin APIs Brochure.pdf" class="btn btn-secondary btn-block">
+                  <i class="icon-pdf-file btn-icon"></i>
+                  <span class="btn-text">APIs Brochure</span>
+                </a>
+                 <a href="../assets/Pdf/Prachin APIs Brochure.pdf" download="Prachin APIs Brochure.pdf" alt="APIs Brochure" class="btn btn-secondary btn-block">
+                  <i class="icon-pdf-file btn-icon"></i>
+                  <span class="btn-text">APIs Brochure</span>
+                </a>
+                <a href="../assets/Pdf/Prachin Excipients Brochure.pdf" download="Prachin Excipients Brochure.pdf" class="btn btn-secondary btn-block">
+                  <i class="icon-pdf-file btn-icon"></i>
+                  <span class="btn-text">Excipients Brochure</span>
+                </a>
+
+              </div><!-- /.widget-download -->
+            </aside><!-- /.sidebar -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-sm-12 col-md-12 col-lg-8 order-1-md">
+
+            <div class="custom-carousel mb-30">
+              <div class="carousel-container">
+                <!-- Gallery items will be loaded dynamically -->
+              </div>
+            </div><!-- /.carousel -->
+
+            <div class="text-block mb-30">
+<div class="section-divider"></div>
+              <h4 class="text-block-title">Overview</h4>
+              <p class="text-block-desc mb-20">Product overview will be loaded dynamically.</p>
+             
+              
+            </div><!-- /.text-block -->
+            
+           
+
+            <div class="text-block mb-30">
+              <div class="section-divider"></div>
+              <h5 class="text-block-title">Product Specifications</h5>
+              
+              
+
+
+              <!-- Unique Tab Navigation -->
+              <ul class="nav nav-tabs parcros-spec-tabs" id="parcrosSpecTabs" role="tablist">
+                <!-- Specification tabs will be loaded dynamically -->
+              </ul>
+
+              <!-- Tab Content -->
+              <div class="tab-content parcros-spec-content" id="parcrosSpecContent">
+                <!-- Specification content will be loaded dynamically -->
+              </div><!-- /.container -->
+
+              </div>
+              
+                
+               
+            
+            <div class="text-block mb30">
+<div class="section-divider"></div>
+              <h5 class="text-block-title">Features</h5>
+              <div class="features-grid">
+                <!-- Features will be loaded dynamically -->
+              </div>
+            </div><!-- /.text-block -->
+
+            <div class="text-block mb-30" style="padding-bottom: 30px; background: linear-gradient(to bottom, #f8fafc, #ffffff); padding: 35px; border-radius: 12px; margin-bottom: 45px;">
+<div class="section-divider"></div>
+              <h5 class="text-block-title" style="color: #205781; margin-bottom: 20px;">Applications</h5>
+
+              <div class="app-grid">
+                <!-- Applications will be loaded dynamically -->
+              </div>
+            </div><!-- /.text-block -->
+
+          </div><!-- /.col-lg-8 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.shop -->
+
+    <!-- ========================
+      Footer
+    ========================== -->
+    <div id="footer-container"></div>
+    <script src="../assets/js/footer-loader.js"></script>
+
+  </div><!-- /.wrapper -->
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/plugins.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/pdf-handler.js"></script>
+</body>
+
+</html>

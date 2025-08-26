@@ -1,0 +1,276 @@
+/* Homepage Spacing Improvements
+   This file contains specific spacing and layout improvements for the homepage
+   to ensure proper spacing, alignment, and visual hierarchy
+*/
+
+/* Global Section Spacing */
+section {
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add proper spacing between sections */
+section + section {
+    margin-top: 30px;
+}
+
+/* Slider Section Adjustments */
+.slider {
+    margin-bottom: 40px;
+}
+
+.slide-item {
+    padding: 40px 0;
+}
+
+.slide-content {
+    padding-right: 20px;
+}
+
+/* About Section Spacing */
+.about-layout2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about-Text p {
+    margin-bottom: 25px;
+}
+
+.features-list-layout2 .feature-item {
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* Banner Layout Improvements */
+.banner-layout8 {
+    padding: 80px 0;
+}
+
+.banner-layout8 .banner-content {
+    padding: 40px;
+}
+
+.banner-layout8 .heading-desc {
+    margin-bottom: 30px;
+}
+
+.banner-layout8 .fancybox-layout2 .fancybox-item {
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+/* Services Section Spacing */
+.services-layout3 {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.services-layout3 .heading-layout2 {
+    margin-bottom: 40px;
+}
+
+.services-layout3 .service-item {
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.row-new {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row-new > [class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+/* Product Carousel Spacing */
+.fancybox-layout4 {
+    padding: 80px 0;
+}
+
+.fancybox-layout4 .heading-layout2 {
+    margin-bottom: 40px;
+}
+
+.fancybox-layout4 .fancybox-item {
+    margin: 15px;
+    height: 100%;
+}
+
+.fancybox-layout4 .fancybox-body {
+    padding: 20px;
+}
+
+/* Clients Section Spacing */
+.clients {
+    padding: 50px 0;
+}
+
+.clients .section-title {
+    margin-bottom: 20px;
+}
+
+.clients .section-desc {
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clients .client {
+    /* padding: 15px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Call to Action Section */
+.cta-layout1 {
+    padding: 70px 0;
+}
+
+.cta-layout1 .trusted {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    column-gap: 135px;
+}
+/* iPad – portrait & landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .cta-layout1 {
+      padding: 135px 0;   /* top & bottom 165 px, no side padding */
+    }
+  }
+  /* iPad Air 10.9″  (≈ 820 px portrait • 1180 px landscape)  */
+@media only screen and (min-width: 820px) and (max-width: 1180px) {
+    .cta-layout1 {
+      padding: 140px 0;   /* top & bottom */
+    }
+    .banner-layout8 .banner-img {
+        width: 100%;
+        height: 0%;
+        min-height: 670px;
+        margin-left: 100px;
+        -webkit-clip-path: url(#path-direction-left-large);
+        clip-path: url(#path-direction-left-large);
+    }
+    .banner-layout8 .banner-shape {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #c41a1b;
+        -webkit-clip-path: url(#path-direction-left-large);
+        clip-path: url(#path-direction-left-large);
+        margin-left: 70px;
+    }
+  }
+  
+  
+/* .cta-layout1 .cta-block {
+    padding: 30px;
+} */
+
+/* Testimonials Section */
+.banner-layout7 {
+    padding: 80px 0 !important;
+}
+
+.banner-layout7 .banner-content {
+    padding: 40px !important;
+}
+
+.testimonials-layout3 {
+    padding: 20px;
+}
+
+/* Distribution Network Section */
+.distribution-section {
+    padding: 60px 0;
+}
+
+.distribution-section .heading-title {
+    margin-bottom: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .banner-layout8 .banner-content,
+    .banner-layout7 .banner-content {
+        padding: 30px !important;
+    }
+    
+    .about-layout2 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .fancybox-layout4 {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .slide-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .banner-layout8 .banner-content,
+    .banner-layout7 .banner-content {
+        padding: 20px !important;
+    }
+    
+    .about-layout2 {
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    
+    .fancybox-layout4 {
+        padding: 40px 0;
+    }
+    
+    .clients {
+        padding: 30px 0;
+    }
+    
+    .cta-layout1 {
+        padding: 150px 0;
+    }
+    
+    .distribution-section {
+        padding: 40px 0;
+    }
+}
+
+
+/* new */
+.new {
+    display: flex
+;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* column-gap: 10px; */
+    row-gap: 50px;
+}   
+.col-md-12.col-lg-6.offset-lg-3.text-center {
+    display: contents;
+}
+
+

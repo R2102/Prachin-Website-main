@@ -1,0 +1,123 @@
+{
+    "id": "stearicacidpowder",
+    "title": "Stearic Acid Powder",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Fatty Acids & Lubricants",
+    "overview": "Stearic acid is a saturated fatty acid that appears as a white, waxy powder or flakes at room temperature. It can be derived from both animal and vegetable fats and oils. Stearic acid possesses versatile properties, making it valuable across several industries.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/stearicacidpowder/image-1.jpg",
+        "alt": "Stearic Acid Powder product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/stearicacidpowder/image-2.jpg",
+        "alt": "Stearic Acid Powder product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "stearicacidpowder100",
+        "name": "Stearic Acid Powder",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets USP/NF standards"
+          },
+          {
+            "parameter": "Stearic Acid Content",
+            "value": "40.0% to 60.0% (Stearic acid 50)"
+          },
+          {
+            "parameter": "Total Fatty Acids",
+            "value": "Sum of Stearic acid and palmitic acid: NLT 90.0%"
+          },
+          {
+            "parameter": "Freezing Point",
+            "value": "53-59°C"
+          },
+          {
+            "parameter": "Iodine Value",
+            "value": "NMT 4.0"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Lubricating Properties: Reduces friction in manufacturing processes",
+      "Emulsifying Agent: Helps bind together oil and water-based ingredients",
+      "Thickening Agent: Imparts texture and viscosity to formulations",
+      "Surfactant Properties: Can lower surface tension between liquids or between a liquid and a solid"
+    ],
+    "applications": [
+      {
+        "title": "Cosmetics & Personal Care",
+        "description": "Thickener and emulsifier in creams, lotions, soaps, and makeup",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Cosmetics.jpg",
+        "iconUrl2": "../assets/images/products/Personal Care.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Pharmaceuticals",
+        "description": "Lubricant and viscosity modifier in tablets, capsules, and topical ointments",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Industrial",
+        "description": "Mold release agent in rubber and plastics manufacturing, candle making, and metalworking processes",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Industrial.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Food",
+        "description": "Potential applications as a thickener, emulsifier, and anti-caking agent",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

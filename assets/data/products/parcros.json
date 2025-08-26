@@ -1,0 +1,240 @@
+{
+  "id": "parcros",
+  "title": "Croscarmellose Sodium",
+  "brandName": "PARCROS",
+  "category": "Excipients",
+  "subcategory": "Superdisintegrants & Disintegrants",
+  "overview": "Croscarmellose Sodium (PARCROS) is a crosslinked sodium carboxymethyl cellulose used as a superdisintegrant in a wide range of oral dosage forms. It offers efficient disintegration at low concentrations through its excellent wicking and swelling properties. Available in multiple grades, PARCROS is suitable for direct compression, wet, and dry granulation, and is widely used in both pharmaceutical and nutraceutical tablets, capsules, ODTs, blends, and granules.",
+  "gallery": [
+    {
+      "url": "../assets/images/products/photography/croscarmellosesodium/image-1.jpg",
+      "alt": "PARCROS product image 1"
+    },
+    {
+      "url": "../assets/images/products/photography/croscarmellosesodium/image-2.jpg",
+      "alt": "PARCROS product image 2"
+    }
+  ],
+  "variants": [
+    {
+      "id": "parcros711",
+      "name": "PARCROS 711",
+      "specifications": [
+        {
+          "parameter": "Settling Volume",
+          "value": "10-30 ml"
+        },
+        {
+          "parameter": "Mesh",
+          "value": "95% Pass #100"
+        },
+        {
+          "parameter": "LOD",
+          "value": "NMT 10"
+        },
+        {
+          "parameter": "Disintegration Time",
+          "value": "Improved DT"
+        },
+        {
+          "parameter": "Water Solubility",
+          "value": "NMT 10"
+        }
+      ]
+    },
+    {
+      "id": "parcros711s", 
+      "name": "PARCROS 711S",
+      "specifications": [
+        {
+          "parameter": "Settling Volume",
+          "value": "10-30 ml"
+        },
+        {
+          "parameter": "Mesh",
+          "value": "95% Pass #200"
+        },
+        {
+          "parameter": "LOD",
+          "value": "NMT 10"
+        },
+        {
+          "parameter": "Disintegration Time",
+          "value": "Similar to 711, better Flow"
+        },
+        {
+          "parameter": "Water Solubility",
+          "value": "NMT 10"
+        }
+      ]
+    },
+    {
+      "id": "parcrosg911",
+      "name": "PARCROS G911",
+      "specifications": [
+        {
+          "parameter": "Settling Volume",
+          "value": "18-30 ml"
+        },
+        {
+          "parameter": "Mesh",
+          "value": "95% Pass #200; 50% Pass #325"
+        },
+        {
+          "parameter": "LOD",
+          "value": "NMT 10"
+        },
+        {
+          "parameter": "Disintegration Time",
+          "value": "Superior to 711"
+        },
+        {
+          "parameter": "Water Solubility",
+          "value": "NMT 10"
+        }
+      ]
+    },
+    {
+      "id": "parcrosr1011",
+      "name": "PARCROS R1011",
+      "specifications": [
+        {
+          "parameter": "Settling Volume",
+          "value": "10-20 ml"
+        },
+        {
+          "parameter": "Mesh",
+          "value": "90% Pass #325"
+        },
+        {
+          "parameter": "LOD",
+          "value": "NMT 10"
+        },
+        {
+          "parameter": "Disintegration Time",
+          "value": "Comparable to G911"
+        },
+        {
+          "parameter": "Water Solubility",
+          "value": "NMT 10"
+        }
+      ]
+    },
+    {
+      "id": "parcrosr1111",
+      "name": "PARCROS R1111",
+      "specifications": [
+        {
+          "parameter": "Settling Volume",
+          "value": "10-20 ml"
+        },
+        {
+          "parameter": "Mesh",
+          "value": "95% Pass #200"
+        },
+        {
+          "parameter": "LOD",
+          "value": "NMT 6"
+        },
+        {
+          "parameter": "Disintegration Time",
+          "value": "Fastest DT"
+        },
+        {
+          "parameter": "Water Solubility",
+          "value": "NMT 5"
+        }
+      ]
+    }
+  ],
+  "features": [
+    "Exhibits rapid disintegration and enhanced drug release profiles",
+    "Demonstrates superior swelling capacity, leading to faster dissolution rates compared to traditional disintegrants",
+    "Offers excellent compatibility and stability with a broad range of active pharmaceutical ingredients (APIs)",
+    "Highly effective at low concentrations, minimizing excipient load",
+    "Ideal for use in direct compression, wet granulation, and various tableting processes"
+  ],
+  "applications": [
+    {
+      "title": "Pharmaceutical",
+      "description": "Widely used as the primary disintegrant in a multitude of solid oral dosage forms, including tablets and capsules",
+      "iconType": "image",
+      "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+      "largeIcon": true
+    },
+    {
+      "title": "Nutraceutical",
+      "description": "Enhances the disintegration and dissolution of dietary supplements formulated as tablets or capsules",
+      "iconType": "image",
+      "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+      "largeIcon": true
+    },
+    {
+      "title": "Food",
+      "description": "Potential applications may include thickening and stabilizing functions (subject to regional regulations)",
+      "iconType": "image",
+      "iconUrl": "../assets/images/products/Food.jpg",
+      "largeIcon": true
+    }
+  ],
+  "brochures": {
+    "product": "#",
+    "company": "#"
+  },
+  "certifications": [
+    {
+      "name": "USDMF #32704",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/FDA.jpg",
+      "largeIcon": true
+    },
+    {
+      "name": "Excipact",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/Untitled-2-04.png",
+      "largeIcon": true
+    },
+    {
+      "name": "Kosher",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/keniseth.jpg",
+      "largeIcon": true
+    },
+    {
+      "name": "Halal",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/halal.png",
+      "largeIcon": true
+    },
+    {
+      "name": "ISO 9001",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+      "largeIcon": true
+    },
+    {
+      "name": "ISO 14001",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/ISO_14001.png",
+      "largeIcon": true
+    },
+    {
+      "name": "ISO 22000",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+      "largeIcon": true
+    },
+    {
+      "name": "GMP",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+      "largeIcon": true
+    },
+    {
+      "name": "FSSAI",
+      "iconType": "image",
+      "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+      "largeIcon": true
+    }
+  ]
+}

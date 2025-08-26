@@ -1,0 +1,166 @@
+{
+    "id": "hydroxypropylmethylcellulose",
+    "title": "HPMC (Hydroxypropyl Methylcellulose)",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Stabilizers & Thickening Agents",
+    "overview": "HPMC, also known as hypromellose, is a semi-synthetic, water-soluble polymer derived from cellulose. It appears as an off-white powder with no odor or taste. HPMC is available in a variety of grades that differ in their viscosity and substitution patterns, impacting functionality.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/crospovidone/image-1.jpg",
+        "alt": "PARONE product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/crospovidone/image-2.jpg",
+        "alt": "PARONE product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "hpmce5",
+        "name": "HPMC E5",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF standards"
+          },
+          {
+            "parameter": "Viscosity",
+            "value": "Low viscosity grade"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<5%"
+          },
+          {
+            "parameter": "pH",
+            "value": "5.0-8.0 (as an aqueous solution)"
+          }
+        ]
+      },
+      {
+        "id": "hpmce15",
+        "name": "HPMC E15",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF standards"
+          },
+          {
+            "parameter": "Viscosity",
+            "value": "Medium viscosity grade"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<5%"
+          },
+          {
+            "parameter": "pH",
+            "value": "5.0-8.0 (as an aqueous solution)"
+          }
+        ]
+      },
+      {
+        "id": "hpmck100m",
+        "name": "HPMC K100M",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF standards"
+          },
+          {
+            "parameter": "Viscosity",
+            "value": "High viscosity grade"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<5%"
+          },
+          {
+            "parameter": "pH",
+            "value": "5.0-8.0 (as an aqueous solution)"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Thickening Agent: Increases viscosity of solutions, creating gels at varying consistencies",
+      "Film-Former: Forms clear, flexible, and strong films",
+      "Binder and Adhesive: Promotes adhesion in tablets and coatings",
+      "Emulsifier and Stabilizer: Helps maintain the stability of emulsions",
+      "Water Retention: Improves moisture retention in formulations",
+      "Physiologically Inert: Generally considered safe and non-toxic"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Controlled-release matrix in tablets and capsules, tablet binder and film-coating agent, thickening agent for ophthalmic solutions and other topical formulations",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceuticals",
+        "description": "Similar applications, especially for capsule shells (vegetarian alternative)",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Food",
+        "description": "Thickener, stabilizer, emulsifier in a variety of foods (sauces, dressings, bakery), film coatings for food preservation",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Industrial",
+        "description": "Adhesives, coatings, construction materials, personal care products (shampoos, lotions)",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Industrial.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "Halal",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/halal.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

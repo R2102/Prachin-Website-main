@@ -1,0 +1,104 @@
+/*--------------------
+    Tabs
+--------------------*/
+.nav-tabs {
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    gap: 15px;
+    padding: 25px 30px;
+    background-color: #ffffff;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid #e7ebef;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        right: 0;
+        height: 3px;
+        width: 80%;
+        transform: translateX(-50%);
+        background: linear-gradient(to right, transparent, #e7ebef 30%, #e7ebef 70%, transparent);
+    }
+    &:before {
+        top: 0;
+    }
+    &:after {
+        bottom: 0;
+    }
+
+    .nav-link {
+        display: block;
+        position: relative;
+        padding: 18px 35px;
+        margin: 0;
+        text-transform: capitalize;
+        font-weight: 700;
+        line-height: 1;
+        font-size: 16px;
+        color: $color-primary;
+        border: 2px solid #e7ebef;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $color-secondary;
+            @include prefix(transform, scale3d(0, 1, 1), webkit moz ms o);
+            @include prefix(transform-origin, 100% 50%, webkit moz ms o);
+            @include prefix(transition, transform 2s cubic-bezier(0.2, 1, 0.3, 1), webkit moz ms o);
+        }
+
+        &.active,
+        &:hover {
+            color: #ffffff;
+            border-color: $color-secondary;
+            background-color: $color-secondary;
+            box-shadow: 0 4px 8px rgba($color-secondary, 0.2);
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+.nav-tabs-white .nav-link {
+    color: $color-white;
+
+    &.active,
+    &:hover {
+        color: $color-white;
+    }
+
+    &:after {
+        background-color: #fff;
+    }
+}
+
+/* Mobile Phones and tablets */
+@include xs-sm-screens {
+    .nav-tabs .nav-link {
+        font-size: 13px;
+        margin: 0 15px 0 0;
+
+        &:after {
+            bottom: 4px;
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "id": "starch",
+    "title": "Starch",
+    "brandName": "N/A",
+    "category": "Excipients",
+    "subcategory": "Binders & Disintegrants",
+    "overview": "Starch is a white, odorless, tasteless, carbohydrate powder extracted from plant sources. Commonly used starches include: Maize Starch (Corn Starch): Derived from the endosperm of corn kernels, and Potato Starch: Derived from potato tubers. Both starches share fundamental properties but exhibit subtle differences in functionality.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/magnesiumstearate/image-1.jpg",
+        "alt": "PARMEG product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/magnesiumstearate/image-2.jpg",
+        "alt": "PARMEG product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "starchmaize",
+        "name": "STARCH MAIZE",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF standards"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<15%"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "4.0 to 7.0"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          },
+          {
+            "parameter": "Microbial Limits",
+            "value": "As per standard specifications"
+          }
+        ]
+      },
+      {
+        "id": "starchpotato",
+        "name": "STARCH POTATO",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Meets IP/BP/USP/NF standards"
+          },
+          {
+            "parameter": "Moisture Content",
+            "value": "<15%"
+          },
+          {
+            "parameter": "pH Value",
+            "value": "4.0 to 7.0"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "As per standard specifications"
+          },
+          {
+            "parameter": "Microbial Limits",
+            "value": "As per standard specifications"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Binder: Promotes adhesion and cohesion within tablets and capsules",
+      "Disintegrant: When exposed to moisture, swells to aid tablet breakdown for drug release",
+      "Thickening Agent: Increases viscosity and imparts texture in liquid and semi-solid formulations",
+      "Gelling Agent: Can form gels under specific conditions"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Widely used as a binder, disintegrant, filler, and diluent in tablets, capsules, and topical preparations",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical",
+        "description": "Similar applications for dietary supplement formulation",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Food",
+        "description": "Thickener, stabilizer, gelling agent, and texturizer in various processed foods",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Industrial",
+        "description": "Applications in papermaking, adhesives, textiles, and more",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Industrial.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      },
+      {
+        "name": "FSSAI",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-10.png",
+        "largeIcon": true
+      }
+    ]
+}

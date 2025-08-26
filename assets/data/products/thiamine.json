@@ -1,0 +1,108 @@
+{
+    "id": "thiamine",
+    "title": "Vitamin B1 (Thiamine)",
+    "brandName": "N/A",
+    "category": "APIs",
+    "subcategory": "Vitamins & Nutrients",
+    "overview": "Vitamin B1, also known as Thiamine, is a white to almost white crystalline powder, essential for carbohydrate metabolism and normal nerve function. It plays a pivotal role in energy production by helping convert carbohydrates into usable energy and supports the proper functioning of the heart, muscles, and nervous system. Thiamine is widely used in pharmaceutical formulations, nutraceutical supplements, and fortified food products to prevent and treat thiamine deficiency.",
+    "gallery": [
+      {
+        "url": "../assets/images/products/photography/sodiumstarchglycolate/image-1.jpg",
+        "alt": "PARGEL product image 1"
+      },
+      {
+        "url": "../assets/images/products/photography/sodiumstarchglycolate/image-2.jpg",
+        "alt": "PARGEL product image 2"
+      }
+    ],
+    "variants": [
+      {
+        "id": "thiamine100",
+        "name": "Vitamin B1 (Thiamine)",
+        "specifications": [
+          {
+            "parameter": "Standards Compliance",
+            "value": "Complies with IP/BP/USP/Ph.Eur. quality standards"
+          },
+          {
+            "parameter": "Appearance",
+            "value": "White to almost white crystalline powder"
+          },
+          {
+            "parameter": "Assay",
+            "value": "≥98.0% (on dried basis)"
+          },
+          {
+            "parameter": "Identification",
+            "value": "Conforms to standard tests"
+          },
+          {
+            "parameter": "Loss on Drying",
+            "value": "≤5.0%"
+          },
+          {
+            "parameter": "Residue on Ignition",
+            "value": "≤0.1%"
+          },
+          {
+            "parameter": "Heavy Metals",
+            "value": "≤10 ppm"
+          }
+        ]
+      }
+    ],
+    "features": [
+      "Essential water-soluble vitamin for energy metabolism",
+      "Highly stable and suitable for various dosage forms",
+      "Compatible with both pharmaceutical and food applications",
+      "Available in different salt forms (mononitrate, hydrochloride)",
+      "Excellent bioavailability and proven safety profile"
+    ],
+    "applications": [
+      {
+        "title": "Pharmaceutical",
+        "description": "Used in tablets, capsules, and injections to treat or prevent thiamine deficiency and associated disorders",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Pharmaceutical.jpg",
+        "largeIcon": true
+      },
+      {
+        "title": "Nutraceutical/Food",
+        "description": "Added to dietary supplements, multivitamins, and fortified food products to support overall health and wellbeing",
+        "iconType": "image",
+        "iconUrl": "../assets/images/products/Nutraceutical.jpg",
+        "iconUrl2": "../assets/images/products/Food.jpg",
+        "largeIcon": true
+      }
+    ],
+    "brochures": {
+      "product": "#",
+      "company": "#"
+    },
+    "certifications": [
+      {
+        "name": "ISO 9001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-01.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 14001",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/ISO_14001.png",
+        "largeIcon": true
+      },
+      {
+        "name": "ISO 22000",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-03.png",
+        "largeIcon": true
+      },
+      {
+        "name": "GMP",
+        "iconType": "image",
+        "iconUrl": "../assets/images/certificates/Untitled-2-07.png",
+        "largeIcon": true
+      }
+    ]
+}
