@@ -1,26 +1,6 @@
-// Populate blog.html cards from assets/data/blogs/blogs-index.json
-// Preserves the existing grid layout and styles by cloning the first card as a template.
+// Populate the "Recent Articles" section on index.html from blogs-index.json
+// Preserves design by cloning the first card as a template and filling top 3 posts.
 (function () {
-  function hidePagination() {
-    try {
-      const nav = document.querySelector('nav.pagination-area');
-      if (!nav) return;
-      const row = nav.closest('.row');
-      if (row) {
-        row.remove();
-      } else {
-        nav.style.display = 'none';
-      }
-    } catch { /* noop */ }
-  }
-  function getSearchTerm() {
-    try {
-      const params = new URLSearchParams(window.location.search);
-      const q = params.get('search');
-      return q ? q.trim().toLowerCase() : '';
-    } catch { return ''; }
-  }
-
   function $(sel, parent) { return (parent || document).querySelector(sel); }
   function $all(sel, parent) { return Array.from((parent || document).querySelectorAll(sel)); }
 
@@ -54,25 +34,24 @@
     const authorEl = card.querySelector('.post-meta-author');
     if (authorEl) authorEl.textContent = post.author || authorEl.textContent;
 
-    // Description: populate from index excerpt while preserving design
+    // Description
     const descEl = card.querySelector('.post-desc');
     if (descEl) {
       const text = (post.excerpt || descEl.textContent || '').toString();
-      // Light truncation to roughly match existing layout if very long
-      const trimmed = text.length > 180 ? text.slice(0, 177).trimEnd() + '…' : text;
+      const trimmed = text.length > 160 ? text.slice(0, 157).trimEnd() + '…' : text;
       descEl.textContent = trimmed;
-      // Optional tooltip with full text
       descEl.title = text;
     }
     return card;
   }
 
   function init() {
-    // Find the blog grid row that contains cards
-    const grid = document.querySelector('section.blog-layout1 .container .row');
+    // Find the Recent Articles grid (first blog-layout1 section on the page)
+    const section = document.querySelector('section.blog-layout1');
+    if (!section) return;
+    const grid = section.querySelector('.container > .row + .row'); // the row containing cards after heading row
     if (!grid) return;
 
-    // Use the first post card as the template
     const templateCol = grid.querySelector('.col-sm-12.col-md-6.col-lg-4');
     if (!templateCol) return;
 
@@ -80,51 +59,23 @@
       .then(r => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
       .then(list => {
         if (!Array.isArray(list) || list.length === 0) return;
+        const top = list.slice(0, 3);
 
-        // Optional filtering by search term
-        const q = getSearchTerm();
-        const filtered = q
-          ? list.filter(p => {
-              const hay = [p.title, p.category, p.author]
-                .filter(Boolean)
-                .join(' ').toLowerCase();
-              return hay.includes(q);
-            })
-          : list;
-
-        if (filtered.length === 0) {
-          // Clear all cards and show a minimal message, preserving container
-          const cards = $all('.col-sm-12.col-md-6.col-lg-4', grid);
-          cards.forEach(c => c.remove());
-          const col = document.createElement('div');
-          col.className = 'col-12';
-          const p = document.createElement('p');
-          p.textContent = 'No posts found.';
-          col.appendChild(p);
-          grid.appendChild(col);
-          hidePagination();
-          return;
-        }
-
-        // Keep the first card as template, clear the rest
+        // Remove extra existing cards; keep only the first as template
         const cards = $all('.col-sm-12.col-md-6.col-lg-4', grid);
         cards.slice(1).forEach(c => c.remove());
 
-        // Fill first card with first post
-  const first = filtered[0];
-        const firstCard = makeCardFromTemplate(templateCol, first);
+        // Fill first card
+        const firstCard = makeCardFromTemplate(templateCol, top[0]);
         grid.replaceChild(firstCard, templateCol);
 
-        // Append others
-  filtered.slice(1).forEach(post => {
+        // Append remaining (up to 2 more)
+        top.slice(1).forEach(post => {
           const card = makeCardFromTemplate(firstCard, post);
           grid.appendChild(card);
         });
-
-  // No JS pagination yet; remove static pagination block
-  hidePagination();
       })
-      .catch(() => { /* silent fail to avoid layout changes */ });
+      .catch(() => {});
   }
 
   if (document.readyState === 'loading') {

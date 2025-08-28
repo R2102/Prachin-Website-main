@@ -6,6 +6,21 @@
 		return document.querySelector(selector);
 	}
 
+	function updateBreadcrumbTitle(title) {
+		try {
+			const activeCrumb = document.querySelector('.breadcrumb .breadcrumb-item.active');
+			if (activeCrumb && title) {
+				activeCrumb.textContent = title;
+			}
+			// Also update the document title for better UX/SEO without changing design
+			if (title) {
+				document.title = `${title} | Prachin`;
+			}
+		} catch (e) {
+			// no-op
+		}
+	}
+
 	function insertImagesRow(container, images) {
 		if (!container || !Array.isArray(images) || images.length === 0) return;
 		const row = document.createElement('div');
@@ -35,6 +50,8 @@
 			// Title
 			const titleEl = safeSelect('.post-title');
 			if (titleEl && data.title) titleEl.textContent = data.title;
+			// Breadcrumb active item
+			if (data.title) updateBreadcrumbTitle(data.title);
 
 			// Category
 			const catEl = safeSelect('.post-meta-cat a');
@@ -79,115 +96,79 @@
 		}
 	}
 
-		function parseDateObj(d) {
-			if (!d || !d.day || !d.month) return 0;
-			// month contains e.g. 'Aug 2025' or 'Jan 2022'
-			const str = `${d.day} ${d.month}`;
-			const t = Date.parse(str);
-			return isNaN(t) ? 0 : t;
-		}
+	function init() {
+		// Hide comment section (list, form, and top meta count)
+		try {
+			const commentsBlock = document.querySelector('.blog-comments');
+			if (commentsBlock) commentsBlock.style.display = 'none';
+			const commentsForm = document.querySelector('.blog-comments-form');
+			if (commentsForm) commentsForm.style.display = 'none';
+			const commentsMeta = document.querySelector('.post-meta-comments');
+			if (commentsMeta) commentsMeta.style.display = 'none';
+			// Hide tags (in-post block and sidebar widget)
+			const tagsBlocks = document.querySelectorAll('.widget-tags');
+			tagsBlocks.forEach(el => { el.style.display = 'none'; });
+		} catch (_) {}
 
-		function updatePrevNext(currentSlug) {
+		const prevLink = document.querySelector('.widget-nav .nav-next'); // left/Previous
+		const nextLink = document.querySelector('.widget-nav .nav-prev'); // right/Next
+		// Hide both by default to avoid incorrect display before data loads
+		if (prevLink) prevLink.style.display = 'none';
+		if (nextLink) nextLink.style.display = 'none';
+
+		const params = new URLSearchParams(window.location.search);
+		const id = params.get('id') || params.get('slug');
+		// If no id, still wire Next to the first item from index (treat as entry point)
+		if (!id) {
 			fetch('assets/data/blogs/blogs-index.json')
 				.then(r => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
 				.then(list => {
 					if (!Array.isArray(list) || list.length === 0) return;
-					// Sort by date desc (newest first) to make navigation intuitive
-					const sorted = list.slice().sort((a, b) => parseDateObj(b.date) - parseDateObj(a.date));
-					const idx = sorted.findIndex(p => p.slug === currentSlug);
-					if (idx === -1) return;
-
-					const prevPost = sorted[idx + 1]; // older
-					const nextPost = sorted[idx - 1]; // newer
-
-					// In markup, .nav-next displays "Previous Post" (arrow left)
-					const prevAnchor = document.querySelector('.widget-nav .nav-next');
-					const nextAnchor = document.querySelector('.widget-nav .nav-prev');
-
-					if (prevAnchor) prevAnchor.href = prevPost ? `blog-single-post.html?id=${prevPost.slug}` : 'blog.html';
-					if (nextAnchor) nextAnchor.href = nextPost ? `blog-single-post.html?id=${nextPost.slug}` : 'blog.html';
+					if (nextLink) {
+						nextLink.href = `blog-single-post.html?id=${list[0].slug}`;
+						nextLink.style.display = '';
+					}
+					// No previous on entry page
 				})
-				.catch(() => { /* silent */ });
+				.catch(() => {});
+			return;
 		}
-
-			function formatSidebarDate(d) {
-				if (!d) return '';
-				const day = d.day || '';
-				const parts = String(d.month || '').trim().split(/\s+/); // e.g., ["Aug","2025"]
-				if (parts.length === 2) {
-					const [mon, year] = parts;
-					return `${mon} ${day}, ${year}`.trim();
-				}
-				return `${day} ${d.month}`.trim();
-			}
-
-			function updateRecentPosts(currentSlug) {
-				const container = document.querySelector('.widget.widget-posts .widget-content');
-				if (!container) return;
-				fetch('assets/data/blogs/blogs-index.json')
-					.then(r => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
-					.then(list => {
-						if (!Array.isArray(list)) return;
-						const sorted = list.slice().sort((a, b) => parseDateObj(b.date) - parseDateObj(a.date));
-						const recent = sorted.filter(p => p.slug !== currentSlug).slice(0, 3);
-
-						// Clear existing items
-						container.innerHTML = '';
-
-								const maxTitleLen = 60; // adjust as needed to fit design
-								const ellipsize = (s, n) => {
-									if (!s) return '';
-									const t = s.trim();
-									return t.length > n ? t.slice(0, n - 1) + '…' : t;
-								};
-
-								recent.forEach(post => {
-							const item = document.createElement('div');
-							item.className = 'widget-post-item d-flex align-items-center';
-
-							const imgWrap = document.createElement('div');
-							imgWrap.className = 'widget-post-img';
-							const aImg = document.createElement('a');
-							aImg.href = `blog-single-post.html?id=${post.slug}`;
-							const img = document.createElement('img');
-							img.src = post.heroImage || 'assets/images/blog/grid/1.jpg';
-							img.alt = 'thumb';
-							aImg.appendChild(img);
-							imgWrap.appendChild(aImg);
-
-							const content = document.createElement('div');
-							content.className = 'widget-post-content';
-							const dateSpan = document.createElement('span');
-							dateSpan.className = 'widget-post-date';
-							dateSpan.textContent = formatSidebarDate(post.date);
-							const h4 = document.createElement('h4');
-							h4.className = 'widget-post-title';
-							  const aTitle = document.createElement('a');
-							aTitle.href = `blog-single-post.html?id=${post.slug}`;
-							  aTitle.textContent = ellipsize(post.title, maxTitleLen);
-							  aTitle.title = post.title; // tooltip with full title
-							h4.appendChild(aTitle);
-							content.appendChild(dateSpan);
-							content.appendChild(h4);
-
-							item.appendChild(imgWrap);
-							item.appendChild(content);
-							container.appendChild(item);
-						});
-					})
-					.catch(() => { /* silent */ });
-			}
-
-	function init() {
-		const params = new URLSearchParams(window.location.search);
-		const id = params.get('id') || params.get('slug');
-		if (!id) return; // No dynamic loading if no id
 		const url = `assets/data/blogs/${id}.json`;
 		fetch(url)
 			.then(r => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
-				.then(data => { populate(data); updatePrevNext(id); updateRecentPosts(id); })
+			.then(populate)
 			.catch(() => {
 				// Graceful fallback: do nothing if file missing
+			});
+
+		// Wire Previous/Next links using the blogs index, preserving labels and design
+		fetch('assets/data/blogs/blogs-index.json')
+			.then(r => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
+			.then(list => {
+				if (!Array.isArray(list)) return;
+				const idx = list.findIndex(p => p.slug === id);
+				if (idx === -1) return;
+				const prev = idx > 0 ? list[idx - 1] : null; // previous item in the list
+				const next = idx < list.length - 1 ? list[idx + 1] : null; // next item in the list
+
+				const prevLink = document.querySelector('.widget-nav .nav-next'); // left/Previous
+				const nextLink = document.querySelector('.widget-nav .nav-prev'); // right/Next
+				// Hide both by default to avoid showing invalid links
+				if (prevLink) prevLink.style.display = 'none';
+				if (nextLink) nextLink.style.display = 'none';
+
+				// Show and set only when available
+				if (prevLink && prev) {
+					prevLink.href = `blog-single-post.html?id=${prev.slug}`;
+					prevLink.style.display = '';
+				}
+				if (nextLink && next) {
+					nextLink.href = `blog-single-post.html?id=${next.slug}`;
+					nextLink.style.display = '';
+				}
+			})
+			.catch(() => {
+				// Ignore if index not found
 			});
 	}
 

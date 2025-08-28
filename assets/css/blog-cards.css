@@ -1,0 +1,29 @@
+/* Equal-height blog cards for blog.html without changing design */
+/* Stretch items in the grid row and make columns flex so cards can fill height */
+.blog-layout1 .container > .row { align-items: stretch; }
+/* Media Library left column grid rows */
+.blog-layout1 .col-lg-8 > .row { align-items: stretch; }
+/* Only make blog card columns flex containers (avoid affecting full-width rows like the bottom button) */
+.blog-layout1 .container > .row > .col-sm-12.col-md-6.col-lg-4,
+/* Press Releases columns on media library */
+.blog-layout1 .col-lg-8 > .row > .col-sm-12.col-md-6.media-item[data-category="press"] {
+  display: flex;
+}
+/* Make the card fill the column height */
+.blog-layout1 .col-sm-12.col-md-6.col-lg-4 > .post-item,
+/* Press Releases card wrapper */
+.blog-layout1 .col-lg-8 > .row > .col-sm-12.col-md-6.media-item[data-category="press"] > .post-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1 1 auto; /* fill column height */
+}
+/* Let the body grow; keep Read More pinned at bottom */
+.blog-layout1 .post-item .post-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.blog-layout1 .post-item .post-body .btn.btn-link {
+  margin-top: auto;
+}

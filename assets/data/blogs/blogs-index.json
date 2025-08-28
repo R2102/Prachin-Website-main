@@ -5,7 +5,8 @@
     "category": "Pharmaceuticals",
     "author": "Prachin Editorial Team",
     "date": { "day": "30", "month": "Jan 2022" },
-    "heroImage": "assets/images/blog/single/1.jpg"
+  "heroImage": "assets/images/blog/single/1.jpg",
+  "excerpt": "APIs deliver the therapeutic effect while excipients ensure stability, safety, and performance. See how Prachin’s quality and compliance enable reliable medicines."
   },
   {
     "slug": "ccs-vs-ssg-choosing-right-super-disintegrant",
@@ -13,7 +14,8 @@
     "category": "Pharmaceuticals",
     "author": "Prachin Editorial Team",
     "date": { "day": "26", "month": "Aug 2025" },
-    "heroImage": "assets/images/blog/single/1.jpg"
+  "heroImage": "assets/images/blog/single/1.jpg",
+  "excerpt": "Compare CCS and SSG to select the right super‑disintegrant for robust tablet performance, faster disintegration, and formulation reliability."
   },
   {
     "slug": "magnesium-stearate-deep-dive",
@@ -21,7 +23,8 @@
     "category": "Pharmaceuticals",
     "author": "Prachin Editorial Team",
     "date": { "day": "26", "month": "Aug 2025" },
-    "heroImage": "assets/images/blog/single/1.jpg"
+  "heroImage": "assets/images/blog/single/1.jpg",
+  "excerpt": "Explore how magnesium stearate affects lubrication, tablet stability, and dissolution—and how to optimize its use to avoid common pitfalls."
   },
   {
     "slug": "particle-size-excipients-performance",
@@ -29,6 +32,7 @@
     "category": "Pharmaceuticals",
     "author": "Prachin Editorial Team",
     "date": { "day": "26", "month": "Aug 2025" },
-    "heroImage": "assets/images/blog/single/1.jpg"
+  "heroImage": "assets/images/blog/single/1.jpg",
+  "excerpt": "Why particle size matters for flow, compressibility, and dissolution—plus practical guidance for choosing excipients with the right PSD."
   }
 ]
