@@ -1,22 +1,23 @@
 /* Equal-height blog cards for blog.html without changing design */
-/* Stretch items in the grid row and make columns flex so cards can fill height */
-.blog-layout1 .container > .row { align-items: stretch; }
-/* Media Library left column grid rows */
-.blog-layout1 .col-lg-8 > .row { align-items: stretch; }
-/* Only make blog card columns flex containers (avoid affecting full-width rows like the bottom button) */
-.blog-layout1 .container > .row > .col-sm-12.col-md-6.col-lg-4,
-/* Press Releases columns on media library */
-.blog-layout1 .col-lg-8 > .row > .col-sm-12.col-md-6.media-item[data-category="press"] {
-  display: flex;
+/* Stretch items in the grid rows so columns match height */
+.blog-layout1 .container > .row,
+.blog-layout1 .col-lg-8 > .row {
+  align-items: stretch;
 }
-/* Make the card fill the column height */
-.blog-layout1 .col-sm-12.col-md-6.col-lg-4 > .post-item,
-/* Press Releases card wrapper */
+/* Make the card fill the column height across any 2/3-col grid (col-lg-4/6/etc.) */
+.blog-layout1 .col-lg-8 > .row > [class*="col-"] > .post-item,
+.blog-layout1 .container > .row > [class*="col-"] > .post-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; /* fill parent column height without requiring parent flex */
+}
+/* Press Releases card wrapper (when present on media pages using same layout) */
 .blog-layout1 .col-lg-8 > .row > .col-sm-12.col-md-6.media-item[data-category="press"] > .post-item {
   display: flex;
   flex-direction: column;
   width: 100%;
-  flex: 1 1 auto; /* fill column height */
+  height: 100%;
 }
 /* Let the body grow; keep Read More pinned at bottom */
 .blog-layout1 .post-item .post-body {
@@ -26,4 +27,40 @@
 }
 .blog-layout1 .post-item .post-body .btn.btn-link {
   margin-top: auto;
+}
+
+/* Sidebar search: make input and button equal height */
+.blog-layout1 .widget.widget-search .form-search .input-group,
+.blog-layout1 .widget.widget-search .widget-form-search .input-group {
+  align-items: stretch;
+}
+.blog-layout1 .widget.widget-search .form-search .form-control,
+.blog-layout1 .widget.widget-search .widget-form-search .form-control {
+  height: 48px;
+}
+.blog-layout1 .widget.widget-search .form-search .input-group-append .btn,
+.blog-layout1 .widget.widget-search .widget-form-search .btn {
+  height: 48px;
+  line-height: 48px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Sidebar search button width and border radius (scoped) */
+.blog-layout1 .widget.widget-search .input-group>.input-group-append>.btn,
+.blog-layout1 .widget.widget-search .input-group>.input-group-append>.input-group-text,
+.blog-layout1 .widget.widget-search .input-group>.input-group-prepend:first-child>.btn:not(:first-child),
+.blog-layout1 .widget.widget-search .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child),
+.blog-layout1 .widget.widget-search .input-group>.input-group-prepend:not(:first-child)>.btn,
+.blog-layout1 .widget.widget-search .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  min-width: 150px;
+}
+
+/* Make the Search widget title white */
+.blog-layout1 .widget.widget-search .widget-title {
+  color: #ffffff;
 }

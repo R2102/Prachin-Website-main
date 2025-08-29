@@ -38,47 +38,39 @@
     } catch { return 0; }
   }
 
-  function buildPressCard(post, template) {
+  function buildPressCard(post) {
+    // Build a blog-style card for consistency with blog.html and index.html
     const col = document.createElement('div');
-    col.className = 'col-sm-12 col-md-6 media-item';
-    col.setAttribute('data-category', 'press');
+  col.className = 'col-sm-12 col-md-6 col-lg-6'; // 2 per row on md+ screens
+  col.setAttribute('data-press-card', '1');
 
     const wrapper = document.createElement('div');
     wrapper.className = 'post-item';
 
     const imgWrap = document.createElement('div');
-    imgWrap.className = 'post-img media-img';
-    const dateSpan = document.createElement('span');
-    dateSpan.className = 'media-date';
-    dateSpan.textContent = composePressDate(post.date);
-    const catSpan = document.createElement('span');
-    catSpan.className = 'media-category';
-    catSpan.textContent = 'Press';
-    const aImg = document.createElement('a');
-    aImg.href = `blog-single-post.html?id=${post.slug}`;
-    const img = document.createElement('img');
-    img.src = post.heroImage || 'assets/images/gallery/8.jpg';
-    img.alt = 'media image';
-    img.loading = 'lazy';
+    imgWrap.className = 'post-img';
+    const dateWrap = document.createElement('span');
+    dateWrap.className = 'post-meta-date';
+    const day = document.createElement('span'); day.className = 'day'; day.textContent = (post.date && post.date.day) || '';
+    const month = document.createElement('span'); month.className = 'month'; month.textContent = (post.date && post.date.month) || '';
+    dateWrap.append(day, month);
+    const aImg = document.createElement('a'); aImg.href = `blog-single-post.html?id=${post.slug}`;
+    const img = document.createElement('img'); img.src = post.heroImage || 'assets/images/blog/grid/1.jpg'; img.alt = 'post image'; img.loading = 'lazy';
     aImg.appendChild(img);
-    imgWrap.append(dateSpan, catSpan, aImg);
+    imgWrap.append(dateWrap, aImg);
 
-    const body = document.createElement('div');
-    body.className = 'post-body media-body';
-    const h4 = document.createElement('h4');
-    h4.className = 'media-title';
-    h4.textContent = post.title;
-    const descDiv = document.createElement('div');
-    descDiv.className = 'media-desc';
-    const p = document.createElement('p');
-    const text = (post.excerpt || '').toString();
-    p.textContent = text.length > 200 ? text.slice(0, 197).trimEnd() + '…' : text;
-    descDiv.appendChild(p);
-    const read = document.createElement('a');
-    read.className = 'btn btn-link';
-    read.href = `blog-single-post.html?id=${post.slug}`;
-    read.innerHTML = '<i class="plus-icon">+</i><span>Read More</span>';
-    body.append(h4, descDiv, read);
+    const body = document.createElement('div'); body.className = 'post-body';
+    const meta = document.createElement('div'); meta.className = 'post-meta d-flex align-items-center';
+    const catWrap = document.createElement('div'); catWrap.className = 'post-meta-cat';
+    const tags = Array.isArray(post.tags) ? Array.from(new Set(post.tags.filter(Boolean))) : [];
+    const chips = tags.length ? tags : (post.category ? [post.category] : []);
+    chips.forEach((t, idx) => { const a = document.createElement('a'); a.href = 'blog.html?tag=' + encodeURIComponent(t); a.textContent = t; if (idx>0) a.style.marginLeft = '6px'; catWrap.appendChild(a); });
+    const author = document.createElement('a'); author.className = 'post-meta-author'; author.href = '#'; author.textContent = post.author || '';
+    meta.append(catWrap, author);
+    const h4 = document.createElement('h4'); h4.className = 'post-title'; const h4a = document.createElement('a'); h4a.href = `blog-single-post.html?id=${post.slug}`; h4a.textContent = post.title; h4.appendChild(h4a);
+    const p = document.createElement('p'); p.className = 'post-desc'; const text = (post.excerpt || '').toString(); p.textContent = text.length > 180 ? text.slice(0,177).trimEnd() + '…' : text; p.title = text;
+    const read = document.createElement('a'); read.className = 'btn btn-link'; read.href = `blog-single-post.html?id=${post.slug}`; read.innerHTML = '<i class="plus-icon">+</i><span>Read More</span>';
+    body.append(meta, h4, p, read);
 
     wrapper.append(imgWrap, body);
     col.appendChild(wrapper);
@@ -90,7 +82,8 @@
     const grid = document.querySelector('section.blog-layout1 .col-lg-8 > .row');
     if (!grid) return;
 
-    const navId = 'press-pagination-nav';
+  const navId = 'press-pagination-nav';
+  const viewAllId = 'press-viewall-cta';
 
     function ensureNav() {
       let nav = document.getElementById(navId);
@@ -115,49 +108,62 @@
     }
 
     function renderPagination(total, page, perPage, onPage) {
-      const totalPages = Math.ceil(total / perPage);
+      // For Press, we now hide numeric pagination and show a single View All button instead
       const nav = ensureNav();
-      const ul = nav.querySelector('ul.pagination');
-      ul.innerHTML = '';
-      if (totalPages <= 1) {
-        nav.style.display = 'none';
-        return;
+      if (nav) nav.style.display = 'none';
+    }
+
+    function ensureViewAll() {
+  let cta = document.getElementById(viewAllId);
+      if (!cta) {
+        cta = document.createElement('div');
+        cta.id = viewAllId;
+        cta.className = 'row mt-20';
+        const col = document.createElement('div');
+        col.className = 'col-12 text-center';
+  const a = document.createElement('a');
+  a.href = 'blog.html';
+        a.className = 'btn btn-primary';
+        a.textContent = 'View All';
+        col.appendChild(a);
+        cta.appendChild(col);
+        const leftCol = document.querySelector('section.blog-layout1 .col-lg-8');
+        if (leftCol) leftCol.appendChild(cta); else grid.parentElement.appendChild(cta);
       }
-      // Build page numbers
-      for (let p = 1; p <= totalPages; p++) {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = '#';
-        a.textContent = String(p);
-        a.className = 'page-link';
-        if (p === page) a.classList.add('current');
-        a.addEventListener('click', function (e) { e.preventDefault(); onPage(p); });
-        li.className = 'page-item';
-        li.appendChild(a);
-        ul.appendChild(li);
-      }
-      nav.style.display = '';
+      return cta;
     }
 
     fetch('assets/data/blogs/blogs-index.json')
       .then(r => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
       .then(list => {
         if (!Array.isArray(list) || list.length === 0) return;
+        const visible = list.filter(p => !p.hidden);
+
+        // Filter for Press releases first (by tag, category, or explicit type), else fallback to all
+        function isPressItem(p) {
+          const tagHit = Array.isArray(p.tags) && p.tags.some(t => (t || '').toLowerCase() === 'press');
+          const catHit = (p.category || '').toLowerCase() === 'press';
+          const typeHit = (p.type || '').toLowerCase() === 'press';
+          return tagHit || catHit || typeHit;
+        }
+  const pressOnly = visible.filter(isPressItem);
 
         // Sort by newest first using parsed timestamps
-        const allPress = list.slice().sort((a, b) => parseDateToTs(b) - parseDateToTs(a));
-        const perPage = 4;
+  const allPress = (pressOnly.length ? pressOnly : visible).slice().sort((a, b) => parseDateToTs(b) - parseDateToTs(a));
+  const perPage = 4; // show only latest 4
         let currentPage = 1;
 
         function clearPress() {
-          $all('.media-item[data-category="press"]', grid).forEach(el => el.remove());
+          $all('[data-press-card="1"]', grid).forEach(el => el.remove());
           const nav = document.getElementById(navId);
           if (nav) nav.style.display = 'none';
+          const cta = document.getElementById(viewAllId);
+          if (cta) cta.style.display = 'none';
         }
 
         function renderPage(page) {
           // Remove existing press items to avoid duplicates
-          $all('.media-item[data-category="press"]', grid).forEach(el => el.remove());
+          $all('[data-press-card="1"]', grid).forEach(el => el.remove());
 
           const start = (page - 1) * perPage;
           const slice = allPress.slice(start, start + perPage);
@@ -165,11 +171,13 @@
           currentPage = page;
 
           renderPagination(allPress.length, page, perPage, renderPage);
-          // Ensure visible only when Press is active
+          // Ensure View All is visible only when Press is active
           const activeBtn = document.querySelector('.media-filter-btn.active');
-          const nav = document.getElementById(navId);
+          const cta = ensureViewAll();
           if (!activeBtn || activeBtn.getAttribute('data-filter') !== 'press') {
-            if (nav) nav.style.display = 'none';
+            if (cta) cta.style.display = 'none';
+          } else {
+            if (cta) cta.style.display = '';
           }
         }
 
@@ -177,10 +185,8 @@
         $all('.media-filter-btn').forEach(btn => {
           btn.addEventListener('click', () => {
             const filter = btn.getAttribute('data-filter');
-            const nav = document.getElementById(navId);
             if (filter === 'press') {
               renderPage(currentPage || 1);
-              if (nav) nav.style.display = '';
             } else {
               clearPress();
             }

@@ -4,6 +4,24 @@
   function $(sel, parent) { return (parent || document).querySelector(sel); }
   function $all(sel, parent) { return Array.from((parent || document).querySelectorAll(sel)); }
 
+  function parseDateToTs(post) {
+    try {
+      if (!post || !post.date) return 0;
+      const m = (post.date.month || '').trim();
+      const d = (post.date.day || '').toString().trim();
+      const parts = m.split(/\s+/);
+      if (parts.length >= 2) {
+        const mon = parts[0];
+        const yr = parts[1];
+        const dtStr = `${mon} ${d || '01'}, ${yr}`;
+        const ts = Date.parse(dtStr);
+        return isNaN(ts) ? 0 : ts;
+      }
+      const ts2 = Date.parse(`${m} ${d || '01'}`);
+      return isNaN(ts2) ? 0 : ts2;
+    } catch { return 0; }
+  }
+
   function makeCardFromTemplate(template, post) {
     const card = template.cloneNode(true);
     // Date
@@ -28,9 +46,21 @@
     const titleEl = card.querySelector('.post-title a');
     if (titleEl) titleEl.textContent = post.title;
 
-    // Category and author
-    const catEl = card.querySelector('.post-meta-cat a');
-    if (catEl) catEl.textContent = post.category || catEl.textContent;
+    // Tags (chips) and author — mirror blog list
+    const catWrap = card.querySelector('.post-meta-cat');
+    if (catWrap) {
+      const tags = Array.isArray(post.tags) ? Array.from(new Set(post.tags.filter(Boolean))) : [];
+      const chips = tags.length ? tags : (post.category ? [post.category] : []);
+      catWrap.innerHTML = '';
+      chips.forEach((t, idx) => {
+        const a = document.createElement('a');
+        a.href = 'blog.html?tag=' + encodeURIComponent(t);
+        a.textContent = t;
+        a.setAttribute('data-tag', t);
+        if (idx > 0) a.style.marginLeft = '6px';
+        catWrap.appendChild(a);
+      });
+    }
     const authorEl = card.querySelector('.post-meta-author');
     if (authorEl) authorEl.textContent = post.author || authorEl.textContent;
 
@@ -59,18 +89,21 @@
       .then(r => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
       .then(list => {
         if (!Array.isArray(list) || list.length === 0) return;
-        const top = list.slice(0, 3);
+  const visible = list.filter(p => !p.hidden);
+  const sorted = visible.slice().sort((a, b) => parseDateToTs(b) - parseDateToTs(a));
+  const top = sorted.slice(0, 3);
+  if (top.length === 0) return;
 
         // Remove extra existing cards; keep only the first as template
         const cards = $all('.col-sm-12.col-md-6.col-lg-4', grid);
         cards.slice(1).forEach(c => c.remove());
 
         // Fill first card
-        const firstCard = makeCardFromTemplate(templateCol, top[0]);
+  const firstCard = makeCardFromTemplate(templateCol, top[0] || {});
         grid.replaceChild(firstCard, templateCol);
 
         // Append remaining (up to 2 more)
-        top.slice(1).forEach(post => {
+  top.slice(1).forEach(post => {
           const card = makeCardFromTemplate(firstCard, post);
           grid.appendChild(card);
         });

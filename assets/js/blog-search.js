@@ -2,16 +2,31 @@
 (function(){
   function onSubmit(e){
     e.preventDefault();
-    var input = e.target.querySelector('input[type="text"], input[type="search"]');
+    var form = e.target;
+    var input = form.querySelector('#blog-search-input, input[type="search"], input[type="text"]');
     var q = input && input.value ? input.value.trim() : '';
-    var dest = 'blog.html';
-    if (q) dest += '?search=' + encodeURIComponent(q);
+    var params = new URLSearchParams(window.location.search);
+    // Update search term
+    if (q) {
+      params.set('search', q);
+    } else {
+      params.delete('search');
+    }
+    var dest = 'blog.html' + (params.toString() ? ('?' + params.toString()) : '');
     window.location.href = dest;
   }
 
   function init(){
-    var forms = document.querySelectorAll('.widget-form-search');
-    forms.forEach(function(f){ f.addEventListener('submit', onSubmit); });
+    var form = document.getElementById('blog-search-form') || document.querySelector('.widget.widget-search form');
+    if (form) {
+      form.addEventListener('submit', onSubmit);
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var q = params.get('search') || '';
+        var input = form.querySelector('#blog-search-input, input[type="search"], input[type="text"]');
+        if (input) input.value = q;
+      } catch { /* noop */ }
+    }
   }
 
   if(document.readyState === 'loading'){
