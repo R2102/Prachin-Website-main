@@ -220,6 +220,16 @@
 				if (!Array.isArray(list)) return;
 				// Exclude hidden posts for navigation and sidebar
 				const visible = list.filter(p => !p.hidden);
+				// Ensure date on single page matches the index.json entry for this slug
+				try {
+					const cur = visible.find(p => p.slug === id);
+					if (cur && cur.date) {
+						const dayEl = document.querySelector('.post-meta-date .day');
+						const monthEl = document.querySelector('.post-meta-date .month');
+						if (dayEl) dayEl.textContent = cur.date.day || '';
+						if (monthEl) monthEl.textContent = cur.date.month || '';
+					}
+				} catch { /* noop */ }
 				// Populate sidebar categories (tags with counts)
 				renderSidebarCategoriesFromList(visible);
 				// Sort by date ascending so the oldest is first

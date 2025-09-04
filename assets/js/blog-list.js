@@ -2,6 +2,24 @@
 // – Builds cards to match the existing grid, supports ?search= and ?category= filters,
 // – Populates the sidebar categories dynamically, and hides the static pagination.
 (function () {
+  // Parse the post date to a timestamp (supports month like "Aug 2025" + day like "10")
+  function parseDateToTs(post) {
+    try {
+      if (!post || !post.date) return 0;
+      const m = (post.date.month || '').trim();
+      const d = (post.date.day || '').toString().trim();
+      const parts = m.split(/\s+/);
+      if (parts.length >= 2) {
+        const mon = parts[0];
+        const yr = parts[1];
+        const dtStr = `${mon} ${d || '01'}, ${yr}`;
+        const ts = Date.parse(dtStr);
+        return isNaN(ts) ? 0 : ts;
+      }
+      const ts2 = Date.parse(`${m} ${d || '01'}`);
+      return isNaN(ts2) ? 0 : ts2;
+    } catch { return 0; }
+  }
   function hidePagination() {
     try {
       const nav = document.querySelector('nav.pagination-area');
@@ -237,17 +255,20 @@
           return;
         }
 
-        // Keep the first card as template, clear the rest
+  // Sort newest first so latest blogs show first
+  const ordered = filtered.slice().sort((a, b) => parseDateToTs(b) - parseDateToTs(a));
+
+  // Keep the first card as template, clear the rest
         const cards = Array.from(grid.children).filter(el => /(^|\s)col-/.test(el.className));
         cards.slice(1).forEach(c => c.remove());
 
-        // Fill first card with first post
-        const first = filtered[0];
+  // Fill first card with first post
+  const first = ordered[0];
         const firstCard = makeCardFromTemplate(templateCol, first);
         grid.replaceChild(firstCard, templateCol);
 
-        // Append others
-        filtered.slice(1).forEach(post => {
+  // Append others
+  ordered.slice(1).forEach(post => {
           const card = makeCardFromTemplate(firstCard, post);
           grid.appendChild(card);
         });
