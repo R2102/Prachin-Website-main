@@ -24,6 +24,9 @@
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
+  /* Base theme uses margin-bottom: -65px to hide the Read More until hover;
+    neutralize it so the button is always visible. */
+  margin-bottom: 0 !important;
 }
 .blog-layout1 .post-item .post-body .btn.btn-link {
   margin-top: auto;
@@ -57,10 +60,32 @@
 .blog-layout1 .widget.widget-search .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  min-width: 150px;
+  min-width: 80px;
 }
 
 /* Make the Search widget title white */
 .blog-layout1 .widget.widget-search .widget-title {
   color: #ffffff;
+}
+
+/* Limit blog card hover to image area only (override base full-card hover) */
+.blog-layout1 .post-item:hover { border-bottom-color: #dfdfea !important; }
+.blog-layout1 .post-item:hover .post-body { transform: none !important; }
+.blog-layout1 .post-item:hover .post-desc,
+.blog-layout1 .post-item:hover .post-title a,
+.blog-layout1 .post-item:hover .post-meta-cat a,
+.blog-layout1 .post-item:hover .post-meta-cat a:after { color: inherit !important; }
+.blog-layout1 .post-item:hover::after { opacity: 0 !important; visibility: hidden !important; transform: none !important; }
+/* stop zoom on full-card hover */
+.blog-layout1 .post-item:hover .post-img img { transform: none !important; }
+/* apply zoom only when hovering the image */
+.blog-layout1 .post-item .post-img:hover img { transform: scale(1.1) rotate(1deg); }
+
+/* Always show the Read More button (base theme sets opacity:0) */
+.blog-layout1 .post-item .btn-link {
+  opacity: 1 !important;
+  color: #205781 !important; /* readable primary color instead of white */
+}
+.blog-layout1 .post-item .btn-link:hover {
+  color: #c41a1b !important; /* match theme hover */
 }

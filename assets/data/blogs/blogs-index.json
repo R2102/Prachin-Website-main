@@ -17,7 +17,7 @@
     "date": { "day": "26", "month": "Aug 2025" },
     "heroImage": "assets/images/products/photography/microcrystallinecellulose/image-3.png",
     "excerpt": "Compare CCS and SSG to select the right super‑disintegrant for robust tablet performance, faster disintegration, and formulation reliability.",
-    "tags": ["Superdisintegrants & Disintegrants", "Sora"]
+    "tags": ["Superdisintegrants & Disintegrants"]
   },
   {
     "slug": "magnesium-stearate-deep-dive",
@@ -37,6 +37,6 @@
     "date": { "day": "26", "month": "Aug 2025" },
     "heroImage": "assets/images/products/photography/crospovidone/image-1.jpg",
     "excerpt": "Why particle size matters for flow, compressibility, and dissolution—plus practical guidance for choosing excipients with the right PSD.",
-    "tags": ["Binders & Fillers", "Sora"]
+    "tags": ["Binders & Fillers"]
   }
 ]
