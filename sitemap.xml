@@ -1,65 +1,292 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <!-- Main Homepage with rich metadata -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <!-- Auto-generated on 2025-09-04 -->
+
+  <!-- Core pages -->
   <url>
     <loc>https://prachinpharmachem.com/</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://prachinpharmachem.com/assets/images/logo/logo-light.png</image:loc>
       <image:title>Prachin Pharmachem Logo</image:title>
-      <image:caption>Leading Chemical Manufacturer and Supplier</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://prachinpharmachem.com/</loc>
-    <lastmod>2024-01-15</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://prachinpharmachem.com/about-us.html</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://prachinpharmachem.com/Product-list.html</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://prachinpharmachem.com/assets/images/products/default-product.jpg</image:loc>
-      <image:title>Prachin Pharmachem Products</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://prachinpharmachem.com/contact-us.html</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://prachinpharmachem.com/certifications.html</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://prachinpharmachem.com/assets/images/certificates/certificate.jpg</image:loc>
-      <image:title>Prachin Pharmachem Certifications</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://prachinpharmachem.com/media-library.html</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://prachinpharmachem.com/Inquiry.html</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2025-09-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://prachinpharmachem.com/blog.html</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/blog-single-post.html</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Product detail pages (dynamic via query param) -->
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=parcros</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=calopar</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=pargel</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=parone</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=parlose</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=sodiumcmc</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=carbopar</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=povidone</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=pregelatinizedstarch</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=disodiumedetate</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=starch</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=talc</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=mannitol</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=parmeg</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=parfum</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=calciumstearate</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=stearicacidpowder</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=mcccmc</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=hydroxpropylmethylcellulose</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=xanthangum</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=calphos</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=calciumcitrate</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=calcitratemalate</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=potcitrate</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=magcitrate</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=potasiummagnesiumcitrate</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=magnesiumtaurate</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=magnesiumglycinate</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=amiodaronehydrochloride</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=adapalene</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=acylovir</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=itopride</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=minoxidil</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=thiamine</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=riboflavin</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=pyridoxine</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://prachinpharmachem.com/Products/product-template.html?product=methylcobalamin</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
