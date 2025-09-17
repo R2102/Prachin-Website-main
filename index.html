@@ -222,8 +222,8 @@
           <!-- align-items-center -->
           <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7">
             <div class="video-banner mb-50" data-aos="fade-right">
-              <img src="assets/images/banners/11.png" alt="Prachin Chemicals Prachin Pharmachem" class="img-fluid">
-              <a class="video-btn popup-video" href="https://www.youtube.com/watch?v=yTpzy1uLKZc" aria-label="Watch our facility video">
+              <img src="assets/images/banners/10.png" alt="Prachin Chemicals Prachin Pharmachem" class="img-fluid">
+              <a class="video-btn popup-video" href="https://www.youtube.com/watch?v=G8eG7UHwono&ab_channel=PrachinPharmachem" aria-label="Watch our facility video">
                 <div class="video-player">
                   <i class="fa fa-play"></i>
                 </div>
@@ -2153,7 +2153,10 @@
           patterns: {
             youtube: {
               index: 'youtube.com/',
-              id: 'v=',
+              id: function(url) {
+                var match = url.match(/[?&]v=([^&]+)/);
+                return match && match[1] ? match[1] : null;
+              },
               src: 'https://www.youtube.com/embed/%id%?autoplay=1'
             }
           }
